@@ -46,7 +46,6 @@ import WhimsicalSlide from '../components/slides/WhimsicalSlide'
 import FlowTypesSlide from '../components/slides/FlowTypesSlide'
 import IADesignSlide from '../components/slides/IADesignSlide'
 import RelumeSitemapSlide from '../components/slides/RelumeSitemapSlide'
-import UnhappyPathSlide from '../components/slides/UnhappyPathSlide'
 import MobbinSlide from '../components/slides/MobbinSlide'
 
 
@@ -165,7 +164,6 @@ const rawSchedule: DayScheduleInput[] = [
         id: "sys-flow-input", title: "User Flows & IA", icon: <BookOpen className="w-[18px] h-[18px]" />,
         slides: [
           { id: 's03-flow-intro', title: 'System-Architekt', component: <UXArchitectRoleSlide /> },
-          { id: 's03-flow-4', title: 'The Unhappy Path', component: <UnhappyPathSlide /> },
           { id: 's03-flow-2', title: 'Task vs. Journey', component: <FlowTypesSlide /> },
           { id: 's03-flow-1', title: 'Flowchart Notation', component: <FlowNotationSlide /> },
           { id: 's03-flow-mermaid', title: 'Format: Mermaid.js', component: <MermaidNotationSlide /> },

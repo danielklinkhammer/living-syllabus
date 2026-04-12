@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion'
-import { Network, Layout, Scale } from 'lucide-react'
+import { Network, Layout, Scale, AlertTriangle } from 'lucide-react'
 
 export default function UXArchitectRoleSlide() {
   return (
@@ -12,10 +12,21 @@ export default function UXArchitectRoleSlide() {
             <div className="text-fhgr-petrol-light text-xs font-mono uppercase tracking-widest mb-3">Die neue Design-Realität</div>
             <h2 className="text-4xl lg:text-5xl font-bold mb-6 mt-2 tracking-tight">UX Designer als Architekten</h2>
             <p className="text-lg text-white/50 leading-relaxed mb-6">
-              KI-Modelle sind extrem mächtig in der Mikro-Exekution (z.B. dem Generieren einzelner Interfaces oder Texte). Aber sie verlieren im Makro-Level schnell den Kontext über komplexe Geschäftslogiken.
+              KI-Modelle sind extrem mächtig in der Mikro-Exekution (z.B. dem Generieren isolierter Interfaces). Sie verlieren im Makro-Level jedoch völlig den Kontext über komplexe Geschäftslogiken.
             </p>
-            <div className="p-4 rounded-xl bg-white/5 border border-white/10 text-sm text-white/60 leading-relaxed">
-              Die Konsequenz: Unsere Rolle als Product Designer shiftet dramatisch hin zu <strong className="text-fhgr-accent">Orchestrierung</strong>, <strong className="text-fhgr-accent">Systemarchitektur</strong> und strategischer <strong className="text-fhgr-accent">Planung</strong>.
+            
+            {/* The Unhappy Path Box */}
+            <div className="p-5 rounded-xl bg-red-500/10 border border-red-500/20 shadow-[0_0_30px_rgba(239,68,68,0.1)] mb-6">
+              <h3 className="font-bold text-red-400 mb-2 flex items-center gap-2 text-sm uppercase tracking-wider">
+                <AlertTriangle className="w-4 h-4"/> KI-Blindspot: Der "Happy Path"
+              </h3>
+              <p className="text-sm text-white/70 leading-relaxed">
+                KI-Modelle haben ein massives Optimismus-Problem: Sie generieren fast ausschließlich den perfekten Idealzustand. <strong>Edge Cases, Error-States und "Unhappy Paths"</strong> (z.B. Offline-Zustände, Payment-Abbrüche) können sie von sich aus nicht vorausschauend planen.
+              </p>
+            </div>
+
+            <div className="text-sm text-white/60 leading-relaxed">
+              Die Konsequenz: Unsere Rolle als Product Designer shiftet dramatisch hin zu <strong className="text-fhgr-accent">Orchestrierung</strong>, <strong className="text-fhgr-accent">Systemarchitektur</strong> und dem Planen dieser Kantenfälle.
             </div>
             
           </motion.div>
@@ -36,20 +47,20 @@ export default function UXArchitectRoleSlide() {
               <div className="p-2 bg-white/10 rounded-lg text-white/50">
                 <Layout className="w-5 h-5" />
               </div>
-              <h3 className="text-lg font-bold text-white/80">Klassische UX</h3>
+              <h3 className="text-lg font-bold text-white/80">Mikro-Ebene (KI & Pixel)</h3>
             </div>
             <ul className="space-y-4">
               <li className="flex gap-3 text-sm text-white/50 items-start">
                 <div className="mt-0.5 text-white/20">●</div>
-                Fokus auf visuelle Perfektion ("Pixel Pushing").
+                Fokus auf das visuelle Layout eines einzelnen Screens.
               </li>
               <li className="flex gap-3 text-sm text-white/50 items-start">
                 <div className="mt-0.5 text-white/20">●</div>
-                Manuelles Zeichnen von jedem einzelnen Screen / State.
+                Generieren des isolierten "Sonnenschein-Szenarios".
               </li>
               <li className="flex gap-3 text-sm text-white/50 items-start">
                 <div className="mt-0.5 text-white/20">●</div>
-                Lokalisiertes Arbeiten innerhalb von isolierten Layout-Files.
+                Diese exekutive Arbeit übernimmt zunehmend der KI-Agent.
               </li>
             </ul>
           </motion.div>
@@ -73,20 +84,20 @@ export default function UXArchitectRoleSlide() {
               <div className="p-2 bg-fhgr-petrol/20 rounded-lg text-fhgr-petrol">
                 <Network className="w-5 h-5" />
               </div>
-              <h3 className="text-lg font-bold text-white">Systemarchitekt</h3>
+              <h3 className="text-lg font-bold text-white">Makro-Ebene (Architekt)</h3>
             </div>
             <ul className="space-y-4">
               <li className="flex gap-3 text-sm text-white/70 items-start">
                 <div className="mt-0.5 text-fhgr-petrol">●</div>
-                Abstraktes Modellieren von Informationsarchitekturen.
+                Abstraktes Modellieren komplexer Informationsarchitekturen.
               </li>
               <li className="flex gap-3 text-sm text-white/70 items-start">
                 <div className="mt-0.5 text-fhgr-petrol">●</div>
-                Makro-Planung: Orchestrierung von Logik-Flows für die KI.
+                Logik-Orchestrierung: Was passiert im Fehlerfall (Unhappy Path)?
               </li>
               <li className="flex gap-3 text-sm text-white/70 items-start">
                 <div className="mt-0.5 text-fhgr-petrol">●</div>
-                Bewerten & Überwachen der generierten Outputs auf Edge Cases.
+                Steuern und Evaluieren der KI durch User Flows & Sitemaps.
               </li>
             </ul>
           </motion.div>
