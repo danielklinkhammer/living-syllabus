@@ -17,6 +17,7 @@ import StitchVsMakeSlide from '../components/slides/StitchVsMakeSlide'
 import StylePromptingSlide from '../components/slides/StylePromptingSlide'
 import DivergenceSlide from '../components/slides/DivergenceSlide'
 import DashboardDefinitionSlide from '../components/slides/DashboardDefinitionSlide'
+import DashboardInspirationSlide from '../components/slides/DashboardInspirationSlide'
 import DataVizBasicsSlide from '../components/slides/DataVizBasicsSlide'
 import DashboardDesignSlide from '../components/slides/DashboardDesignSlide'
 import DashboardPatternsSlide from '../components/slides/DashboardPatternsSlide'
@@ -35,15 +36,21 @@ import RelumeSitemapSlide from '../components/slides/RelumeSitemapSlide'
 import UnhappyPathSlide from '../components/slides/UnhappyPathSlide'
 import MobbinSlide from '../components/slides/MobbinSlide'
 
-import MakerToolsSlide from '../components/slides/MakerToolsSlide'
-import MakerVsProStackSlide from '../components/slides/MakerVsProStackSlide'
-import TerminalAndIDESlide from '../components/slides/TerminalAndIDESlide'
-import EngineeringSandbox from '../components/slides/EngineeringSandbox'
 
+import MakerVsProStackSlide from '../components/slides/MakerVsProStackSlide'
+import IDESlide from '../components/slides/IDESlide'
+import TerminalSlide from '../components/slides/TerminalSlide'
+import GitHubSlide from '../components/slides/GitHubSlide'
+import PublishingSlide from '../components/slides/PublishingSlide'
 import ChallengeDScenariosSlide from '../components/slides/ChallengeDScenariosSlide'
 import ChallengeSlide from '../components/slides/ChallengeSlide'
-import AppSetupSlide from '../components/slides/AppSetupSlide'
-import CodespacesDeploySlide from '../components/slides/CodespacesDeploySlide'
+import Part2IntroSlide from '../components/slides/Part2IntroSlide'
+import StackReactViteSlide from '../components/slides/StackReactViteSlide'
+import StackTailwindSlide from '../components/slides/StackTailwindSlide'
+import StackShadcnSlide from '../components/slides/StackShadcnSlide'
+import StackTypeScriptSlide from '../components/slides/StackTypeScriptSlide'
+import StackFramerMotionSlide from '../components/slides/StackFramerMotionSlide'
+import StackLocalServerSlide from '../components/slides/StackLocalServerSlide'
 
 export interface SlideData {
   id: string
@@ -95,6 +102,7 @@ export const schedule: DaySchedule[] = [
         id: "sys-dash-input", title: "Dashboard Design", icon: <BookOpen className="w-[18px] h-[18px]" />,
         slides: [
           { id: 's03-dash-def', title: 'Was ist ein Dashboard?', component: <DashboardDefinitionSlide /> },
+          { id: 's03-dash-insp', title: 'Inspiration & Domänen', component: <DashboardInspirationSlide /> },
           { id: 's03-dash-viz', title: 'Data Viz Grundlagen', component: <DataVizBasicsSlide /> },
           { id: 's03-dash', title: 'Kriterien & Psychologie', component: <DashboardDesignSlide /> },
           { id: 's03-patterns', title: 'Bento Grid & Patterns', component: <DashboardPatternsSlide /> },
@@ -150,8 +158,10 @@ export const schedule: DaySchedule[] = [
         id: "proto-tech1", title: "Tech für Designer: Part 1", icon: <BookOpen className="w-[18px] h-[18px]" />,
         slides: [
           { id: 's04-mvp', title: 'Maker vs. Pro Stack', component: <MakerVsProStackSlide /> },
-          { id: 's04-maker', title: 'Maker Tools Matrix', component: <MakerToolsSlide /> },
-          { id: 's04-ide1', title: 'Terminal & IDE Anatomie', component: <TerminalAndIDESlide /> }
+          { id: 's04-ide-core', title: 'Die IDE', component: <IDESlide /> },
+          { id: 's04-term', title: 'Das Terminal', component: <TerminalSlide /> },
+          { id: 's04-github', title: 'GitHub', component: <GitHubSlide /> },
+          { id: 's04-publish', title: 'Publishing', component: <PublishingSlide /> }
         ]
       },
       {
@@ -170,9 +180,13 @@ export const schedule: DaySchedule[] = [
       {
         id: "proto-tech2", title: "Tech für Designer: Part 2", icon: <Rocket className="w-[18px] h-[18px]" />,
         slides: [
-          { id: 's04-ide2', title: 'Die Sandbox (Live)', component: <EngineeringSandbox /> },
-          { id: 's04-setup', title: 'App Architecture', component: <AppSetupSlide /> },
-          { id: 's04-deploy', title: 'Codespaces & Deploy', component: <CodespacesDeploySlide /> }
+          { id: 's04-intro', title: 'Intro: The Modern Stack', component: <Part2IntroSlide /> },
+          { id: 's04-react', title: 'React 19 Core', component: <StackReactViteSlide /> },
+          { id: 's04-tailwind', title: 'Tailwind CSS', component: <StackTailwindSlide /> },
+          { id: 's04-shadcn', title: 'shadcn/ui (AI Secret)', component: <StackShadcnSlide /> },
+          { id: 's04-ts', title: 'TypeScript', component: <StackTypeScriptSlide /> },
+          { id: 's04-framer', title: 'Framer Motion', component: <StackFramerMotionSlide /> },
+          { id: 's04-server', title: 'Vite (Server & Build)', component: <StackLocalServerSlide /> }
         ]
       },
       {
