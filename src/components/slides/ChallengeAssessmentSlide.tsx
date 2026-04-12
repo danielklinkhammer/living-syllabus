@@ -5,18 +5,18 @@ import { LayoutDashboard, Component, Scale } from 'lucide-react'
 export default function ChallengeAssessmentSlide() {
   const criteria = [
     {
-      title: "Visuelle Divergenz",
+      title: "Visueller Kontrast & Identität",
       weight: "30%",
       icon: <LayoutDashboard className="w-5 h-5 text-fhgr-accent" />,
       color: "border-fhgr-accent/30 bg-fhgr-accent/5",
-      desc: "Lassen sich die 3 Design-Systeme fundamental und auf den ersten Blick voneinander abgrenzen? Werden die erstellten Sphären (z.B. Corporate vs. Brutalist) konsequent durch Farbgebung, Typografie und Formsprache transportiert?"
+      desc: "Wirken die drei Dashboard-Versionen wirklich wie drei völlig unterschiedliche Apps? Wurde euer Konzept (z.B. \"Cyberpunk\" oder \"Clean Swiss\") durch Farben, Schriften und Eckenradien konsequent umgesetzt?"
     },
     {
-      title: "Systemische Konsistenz",
+      title: "Tool-Beherrschung & Konsistenz",
       weight: "40%",
       icon: <Component className="w-5 h-5 text-fhgr-petrol" />,
       color: "border-fhgr-petrol/30 bg-fhgr-petrol/5",
-      desc: "Zeigt die KI-gestützte Generierung eine strikte Einhaltung des in der `design.md` definierten Token-Systems? Wurden Halluzinationen in Figma bereinigt, sodass Buttons, Spacings und Corner-Radii innerhalb eines Systems identisch bleiben?"
+      desc: "Zeigt ihr, dass ihr den KI-Agenten durch eure `design.md` kontrollieren konntet? Stimmen die Spacings, Schriften und Buttons innerhalb eines Stils überein, oder hat die KI unbemerkt halluziniert?"
     },
     {
       title: "Informationsarchitektur",
@@ -37,10 +37,10 @@ export default function ChallengeAssessmentSlide() {
             <div className="text-fhgr-petrol-light text-xs font-mono uppercase tracking-widest mb-3">Challenge C · Part 3</div>
             <h2 className="text-4xl lg:text-5xl font-bold mb-6 mt-2 tracking-tight">Bewertungsschema</h2>
             <p className="text-lg text-white/50 leading-relaxed mb-6">
-              Die finale Abgabe wird nicht anhand subjektiver Schönheit gemessen, sondern basierend auf architektonischer Integrität und dem Beherrschen des generativen Workflows.
+              Wir bewerten nicht primär, ob das Dashboard \"schön\" ist. Wir bewerten, ob das Dashboard nutzbar ist und ob ihr beweisen könnt, dass ihr KI-Werkzeuge systematisch steuern könnt.
             </p>
             <div className="p-4 rounded-xl bg-white/5 border border-white/10 text-sm text-white/60 leading-relaxed">
-              <strong>Deliverable:</strong> Ein Figma-Link mit exakt 9 Screens (3 Systeme × 3 Views), plus eine Kopie der extrahierten `design.md` der Systeme.
+              <strong>Abgabe-Format:</strong> Ein Figma-Link mit euren 3 Dashboard-Varianten nebeneinander + eure drei `design.md` Manifeste, die ihr benutzt habt.
             </div>
           </motion.div>
         </div>

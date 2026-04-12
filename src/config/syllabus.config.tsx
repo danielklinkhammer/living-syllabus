@@ -144,7 +144,7 @@ const rawSchedule: DayScheduleInput[] = [
       {
         id: "sys-chal-c", title: "Challenge C", icon: <Hammer className="w-[18px] h-[18px]" />,
         slides: [
-          { id: 's03-c-scen', title: 'Szenarien', component: <ChallengeScenariosSlide /> },
+          { id: 's03-c-scen', title: 'Aufgabenstellung', component: <ChallengeScenariosSlide /> },
           { id: 's03-c-work', title: 'Methodik & Pipeline', component: <ChallengeWorkflowSlide /> },
           { id: 's03-c-assess', title: 'Bewertungsschema', component: <ChallengeAssessmentSlide /> }
         ]

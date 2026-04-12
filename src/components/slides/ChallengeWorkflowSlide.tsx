@@ -6,27 +6,27 @@ export default function ChallengeWorkflowSlide() {
   const steps = [
     {
       num: "Phase 1", 
-      title: "Visuelle Exploration", 
+      title: "Visuelle Konzepte erstellen", 
       icon: <Palette className="w-4 h-4 text-white/50" />,
-      desc: "Nutzung von Bildgeneratoren (z.B. Google ImageFX oder Midjourney), um drei radikal voneinander abweichende ästhetische Referenzen (Sphären) für das gewählte Szenario aufzubauen."
+      desc: "Nutzt ImageFX oder Midjourney, um drei grundverschiedene Design-Welten (z.B. Clean vs. Dark Mode vs. Retro) für euer Dashboard zu skizzieren."
     },
     {
       num: "Phase 2", 
-      title: "Semantische Extraktion", 
+      title: "Design-Regeln extrahieren", 
       icon: <FileCode2 className="w-4 h-4 text-white/50" />,
-      desc: "Analyso-Schritt: Die Studierenden übergeben die generierten Referenzen an ein LLM (wie Gemini/ChatGPT), um daraus maschinenlesbare Design-Regeln (Tokens, Spacing, Typografie) abzuleiten. Ergebnis ist ein formalisiertes `design.md` Manifest pro Sphäre."
+      desc: "Übergebt eure Bilder an ein LLM (wie Gemini/ChatGPT) und lasst euch daraus konkrete Manifest-Dateien (`design.md`) mit Farben, Spacings und Typografie-Regeln generieren."
     },
     {
       num: "Phase 3", 
-      title: "Gesteuerte Generierung", 
+      title: "KI-gestützt bauen", 
       icon: <Sparkles className="w-4 h-4 text-fhgr-petrol" />,
-      desc: "Die erstellten `design.md` Manifeste werden als System-Prompt in generative UI-Werkzeuge injiziert. Empfohlene Tools: Figma Make (3.000 Edu-Tokens) oder Google Stitch (als divergenzstarke Expeditions-KI)."
+      desc: "Gebt euer Manifest als Prompt an Figma Make oder Google Stitch. Die KI baut nun euer Layout, wird dabei aber streng durch eure Design-Pattern gesteuert."
     },
      {
       num: "Phase 4", 
-      title: "Figma-Aggregierung", 
+      title: "Figma Konsolidierung", 
       icon: <Download className="w-4 h-4 text-white/50" />,
-      desc: "Unabhängig vom gewählten Generation-Tool werden alle Dashboards zurück in eine zentrale Figma-Datei synchronisiert und dort zu einer Präsentationsmatrix konsolidiert."
+      desc: "Exportiert alle drei fertigen Dashboard-Varianten in eine einzige Figma-Datei, bereinigt KI-Fehler und bereitet sie als Präsentationsmatrix auf."
     }
   ]
 
@@ -40,8 +40,7 @@ export default function ChallengeWorkflowSlide() {
             <div className="text-fhgr-petrol-light text-xs font-mono uppercase tracking-widest mb-3">Challenge C · Part 2</div>
             <h2 className="text-4xl lg:text-5xl font-bold mb-6 mt-2 tracking-tight">Methodik & KI-Pipeline</h2>
             <p className="text-lg text-white/60 leading-relaxed mb-6 max-w-4xl">
-              Der Aufbau der Dashboards erfolgt nicht additiv von Hand, sondern über eine kontrollierte generative Pipeline. 
-              Ziel ist es, den KI-Agenten systemischen Kontext mitzugeben, um Zufall durch architektonische Konsistenz zu ersetzen.
+              Wir bauen die Dashboards nicht mühsam per Hand von Grund auf. Stattdessen nutzen wir KI als Assistenten – orchestrieren den Aufbau aber durch strikte Regeln, um Zufall durch Präzision zu ersetzen.
             </p>
           </motion.div>
         </div>

@@ -251,11 +251,11 @@
   },
   {
     "slideId": "s03-c-scen",
-    "title": "Szenarien",
+    "title": "Aufgabenstellung",
     "block": "B03",
     "order": 26,
     "exportId": "living-syllabus:s03-c-scen",
-    "exportName": "B03-26 \u00b7 Szenarien",
+    "exportName": "B03-26 \u00b7 Aufgabenstellung",
     "figmaPageName": "Living Syllabus",
     "exportStatus": "draft"
   },
