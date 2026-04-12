@@ -55,6 +55,7 @@ import IDESlide from '../components/slides/IDESlide'
 import TerminalSlide from '../components/slides/TerminalSlide'
 import GitHubSlide from '../components/slides/GitHubSlide'
 import PublishingSlide from '../components/slides/PublishingSlide'
+import APIsSlide from '../components/slides/APIsSlide'
 import ChallengeDScenariosSlide from '../components/slides/ChallengeDScenariosSlide'
 import ChallengeDIntroSlide from '../components/slides/ChallengeDIntroSlide'
 import ChallengeDOutcomeSlide from '../components/slides/ChallengeDOutcomeSlide'
@@ -218,7 +219,8 @@ const rawSchedule: DayScheduleInput[] = [
           { id: 's04-ide-core', title: 'Die IDE', component: <IDESlide /> },
           { id: 's04-term', title: 'Das Terminal', component: <TerminalSlide /> },
           { id: 's04-github', title: 'GitHub', component: <GitHubSlide /> },
-          { id: 's04-publish', title: 'Publishing', component: <PublishingSlide /> }
+          { id: 's04-publish', title: 'Publishing', component: <PublishingSlide /> },
+          { id: 's04-api-intro', title: 'APIs (Classic vs AI)', component: <APIsSlide /> }
         ]
       },
       {
