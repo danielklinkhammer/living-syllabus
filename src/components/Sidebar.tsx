@@ -53,8 +53,15 @@ export default function Sidebar({ isOpen, setIsOpen, isMobile, schedule, activeG
         >
         <div className="flex items-center gap-2 mb-10 pl-[8px] pr-6 relative w-full pt-1">
           <button 
-            onClick={(e) => { e.stopPropagation(); onOpenCourseOverview(); }}
-            className={`flex items-center gap-2 flex-1 text-left ${isOpen ? 'hover:bg-white/5 rounded-xl p-1 -ml-1 transition-colors' : ''}`}
+            onClick={(e) => { 
+              e.stopPropagation(); 
+              if (!isOpen) {
+                setIsOpen(true);
+              } else {
+                onOpenCourseOverview();
+              }
+            }}
+            className={`flex items-center gap-2 flex-1 outline-none focus:outline-none text-left ${isOpen ? 'hover:bg-white/5 rounded-xl p-1 -ml-1 transition-colors' : ''}`}
           >
             <div className="w-14 h-14 flex-shrink-0 flex items-center justify-center">
               <img 
