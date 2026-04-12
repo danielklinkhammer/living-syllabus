@@ -1,6 +1,5 @@
 import { motion } from 'framer-motion'
 import Card from '../ui/Card'
-import HeroGraphic from '../ui/HeroGraphic'
 
 export default function FlowNotationSlide() {
   const symbols = [
@@ -41,36 +40,20 @@ export default function FlowNotationSlide() {
         </motion.div>
 
         {/* Right: Graphic */}
-        <div className="flex items-center justify-center lg:mt-0 mt-8 w-full max-w-md mx-auto">
-          <HeroGraphic delay={0.2} className="!p-8 bg-[#1A1A1A] w-full flex-col items-center gap-6 relative">
-            <div className="absolute top-0 right-0 py-2 px-4 bg-fhgr-petrol/20 text-fhgr-petrol-light font-mono text-[10px] rounded-bl-xl border-b border-l border-fhgr-petrol/30 z-10">BEISPIEL-FLOW</div>
-            
-            {/* Start */}
-            <div className="px-6 py-2 border-2 border-indigo-400 bg-indigo-500/20 text-indigo-300 rounded-full text-sm font-bold shadow-[0_0_15px_rgba(99,102,241,0.2)]">Open App</div>
-            
-            <div className="w-0.5 h-6 bg-white/30" />
-            
-            {/* Entscheidung */}
-            <div className="w-24 h-24 rotate-45 border-2 border-orange-400 bg-orange-500/20 text-orange-300 flex items-center justify-center shadow-[0_0_15px_rgba(249,115,22,0.2)]">
-              <span className="-rotate-45 text-xs font-bold text-center leading-tight">Logged<br/>In?</span>
-            </div>
-            
-            <div className="w-full flex justify-between relative mt-2">
-              <div className="w-1/2 flex flex-col items-center">
-                <div className="text-[10px] text-white/50 mb-1 z-10 bg-[#1A1A1A] px-2 -translate-y-6 -ml-16">Yes</div>
-                <div className="w-0.5 h-6 bg-white/30 -mt-6" />
-                <div className="w-32 px-4 py-3 border-2 border-white/40 bg-white/5 text-white rounded text-sm text-center">Dashboard</div>
-              </div>
-              <div className="w-1/2 flex flex-col items-center">
-                <div className="text-[10px] text-white/50 mb-1 z-10 bg-[#1A1A1A] px-2 -translate-y-6 ml-16">No</div>
-                <div className="w-0.5 h-6 bg-white/30 -mt-6" />
-                <div className="w-32 px-4 py-3 border-2 border-white/40 bg-white/5 text-white rounded text-sm text-center">Login Screen</div>
-              </div>
-
-              {/* Connecting Lines (Horizontal) */}
-              <div className="absolute top-[-26px] left-[25%] right-[25%] h-0.5 bg-white/30 -z-0" />
-            </div>
-          </HeroGraphic>
+        <div className="flex items-center justify-center lg:mt-0 mt-8 w-full max-w-xl mx-auto">
+          <motion.div 
+            initial={{opacity:0, scale:0.95}} 
+            animate={{opacity:1, scale:1}} 
+            transition={{delay: 0.2}} 
+            className="w-full relative"
+          >
+            <div className="absolute top-0 right-0 w-32 h-32 bg-fhgr-petrol/20 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2 -z-10" />
+            <img 
+              src="/images/flowchart-notation.avif" 
+              alt="Flowchart Notation" 
+              className="w-full rounded-xl border border-white/10 shadow-2xl relative z-10" 
+            />
+          </motion.div>
         </div>
 
       </div>
