@@ -65,7 +65,7 @@ export default function Sidebar({ isOpen, setIsOpen, isMobile, schedule, activeG
               />
             </div>
             <div className={`flex-1 transition-opacity duration-300 ${!isOpen ? 'opacity-0 pointer-events-none' : 'opacity-100'}`}>
-              <h2 className="text-fhgr-beige font-bold text-[16px] leading-[1.3] tracking-wide pr-2">
+              <h2 className="text-fhgr-beige font-bold text-[18px] leading-[1.6] tracking-wide pr-2">
                 Designing for <br />
                 <span className="text-white/70">and with</span> <span className="text-fhgr-accent bg-fhgr-accent/10 font-black px-1.5 py-0.5 rounded-md tracking-wider shadow-[0_0_8px_rgba(255,107,53,0.3)] border border-fhgr-accent/20">AI</span>
               </h2>
