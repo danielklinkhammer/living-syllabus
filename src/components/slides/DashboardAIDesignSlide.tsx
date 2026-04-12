@@ -55,9 +55,10 @@ export default function DashboardAIDesignSlide() {
               {/* Challenge C Connection */}
               <div className="mt-6 p-4 rounded-xl border border-white/10 bg-white/5 flex gap-3 text-sm text-white/60">
                 <div className="shrink-0 mt-0.5"><MessageSquare className="w-4 h-4 text-white/30" /></div>
-                <p>
-                  <strong>Hinweis für Challenge C:</strong> Ihr müsst keine drei "klassischen" Dashboard-Ansichten bauen. Interfaces wie AI-Copilot-Ansichten oder Generative-UI Screens sind für "Designing for AI" hervorragende (und oft spannendere) Alternativen!
-                </p>
+                <div className="leading-relaxed">
+                  <strong className="text-white mb-1 block">Brücke zur Challenge C</strong>
+                  Ihr seid eingeladen, in euren Entwürfen direkt diese Zukunftsrichtung zu explorieren: Entwerft anstelle starrer Layouts dynamische KI-Dashboards (z.B. den Split-Screen aus Chat & Canvas). Beachtet jedoch, dass hybride Interfaces ein deutlich komplexeres und präziseres Prompting im Modell erfordern als klassische Grids.
+                </div>
               </div>
 
             </div>
