@@ -240,10 +240,20 @@
     "exportStatus": "draft"
   },
   {
+    "slideId": "s03-skills",
+    "title": "Agent Skills",
+    "block": "B03",
+    "order": 19,
+    "exportId": "living-syllabus:s03-skills",
+    "exportName": "B03-19 · Agent Skills",
+    "figmaPageName": "Living Syllabus",
+    "exportStatus": "draft"
+  },
+  {
     "slideId": "s03-dash-def",
     "title": "Was ist ein Dashboard?",
     "block": "B03",
-    "order": 18,
+    "order": 20,
     "exportId": "living-syllabus:s03-dash-def",
     "exportName": "B03-18 · Was ist ein Dashboard?",
     "figmaPageName": "Living Syllabus",
