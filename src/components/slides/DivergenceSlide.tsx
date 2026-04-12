@@ -113,10 +113,12 @@ export default function DivergenceSlide() {
   const styleKeys = Object.keys(styles) as StyleKey[]
 
   return (
-    <div className="w-full h-full flex flex-col lg:flex-row bg-[#060F1A] text-white overflow-y-auto lg:overflow-hidden px-6 lg:px-0">
-      {/* Left: controls */}
-      <div className="w-full lg:w-[400px] flex flex-col pt-12 lg:justify-center lg:px-12 lg:py-8 flex-shrink-0">
-        <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }}>
+    <div className="w-full h-full flex items-center justify-center bg-[#060F1A] text-white overflow-y-auto lg:overflow-hidden relative px-6 lg:px-16">
+      <div className="max-w-7xl w-full mx-auto grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-24 items-center mt-12 lg:mt-0 pb-12">
+        
+        {/* Left: controls */}
+        <div className="lg:col-span-5 flex flex-col justify-center">
+          <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }}>
           <div className="text-fhgr-petrol-light text-xs font-mono uppercase tracking-widest mb-2">Visuelle Divergenz · S02-A2</div>
           <h2 className="text-2xl font-bold mb-1">Divergence Switcher</h2>
           <p className="text-white/40 text-sm mb-6">Selbes Dashboard — 3 visuelle Stile. Klick zum Umschalten.</p>
@@ -172,8 +174,8 @@ export default function DivergenceSlide() {
       </div>
 
       {/* Right: dashboard preview */}
-      <div className="flex-1 flex items-center justify-center p-8">
-        <div className="w-full max-w-md h-[480px]">
+      <div className="lg:col-span-7 flex items-center justify-center">
+        <div className="w-full max-w-[500px] h-[520px]">
           <AnimatePresence mode="wait">
             <motion.div
               key={active}
@@ -187,6 +189,7 @@ export default function DivergenceSlide() {
             </motion.div>
           </AnimatePresence>
         </div>
+      </div>
       </div>
     </div>
   )

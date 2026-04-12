@@ -230,6 +230,16 @@
     "exportStatus": "draft"
   },
   {
+    "slideId": "s03-prompting",
+    "title": "Agent Prompting",
+    "block": "B03",
+    "order": 18,
+    "exportId": "living-syllabus:s03-prompting",
+    "exportName": "B03-18 · Agent Prompting",
+    "figmaPageName": "Living Syllabus",
+    "exportStatus": "draft"
+  },
+  {
     "slideId": "s03-dash-def",
     "title": "Was ist ein Dashboard?",
     "block": "B03",

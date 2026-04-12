@@ -26,6 +26,7 @@ import MCPSlide from '../components/slides/MCPSlide'
 import StitchVsMakeSlide from '../components/slides/StitchVsMakeSlide'
 import StylePromptingSlide from '../components/slides/StylePromptingSlide'
 import DivergenceSlide from '../components/slides/DivergenceSlide'
+import PromptTacticsSlide from '../components/slides/PromptTacticsSlide'
 import DashboardDefinitionSlide from '../components/slides/DashboardDefinitionSlide'
 import DashboardInspirationSlide from '../components/slides/DashboardInspirationSlide'
 import DataVizBasicsSlide from '../components/slides/DataVizBasicsSlide'
@@ -134,7 +135,8 @@ const rawSchedule: DayScheduleInput[] = [
           { id: 's03-mcp', title: 'MCP Handoff', component: <MCPSlide /> },
           { id: 's03-stitch-make', title: 'Stitch vs. Make', component: <StitchVsMakeSlide /> },
           { id: 's03-style', title: 'Aesthetic Fixation', component: <StylePromptingSlide /> },
-          { id: 's03-div', title: 'Visuelle Divergenz', component: <DivergenceSlide /> }
+          { id: 's03-div', title: 'Visuelle Divergenz', component: <DivergenceSlide /> },
+          { id: 's03-prompting', title: 'Agent Prompting', component: <PromptTacticsSlide /> }
         ]
       },
       {
