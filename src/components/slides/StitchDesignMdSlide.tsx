@@ -10,8 +10,8 @@ export default function StitchDesignMdSlide() {
         {/* Left Column: Theory */}
         <div className="lg:col-span-7 flex flex-col justify-center">
           <motion.div initial={{opacity:0, y:20}} animate={{opacity:1, y:0}}>
-            <div className="text-fhgr-petrol-light text-xs font-mono uppercase tracking-widest mb-3">System Context · designmd.ai</div>
-            <h2 className="text-4xl lg:text-5xl font-bold mb-6 mt-2 tracking-tight">Das DESIGN.md Manifest</h2>
+            <div className="text-fhgr-petrol-light text-xs font-mono uppercase tracking-widest mb-3">System Context · Agentic Design Builder</div>
+            <h2 className="text-4xl lg:text-5xl font-bold mb-6 mt-2 tracking-tight">Stitch & DESIGN.md</h2>
             <p className="text-lg text-white/60 leading-relaxed mb-6">
               Ein Projekt hat eine visuelle Identität (Farben, Fonts, Spacing). Traditionell lebt das in einer Figma-Datei oder als Brand-PDF. 
               <strong className="text-white"> Nichts davon ist für einen KI-Agenten lesbar.</strong>
@@ -70,17 +70,22 @@ export default function StitchDesignMdSlide() {
             </div>
             
             <div className="w-full flex-1 flex flex-col justify-center items-center p-8 text-center">
-              <div className="w-16 h-16 rounded-full bg-fhgr-petrol/10 flex items-center justify-center mb-6 border border-fhgr-petrol/20">
-                <PlayCircle className="w-8 h-8 text-fhgr-petrol" />
+              <div className="w-16 h-16 rounded-3xl bg-blue-500/10 flex items-center justify-center mb-6 border border-blue-500/20">
+                <Code2 className="w-8 h-8 text-blue-400" />
               </div>
-              <h3 className="text-xl font-bold text-white mb-2">Google Stitch in Action</h3>
-              <p className="text-sm text-white/40 mb-6 max-w-xs">
-                Ein AI-Native Design Editor, der Layouts basierend auf einer strukturierten DESIGN.md Datei generiert.
+              <h3 className="text-xl font-bold text-white mb-3">Google Stitch</h3>
+              <p className="text-sm text-white/50 mb-6 max-w-sm leading-relaxed">
+                Stitch ist ein experimentelles UI-Entwicklertool der nächsten Generation (Google Labs). Es agiert als <strong>Component Explorer und Agentic Design Tool</strong>, das Layouts direkt über visuelle Prompts und das fundierte DESIGN.md Regelwerk iteriert.
               </p>
               
-              <button className="px-6 py-2.5 bg-fhgr-petrol/20 border border-fhgr-petrol/40 text-fhgr-petrol-light rounded-lg font-mono text-xs hover:bg-fhgr-petrol/30 transition-colors flex items-center gap-2">
-                Launch Video ansehen
-              </button>
+              <a 
+                href="https://stitch.withgoogle.com/docs/learn/overview" 
+                target="_blank" 
+                rel="noreferrer"
+                className="px-6 py-2.5 bg-blue-500/10 hover:bg-blue-500/20 border border-blue-500/30 text-blue-300 rounded-lg font-mono text-xs transition-colors flex items-center gap-2"
+              >
+                Zur offiziellen Dokumentation →
+              </a>
             </div>
             
           </motion.div>
