@@ -600,12 +600,47 @@
     "exportStatus": "draft"
   },
   {
+    "slideId": "s04-chalE1-intro",
+    "block": "B04",
+    "title": "Aufgabenstellung",
+    "order": 13,
+    "exportName": "B04-13 \u00b7 Aufgabenstellung"
+  },
+  {
+    "slideId": "s04-chalE1-scene",
+    "block": "B04",
+    "title": "AI Showcase",
+    "order": 14,
+    "exportName": "B04-14 \u00b7 AI Showcase"
+  },
+  {
+    "slideId": "s04-chalE1-work",
+    "block": "B04",
+    "title": "Der Workspace",
+    "order": 15,
+    "exportName": "B04-15 \u00b7 Der Workspace"
+  },
+  {
+    "slideId": "s04-chalE1-out",
+    "block": "B04",
+    "title": "Outcome",
+    "order": 16,
+    "exportName": "B04-16 \u00b7 Outcome"
+  },
+  {
+    "slideId": "s04-chalE1-assess",
+    "block": "B04",
+    "title": "Evaluationskriterien",
+    "order": 17,
+    "exportName": "B04-17 \u00b7 Evaluationskriterien"
+  },
+  {
     "slideId": "s04-chalE",
     "title": "Optional: Projekt Live schalten",
     "block": "B04",
-    "order": 13,
+    "order": 18,
     "exportId": "living-syllabus:s04-chalE",
-    "exportName": "B04-13 \u00b7 Optional: Projekt Live schalten",
+    "exportName": "B04-18 \u00b7 Optional: Projekt Live schalten",
     "figmaPageName": "Living Syllabus",
     "exportStatus": "draft"
   }
