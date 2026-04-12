@@ -37,10 +37,10 @@ export default function FlowTypesSlide() {
       <div className="max-w-5xl w-full mx-auto relative z-10 text-center">
         
         <motion.div initial={{opacity:0, y:20}} animate={{opacity:1, y:0}}>
-          <div className="text-fhgr-petrol-light text-xs font-mono uppercase tracking-widest mb-3">Perspektiven des Designs</div>
-          <h2 className="text-4xl lg:text-5xl font-bold mb-6 mt-2 tracking-tight">Scope & Detailgrad</h2>
-          <p className="text-lg text-white/50 leading-relaxed max-w-2xl mx-auto mb-12">
-            Nicht jeder Flow ist gleich. Bevor wir mappen, müssen wir entscheiden, aus welcher Flughöhe wir das Problem betrachten wollen.
+          <div className="text-fhgr-petrol-light text-xs font-mono uppercase tracking-widest mb-3">Die Blaupausen des Architekten</div>
+          <h2 className="text-4xl lg:text-5xl font-bold mb-4 mt-2 tracking-tight">Scope & Detailgrad</h2>
+          <p className="text-lg text-white/50 leading-relaxed max-w-2xl mx-auto mb-10">
+            Als System-Architekten brauchen wir präzise Blaupausen, bevor die KI exekutiert. Diese Blaupausen sind unsere <strong>Flows</strong>. (Die <em>Informationsarchitektur</em> betrachten wir separat). Nicht jeder Flow ist gleich – wir müssen erst festlegen, aus welcher Flughöhe wir das System betrachten.
           </p>
         </motion.div>
 
@@ -73,6 +73,19 @@ export default function FlowTypesSlide() {
             </Card>
           ))}
         </div>
+
+        {/* Note on Vibe Coding and Technical Notation */}
+        <motion.div 
+          initial={{opacity:0, y:20}} 
+          animate={{opacity:1, y:0}} 
+          transition={{delay: 0.5}}
+          className="mt-12 text-left max-w-3xl mx-auto p-5 rounded-xl border border-white/10 bg-white/5"
+        >
+          <div className="text-sm font-bold text-white mb-2">Warum strikte Notation statt bunter Bildgenerierung?</div>
+          <p className="text-sm text-white/60 leading-relaxed">
+            Bildgeneratoren könnten uns heute wunderschöne, bunte "Customer Journey Maps" als Illustration malen. Im produktiven UX-Design und der Softwareentwicklung – insbesondere beim <strong>Vibe Coding</strong> – helfen uns Bilder aber nicht weiter. Wir benötigen strikte, <em>technische Notationsweisen</em> (Flowcharts, Text-Graphen). Nur eine präzise logische Notation kann von KI-Agenten als fehlerfreier Bauplan für Code und Architektur gelesen werden.
+          </p>
+        </motion.div>
 
       </div>
     </div>
