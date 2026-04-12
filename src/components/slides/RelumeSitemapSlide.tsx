@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion'
-import { LayoutTemplate, Lightbulb, Hammer, PenTool, ArrowRight } from 'lucide-react'
+import { LayoutTemplate, Lightbulb, Hammer, PenTool, ArrowRight, ExternalLink } from 'lucide-react'
 import Card from '../ui/Card'
 
 export default function RelumeSitemapSlide() {
@@ -14,9 +14,12 @@ export default function RelumeSitemapSlide() {
               <LayoutTemplate className="w-4 h-4" /> Tool Spotlight
             </div>
             <h2 className="text-4xl lg:text-5xl font-bold mb-6 mt-2">Relume: Sitemap zu Figma</h2>
-            <p className="text-lg text-white/50 leading-relaxed mb-8">
+            <p className="text-lg text-white/50 leading-relaxed mb-6">
               Für uns ist <strong>Relume.io</strong> der Sweetspot: Es generiert aus einem einfachen Prompt nicht nur eine strukturierte Informationsarchitektur (Sitemap), sondern liefert erste Wireframes direkt mit, die sich nahtlos nach Figma kopieren lassen.
             </p>
+            <a href="https://www.relume.io/" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 px-4 py-2 bg-fhgr-petrol/10 hover:bg-fhgr-petrol/20 text-fhgr-petrol-light text-sm font-medium rounded-lg transition-colors border border-fhgr-petrol/30 mb-8 w-max">
+              Zu Relume <ExternalLink className="w-4 h-4" />
+            </a>
           </motion.div>
 
           <div className="space-y-4">

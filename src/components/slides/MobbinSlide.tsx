@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion'
-import { Search, Blocks, Smartphone, PanelTop } from 'lucide-react'
+import { Search, Blocks, Smartphone, PanelTop, ExternalLink } from 'lucide-react'
 import Card from '../ui/Card'
 
 export default function MobbinSlide() {
@@ -14,9 +14,12 @@ export default function MobbinSlide() {
               <Search className="w-4 h-4" /> Pattern Research
             </div>
             <h2 className="text-4xl lg:text-5xl font-bold mb-6 mt-2">Mobbin: UI & Flow Library</h2>
-            <p className="text-lg text-white/50 leading-relaxed mb-8">
+            <p className="text-lg text-white/50 leading-relaxed mb-6">
               Warum das Rad neu erfinden? Bevor wir User Flows und Architekturen definieren, hilft ein strukturierter Blick auf den Markt. <strong>Mobbin.com</strong> ist das grösste Archiv für echte UI-Screens und komplette User Journeys von Top-Tier Apps.
             </p>
+            <a href="https://mobbin.com/" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 px-4 py-2 bg-white/10 hover:bg-white/20 text-white text-sm font-medium rounded-lg transition-colors border border-white/10 mb-8 w-max">
+              Zu Mobbin <ExternalLink className="w-4 h-4" />
+            </a>
           </motion.div>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">

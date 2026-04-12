@@ -167,11 +167,11 @@ const rawSchedule: DayScheduleInput[] = [
           { id: 's03-flow-2', title: 'Task vs. Journey', component: <FlowTypesSlide /> },
           { id: 's03-flow-1', title: 'Flowchart Notation', component: <FlowNotationSlide /> },
           { id: 's03-flow-mermaid', title: 'Format: Mermaid.js', component: <MermaidNotationSlide /> },
-          { id: 's03-flow-figjam-ai', title: 'FigJam AI', component: <FigJamAIDiagramsSlide /> },
-          { id: 's03-flow-whimsical', title: 'Whimsical', component: <WhimsicalSlide /> },
+          { id: 's03-flow-figjam-ai', title: 'Tool: FigJam AI', component: <FigJamAIDiagramsSlide /> },
+          { id: 's03-flow-whimsical', title: 'Tool: Whimsical', component: <WhimsicalSlide /> },
           { id: 's03-flow-3', title: 'IA & Sitemaps', component: <IADesignSlide /> },
-          { id: 's03-flow-relume', title: 'Sitemaps mit Relume', component: <RelumeSitemapSlide /> },
-          { id: 's03-flow-mobbin', title: 'Pattern Library (Mobbin)', component: <MobbinSlide /> },
+          { id: 's03-flow-relume', title: 'Tool: Relume', component: <RelumeSitemapSlide /> },
+          { id: 's03-flow-mobbin', title: 'Pattern Library: Mobbin', component: <MobbinSlide /> },
 
         ]
       },

@@ -381,21 +381,21 @@
   },
   {
     "slideId": "s03-flow-figjam-ai",
-    "title": "FigJam AI",
+    "title": "Tool: FigJam AI",
     "block": "B03",
     "order": 29,
     "exportId": "living-syllabus:s03-flow-figjam-ai",
-    "exportName": "B03-29 \u00b7 FigJam AI",
+    "exportName": "B03-29 \u00b7 Tool: FigJam AI",
     "figmaPageName": "Living Syllabus",
     "exportStatus": "draft"
   },
   {
     "slideId": "s03-flow-whimsical",
-    "title": "Whimsical",
+    "title": "Tool: Whimsical",
     "block": "B03",
     "order": 30,
     "exportId": "living-syllabus:s03-flow-whimsical",
-    "exportName": "B03-30 \u00b7 Whimsical",
+    "exportName": "B03-30 \u00b7 Tool: Whimsical",
     "figmaPageName": "Living Syllabus",
     "exportStatus": "draft"
   },
@@ -411,21 +411,21 @@
   },
   {
     "slideId": "s03-flow-relume",
-    "title": "Sitemaps mit Relume",
+    "title": "Tool: Relume",
     "block": "B03",
     "order": 32,
     "exportId": "living-syllabus:s03-flow-relume",
-    "exportName": "B03-32 \u00b7 Sitemaps mit Relume",
+    "exportName": "B03-32 \u00b7 Tool: Relume",
     "figmaPageName": "Living Syllabus",
     "exportStatus": "draft"
   },
   {
     "slideId": "s03-flow-mobbin",
-    "title": "Pattern Library (Mobbin)",
+    "title": "Pattern Library: Mobbin",
     "block": "B03",
     "order": 33,
     "exportId": "living-syllabus:s03-flow-mobbin",
-    "exportName": "B03-33 \u00b7 Pattern Library (Mobbin)",
+    "exportName": "B03-33 \u00b7 Pattern Library: Mobbin",
     "figmaPageName": "Living Syllabus",
     "exportStatus": "draft"
   },
