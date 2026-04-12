@@ -37,6 +37,7 @@ import ChallengeScenariosSlide from '../components/slides/ChallengeScenariosSlid
 import ChallengeOutcomeSlide from '../components/slides/ChallengeOutcomeSlide'
 import ChallengeWorkflowSlide from '../components/slides/ChallengeWorkflowSlide'
 import ChallengeAssessmentSlide from '../components/slides/ChallengeAssessmentSlide'
+import UXArchitectRoleSlide from '../components/slides/UXArchitectRoleSlide'
 import FlowNotationSlide from '../components/slides/FlowNotationSlide'
 import FigJamAIDiagramsSlide from '../components/slides/FigJamAIDiagramsSlide'
 import MermaidNotationSlide from '../components/slides/MermaidNotationSlide'
@@ -163,6 +164,7 @@ const rawSchedule: DayScheduleInput[] = [
       {
         id: "sys-flow-input", title: "User Flows & IA", icon: <BookOpen className="w-[18px] h-[18px]" />,
         slides: [
+          { id: 's03-flow-intro', title: 'System-Architekt', component: <UXArchitectRoleSlide /> },
           { id: 's03-flow-4', title: 'The Unhappy Path', component: <UnhappyPathSlide /> },
           { id: 's03-flow-2', title: 'Task vs. Journey', component: <FlowTypesSlide /> },
           { id: 's03-flow-1', title: 'Flowchart Notation', component: <FlowNotationSlide /> },
