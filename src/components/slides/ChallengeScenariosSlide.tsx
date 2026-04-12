@@ -6,17 +6,17 @@ export default function ChallengeScenariosSlide() {
   const steps = [
     { 
       title: "1 Thema, 3 Ansichten", 
-      desc: "Ihr wählt nachher ein Dashboard-Thema. Für dieses Thema entwerft ihr drei verschiedene Ansichten (z.B. unterschiedliche Dashboard-Größen oder Visualisierungs-Typen).",
+      desc: "Ihr wählt nachher ein Dashboard-Thema. Für dieses Thema entwerft ihr drei verschiedene Ansichten (z.B. unterschiedliche Dashboard-Element-Größen oder Visualisierungs-Typen).",
       icon: <LayoutDashboard className="w-8 h-8 text-fhgr-petrol" />
     },
     { 
       title: "3 Stile", 
-      desc: "Ihr erkundet drei völlig unterschiedliche visuelle Welten (z.B. Swiss Minimalism, Neobrutalism, Spatial UI).",
+      desc: "Ihr erkundet drei völlig unterschiedliche visuelle Welten. Wichtig: Nehmt nicht den ersten Wurf der KI! Iteriert die Stile, verfeinert sie und passt sie aktiv auf euren Geschmack an.",
       icon: <Palette className="w-8 h-8 text-purple-400" />
     },
     { 
       title: "Architektur", 
-      desc: "Ihr nutzt Manifest-Dateien (design.md), um die KI-Agenten zu zwingen, euer Layout akkurat in den drei Stilen aufzubauen.",
+      desc: "Ihr analysiert die erstellen UI-Referenzen und versucht, den Design-Stil und die UI-Elemente systematisch schriftlich zu dokumentieren (z.B. in einem Text- oder Markdown-File).",
       icon: <FileJson className="w-8 h-8 text-orange-400" />
     }
   ]

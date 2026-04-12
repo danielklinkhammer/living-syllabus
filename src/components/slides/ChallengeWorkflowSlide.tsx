@@ -12,9 +12,9 @@ export default function ChallengeWorkflowSlide() {
     },
     {
       num: "Phase 2", 
-      title: "Design-Regeln extrahieren", 
+      title: "Design-Regeln dokumentieren", 
       icon: <FileCode2 className="w-4 h-4 text-white/50" />,
-      desc: "Übergebt eure Bilder an ein LLM (wie Gemini/ChatGPT) und lasst euch daraus konkrete Manifest-Dateien (`design.md`) mit Farben, Spacings und Typografie-Regeln generieren."
+      desc: "Analysiert eure erstellten Referenzen (gerne mit Hilfe eines LLMs wie Gemini/ChatGPT) und dokumentiert die Design-Regeln, Farben und UI-Elemente systematisch in Textform (z.B. als `design.md` oder in Stichpunkten)."
     },
     {
       num: "Phase 3", 
