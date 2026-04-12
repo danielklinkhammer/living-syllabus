@@ -1,29 +1,38 @@
 import { motion } from 'framer-motion'
+import { Component, Scale, FileText, GitBranch, Search } from 'lucide-react'
 import Card from '../ui/Card'
-import { LayoutDashboard, Component, Scale } from 'lucide-react'
 
 export default function ChallengeAssessmentSlide() {
   const criteria = [
     {
-      title: "Ästhetische Reichweite",
-      weight: "30%",
-      icon: <LayoutDashboard className="w-5 h-5 text-fhgr-accent" />,
+      title: "Themen-Spezifikation",
+      icon: <Search className="w-4 h-4 text-fhgr-accent" />,
       color: "border-fhgr-accent/30 bg-fhgr-accent/5",
-      desc: "Haben die Studierenden explorativ gearbeitet? Wie radikal, mutig und unterscheidbar sind die 3 gewählten Stile? Verlangt eine hohe Bandbreite im Prompting und ein Gespür für echte visuelle Identitäten."
+      desc: "Klarheit und Detailtiefe bei der Themensetzung sowie des verfassten Basis-Prompts."
     },
     {
-      title: "Systemische Dekonstruktion",
-      weight: "40%",
-      icon: <Component className="w-5 h-5 text-fhgr-petrol" />,
+      title: "Kreative Divergenz",
+      icon: <Component className="w-4 h-4 text-purple-400" />,
+      color: "border-purple-400/30 bg-purple-400/5",
+      desc: "Wie mutig und radikal unterscheiden sich die drei explorativ abgeleiteten Design-System-Welten?"
+    },
+    {
+      title: "Iterations-Tiefe",
+      icon: <GitBranch className="w-4 h-4 text-orange-400" />,
+      color: "border-orange-400/30 bg-orange-400/5",
+      desc: "Wurden die generierten UI-Entwürfe kritisch weiterentwickelt und handwerklich geschliffen?"
+    },
+    {
+      title: "Systemische Dokumentation",
+      icon: <FileText className="w-4 h-4 text-fhgr-petrol" />,
       color: "border-fhgr-petrol/30 bg-fhgr-petrol/5",
-      desc: "Das Reverse-Engineering: Wie präzise wurde das generierte UI in Textform (`design.md`) zerlegt? Sind die dokumentierten Design-Regeln so analytisch erfasst, dass man das Design rein textbasiert reproduzieren könnte?"
+      desc: "Die Präzision des Reverse-Engineerings (`design.md`). Ist das Layout rein textbasiert reproduzierbar?"
     },
     {
-      title: "Cross-Matrix Konsistenz",
-      weight: "30%",
-      icon: <Scale className="w-5 h-5 text-purple-400" />,
-      color: "border-purple-500/30 bg-purple-500/5",
-      desc: "Bleibt die Informationsarchitektur über alle Stile hinweg logisch stabil, während umgekehrt die visuelle DNA (Regelwerk) innerhalb der 3 Ansichten eines Stils strikt und halluzinationsfrei erhalten bleibt?"
+      title: "Matrix-Konsistenz",
+      icon: <Scale className="w-4 h-4 text-blue-400" />,
+      color: "border-blue-400/30 bg-blue-400/5",
+      desc: "Bleibt die UX-Struktur über alle Stile hinweg stabil und die Design-DNA pro Stil halluzinationsfrei?"
     }
   ]
 
@@ -35,19 +44,12 @@ export default function ChallengeAssessmentSlide() {
         <div className="lg:col-span-5">
           <motion.div initial={{opacity:0, y:20}} animate={{opacity:1, y:0}}>
             <div className="text-fhgr-petrol-light text-xs font-mono uppercase tracking-widest mb-3">Challenge C · Part 3</div>
-            <h2 className="text-4xl lg:text-5xl font-bold mb-6 mt-2 tracking-tight">Bewertungsschema</h2>
-            <p className="text-lg text-white/50 leading-relaxed mb-6">
-              Dieses Modul wächst organisch in eurer zentralen Figma-Datei und fließt am Ende des Semesters in die Gesamtbewertung des Portfolios ein. Es gibt hier keinen isolierten Abgabe-Link.
-            </p>
-            <div className="p-4 rounded-xl bg-white/5 border border-white/10 text-sm text-white/60 leading-relaxed">
-              <strong>Die Essenz:</strong> Wir bewerten am Ende nicht, wer handwerklich am schönsten "Pixel schubst" – sondern wir bewerten das analytische Systemverständnis und den strategischen Umgang mit den KI-Generatoren.
-            </div>
+            <h2 className="text-4xl lg:text-5xl font-bold mb-6 mt-2 tracking-tight">Evaluations-Aspekte</h2>
           </motion.div>
         </div>
 
         {/* Right: The Rubric */}
-        <div className="lg:col-span-7 flex flex-col gap-4">
-          <div className="text-sm font-semibold tracking-widest uppercase text-white/30 ml-2 mb-2">Die 3 Säulen der Evaluierung</div>
+        <div className="lg:col-span-7 flex flex-col gap-3">
           
           {criteria.map((c, idx) => (
             <motion.div 
@@ -56,19 +58,14 @@ export default function ChallengeAssessmentSlide() {
               animate={{ opacity: 1, x: 0 }}
               transition={{ delay: 0.2 + (idx * 0.1) }}
             >
-              <Card variant="glass" className={`!p-6 border transition-all duration-300 ${c.color}`}>
-                <div className="flex gap-4 items-start w-full">
-                  <div className="p-3 rounded-lg bg-black/40 border border-white/10 shrink-0 mt-1">
+              <Card variant="glass" className={`!p-4 border transition-all duration-300 ${c.color}`}>
+                <div className="flex gap-4 items-center w-full">
+                  <div className="p-2 rounded bg-black/40 border border-white/10 shrink-0">
                     {c.icon}
                   </div>
                   <div className="flex-1">
-                    <div className="flex justify-between items-center mb-2 w-full">
-                      <h3 className="font-bold text-white text-lg">{c.title}</h3>
-                      <span className="font-mono text-xs font-bold px-2 py-1 bg-black/40 rounded text-white/70">
-                        {c.weight}
-                      </span>
-                    </div>
-                    <p className="text-sm text-white/60 leading-relaxed">
+                    <h3 className="font-bold text-white text-md mb-1">{c.title}</h3>
+                    <p className="text-sm text-white/60 leading-snug">
                       {c.desc}
                     </p>
                   </div>
