@@ -38,9 +38,9 @@ export default function ChallengeE2Slide() {
             <p className="text-base text-white/50">
               Eure letzte Challenge ist es, euren KI-App-Prototypen manuell ins Netz zu hängen. Wendet euer Wissen aus dem <em>Tech für Designer</em> Block an: Nutzt das Terminal, verwaltet euren Code per Git und durchlauft eine echte Vercel CI/CD Pipeline.
             </p>
-            <div className="bg-red-500/10 border border-red-500/20 p-4 rounded-lg mt-6 text-left">
-              <p className="text-sm text-red-300">
-                <strong>Disclaimer (Optionale Challenge):</strong> Der direkte Einsatz von AI-gestützten Scripts in der lokalen Command Line oder der IDE erfordert Vorsicht. Ihr solltet ungefähr verstehen, welchen Code das AI Studio dort generiert. Seid ihr sicher mit den Lektionen <em>"Tech Stack"</em> & <em>"Tech für Designer"</em>? Prima! Wenn nicht, bleibt in der sicheren Sandbox.
+            <div className="bg-white/5 border border-white/10 p-4 rounded-xl mt-6 text-left">
+              <p className="text-sm text-white/60">
+                <strong className="text-white/80">Disclaimer (Optionale Challenge):</strong> Der direkte Einsatz von AI-gestützten Scripts in der lokalen Command Line oder der IDE erfordert Vorsicht. Ihr solltet ungefähr verstehen, welchen Code das AI Studio dort generiert. Seid ihr sicher mit den Lektionen <em>"Tech Stack"</em> & <em>"Tech für Designer"</em>? Prima! Wenn nicht, bleibt in der sicheren Sandbox.
               </p>
             </div>
           </div>
