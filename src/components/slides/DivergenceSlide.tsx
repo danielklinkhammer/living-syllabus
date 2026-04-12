@@ -15,6 +15,8 @@ interface StyleConfig {
   border: string
   badge: string
   kpiText: string
+  roundedOuter: string
+  roundedInner: string
 }
 
 const styles: Record<StyleKey, StyleConfig> = {
@@ -30,6 +32,8 @@ const styles: Record<StyleKey, StyleConfig> = {
     border:'border-gray-200',
     badge: 'bg-red-600 text-white text-xs px-2 py-0.5 rounded-none font-mono uppercase',
     kpiText: 'font-bold text-gray-900 text-4xl tracking-tighter',
+    roundedOuter: 'rounded-none',
+    roundedInner: 'rounded-none',
   },
   brutalist: {
     name: 'Neobrutalism',
@@ -43,6 +47,8 @@ const styles: Record<StyleKey, StyleConfig> = {
     border:'border-black border-4',
     badge: 'bg-black text-yellow-300 text-xs px-2 py-0.5 font-black uppercase tracking-widest',
     kpiText: 'font-black text-black text-5xl',
+    roundedOuter: 'rounded-none',
+    roundedInner: 'rounded-none',
   },
   glass: {
     name: 'Glassmorphism 2.0',
@@ -56,6 +62,8 @@ const styles: Record<StyleKey, StyleConfig> = {
     border:'border-white/20',
     badge: 'bg-white/20 text-white text-xs px-3 py-0.5 rounded-full backdrop-blur border border-white/30',
     kpiText: 'font-bold text-white text-4xl',
+    roundedOuter: 'rounded-2xl',
+    roundedInner: 'rounded-xl',
   },
   spatial: {
     name: 'Spatial / Tactile UI',
@@ -69,6 +77,8 @@ const styles: Record<StyleKey, StyleConfig> = {
     border:'border-gray-200/50',
     badge: 'bg-white shadow-sm text-gray-700 font-medium text-[10px] px-3 py-1 rounded-full border border-gray-100',
     kpiText: 'font-semibold text-gray-900 text-4xl',
+    roundedOuter: 'rounded-[2rem]',
+    roundedInner: 'rounded-2xl',
   },
   devcore: {
     name: 'Developer Core',
@@ -82,12 +92,14 @@ const styles: Record<StyleKey, StyleConfig> = {
     border:'border-[#27272A]',
     badge: 'bg-[#18181B] border border-[#27272A] text-emerald-400 text-[10px] px-2 py-0.5 rounded font-mono',
     kpiText: 'font-mono text-white text-4xl',
+    roundedOuter: 'rounded-md',
+    roundedInner: 'rounded-sm',
   }
 }
 
 function DashboardMock({ style }: { style: StyleConfig }) {
   return (
-    <div className={`${style.bg} rounded-2xl overflow-hidden w-full h-full flex flex-col transition-all duration-500`}>
+    <div className={`${style.bg} ${style.roundedOuter} overflow-hidden w-full h-full flex flex-col transition-all duration-500`}>
       {/* Header */}
       <div className={`flex items-center justify-between px-5 py-3 ${style.border} border-b`}>
         <span className={`text-sm font-semibold ${style.text}`}>Energy Dashboard</span>
@@ -100,7 +112,7 @@ function DashboardMock({ style }: { style: StyleConfig }) {
           { label: 'Solar',     val: '18.2', unit: 'kWh' },
           { label: 'Netz',      val: '24.5', unit: 'kWh' },
         ].map(({ label, val, unit }) => (
-          <div key={label} className={`${style.card} rounded-xl p-3 transition-all duration-500`}>
+          <div key={label} className={`${style.card} ${style.roundedInner} p-3 transition-all duration-500`}>
             <div className={`text-xs mb-1 opacity-60 ${style.text}`}>{label}</div>
             <div className={style.kpiText}>{val}</div>
             <div className={`text-xs opacity-50 ${style.text}`}>{unit}</div>
@@ -108,7 +120,7 @@ function DashboardMock({ style }: { style: StyleConfig }) {
         ))}
       </div>
       {/* Mini chart */}
-      <div className={`mx-4 mb-4 ${style.card} rounded-xl p-3 flex-1 transition-all duration-500`}>
+      <div className={`mx-4 mb-4 ${style.card} ${style.roundedInner} p-3 flex-1 transition-all duration-500`}>
         <div className={`text-xs mb-2 font-medium opacity-60 ${style.text}`}>7-Tage-Verlauf</div>
         <div className="flex items-end gap-1 h-16">
           {[60,45,80,55,70,40,65].map((h, i) => (
