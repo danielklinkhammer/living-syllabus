@@ -64,7 +64,7 @@ import ChallengeE1ScenariosSlide from '../components/slides/ChallengeE1Scenarios
 import ChallengeE1WorkflowSlide from '../components/slides/ChallengeE1WorkflowSlide'
 import ChallengeE1OutcomeSlide from '../components/slides/ChallengeE1OutcomeSlide'
 import ChallengeE1AssessmentSlide from '../components/slides/ChallengeE1AssessmentSlide'
-import ChallengeSlide from '../components/slides/ChallengeSlide'
+import ChallengeE2Slide from '../components/slides/ChallengeE2Slide'
 import Part2IntroSlide from '../components/slides/Part2IntroSlide'
 import StackReactViteSlide from '../components/slides/StackReactViteSlide'
 import StackTailwindSlide from '../components/slides/StackTailwindSlide'
@@ -263,11 +263,7 @@ const rawSchedule: DayScheduleInput[] = [
         slides: [
           { 
             id: 's04-chalE', title: 'Optional: Projekt Live schalten', 
-            component: <ChallengeSlide 
-              id="E" title="Going Live (Optional)" 
-              scenario="Eure App aus Challenge E.1 verlässt die Sandbox und geht als echte Webseite live."
-              tasks={["Repository erstellen (GitHub/Vercel) oder in Lovable publizieren", "Eigene URL generieren", "Projekt in das Teams/Discord Forum posten!"]}
-              tools="GitHub, Vercel, Netlify" timeBudget="30 Minuten" /> 
+            component: <ChallengeE2Slide />
           }
         ]
       }
