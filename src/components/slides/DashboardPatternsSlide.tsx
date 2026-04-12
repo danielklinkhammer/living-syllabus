@@ -21,9 +21,9 @@ export default function DashboardPatternsSlide() {
                <div className="flex gap-4 items-start">
                  <div className="text-xl mt-1">🎯</div>
                  <div>
-                   <div className="font-bold text-white mb-1">Das F-Pattern (Der Anker)</div>
+                   <div className="font-bold text-white mb-1">Kognitive Last & Das F-Pattern</div>
                    <div className="text-xs text-white/50 leading-relaxed">
-                     In westlichen Kulturen scannt das Auge von links oben nach rechts unten. Der wichtigste Status-Indikator (Alarm/Main KPI) muss <strong>oben links</strong> platziert werden.
+                     In westlichen Kulturen scannt das Auge von links oben nach rechts unten. Um die <strong>kognitive Last (Cognitive Load)</strong> zu minimieren, muss der wichtigste Status-Indikator als Anker direkt oben links platziert werden.
                    </div>
                  </div>
                </div>
@@ -33,9 +33,14 @@ export default function DashboardPatternsSlide() {
                <div className="flex gap-4 items-start">
                  <div className="text-xl mt-1">🍱</div>
                  <div>
-                   <div className="font-bold text-fhgr-petrol-light mb-1">Das Bento Grid</div>
+                   <div className="font-bold text-fhgr-petrol-light mb-1">Flächen-Hierarchie (Bento Grid)</div>
                    <div className="text-xs text-white/50 leading-relaxed">
-                     Klare, aneinandergrenzende rechteckige Flächen (Boxen). Bündelt UI-Informationen semantisch, verhindert zielloses Scannen und lässt sich auf Mobile perfekt vertikal stapeln.
+                     Bento-Boxen reduzieren zielloses Scannen durch semantische Bündelung. Die Anordnung unterliegt einer klaren Priorität:
+                     <ul className="list-disc pl-4 mt-2 text-white/70 space-y-1">
+                       <li><strong>1. Primär:</strong> Alerts & Main KPIs (Oben Links)</li>
+                       <li><strong>2. Sekundär:</strong> Analystische Graphen (Rechts/Mitte)</li>
+                       <li><strong>3. Tertiär:</strong> Tabellen, Listen, Logs (Unten)</li>
+                     </ul>
                    </div>
                  </div>
                </div>
@@ -49,7 +54,8 @@ export default function DashboardPatternsSlide() {
               {/* Box 1: Anchor (F-Pattern Start) */}
               <div className="col-span-1 rounded-2xl bg-gradient-to-br from-indigo-500/20 to-purple-500/10 border border-indigo-500/30 p-4 aspect-square flex flex-col justify-between relative overflow-hidden group">
                  <div className="absolute top-0 right-0 p-2"><div className="w-2 h-2 rounded-full bg-indigo-500 animate-pulse" /></div>
-                 <div className="text-xs font-mono text-indigo-300">MAIN KPI</div>
+                 <div className="absolute top-3 left-3 w-5 h-5 bg-indigo-500/20 border border-indigo-500/50 rounded flex items-center justify-center text-[10px] font-bold text-indigo-300">1</div>
+                 <div className="text-xs font-mono text-indigo-300 mt-6 mt-6">MAIN KPI</div>
                  <div>
                    <div className="text-3xl font-black text-white tracking-tighter">98.2%</div>
                    <div className="text-[10px] text-indigo-200 mt-1">System Health</div>
@@ -57,14 +63,16 @@ export default function DashboardPatternsSlide() {
               </div>
               
               {/* Box 2 & 3: Secondary KPIs */}
-              <div className="col-span-1 rounded-2xl bg-white/5 border border-white/5 p-4 aspect-square flex flex-col justify-between">
+              <div className="col-span-1 rounded-2xl bg-white/5 border border-white/5 p-4 relative aspect-square flex flex-col justify-between">
+                 <div className="absolute top-3 right-3 w-4 h-4 bg-white/10 rounded flex items-center justify-center text-[8px] font-bold text-white/50">2</div>
                  <div className="text-[10px] font-mono text-white/40">USAGE</div>
                  <div>
                    <div className="text-xl font-bold text-white tracking-tighter">42 TB</div>
                    <div className="text-[10px] text-white/40 mt-1">Total Bandwidth</div>
                  </div>
               </div>
-              <div className="col-span-1 rounded-2xl bg-white/5 border border-white/5 p-4 aspect-square flex flex-col justify-between">
+              <div className="col-span-1 rounded-2xl bg-white/5 border border-white/5 p-4 relative aspect-square flex flex-col justify-between">
+                 <div className="absolute top-3 right-3 w-4 h-4 bg-white/10 rounded flex items-center justify-center text-[8px] font-bold text-white/50">2</div>
                  <div className="text-[10px] font-mono text-white/40">ALERTS</div>
                  <div>
                    <div className="text-xl font-bold text-white tracking-tighter">0</div>
@@ -85,7 +93,8 @@ export default function DashboardPatternsSlide() {
               </div>
 
               {/* Box 5: Details */}
-              <div className="col-span-1 border border-dashed border-white/20 rounded-2xl p-4 flex items-center justify-center text-[10px] font-mono text-white/40 text-center">
+              <div className="col-span-1 border border-dashed border-white/20 rounded-2xl p-4 flex items-center justify-center text-[10px] font-mono text-white/40 text-center relative">
+                 <div className="absolute top-3 right-3 w-4 h-4 bg-white/10 rounded flex items-center justify-center text-[8px] font-bold text-white/50">3</div>
                  List<br/>Space
               </div>
               
