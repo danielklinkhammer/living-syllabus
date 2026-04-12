@@ -1,23 +1,23 @@
 import { motion } from 'framer-motion'
 import Card from '../ui/Card'
-import { Search, GitBranch, LayoutTemplate } from 'lucide-react'
+import { PlusCircle, Search, Settings } from 'lucide-react'
 
 export default function ChallengeDIntroSlide() {
-  const steps = [
+  const options = [
     { 
-      title: "Pattern Research", 
-      desc: "Ihr durchsucht Mobbin.com nach bewährten UX-Patterns und Best-Practices für komplexe Onboardings und Checkouts.",
+      title: "1. Forschung & Analyse", 
+      desc: "Ihr durchsucht Relume und Mobbin nach bestehenden komplexen Web-App-Flows (z.B. User-Onboardings, Check-Outs). Analysiert, warum diese Flows genau so aufgebaut sind.",
       icon: <Search className="w-8 h-8 text-fhgr-petrol" />
     },
     { 
-      title: "Flow Mapping", 
-      desc: "Ihr skizziert den Nutzerweg visuell in FigJam oder Whimsical. Dazu gehören auch Abzweigungen, Log-Ins und Fehler-Popups (Unhappy Paths).",
-      icon: <GitBranch className="w-8 h-8 text-purple-400" />
+      title: "2. Eigene Szenarien", 
+      desc: "Wählt ein eigenes, komplexes digitales Szenario (siehe Beispiele oben) und entwerft dafür von Grund auf einen systematischen Klick-Pfad.",
+      icon: <PlusCircle className="w-8 h-8 text-purple-400" />
     },
     { 
-      title: "IA & Wireframing", 
-      desc: "Mittels Relume übersetzt ihr euren theoretischen Pfad in eine echte Sitemap. Daraus erstellt ihr mit wenigen Klicks fertige Low-Fi Ansichten.",
-      icon: <LayoutTemplate className="w-8 h-8 text-orange-400" />
+      title: "3. Flow-Modellierung", 
+      desc: "Erstellt die Flows visuell in Figma/FigJam, skizziert sie als Mermaid-Diagramm oder baut die Sitemaps direkt in Relume nach.",
+      icon: <Settings className="w-8 h-8 text-orange-400" />
     }
   ]
 
@@ -31,20 +31,20 @@ export default function ChallengeDIntroSlide() {
           </div>
           <div className="text-fhgr-petrol-light text-xs font-mono uppercase tracking-widest mb-3">Challenge D · Part 1</div>
           <h2 className="text-4xl lg:text-5xl font-bold mb-6 mt-2 tracking-tight">Die Aufgabenstellung</h2>
-          <div className="text-lg text-white/70 leading-relaxed max-w-3xl mx-auto mb-12 space-y-4">
+          <div className="text-lg text-white/70 leading-relaxed max-w-3xl mx-auto mb-8 space-y-4">
             <p>
-              <strong>Das Ziel:</strong> Ihr baut ein inhaltliches Fundament. Wer wild drauf los designt, scheitert an der Komplexität. Ihr benötigt vorab <strong>User Flows</strong> und <strong>Informationsarchitektur (IA)</strong>!
+              <strong>Das Ziel:</strong> Die zielgerichtete Erstellung oder Analyse eines Workflow-Szenarios für komplexe Web-Applikationen.
             </p>
             <p className="text-base text-white/50">
-              Ihr widmet euch einem komplexen Service-Szenario. Eure Aufgabe ist es, den gesamten Ablauf von Start bis Ziel zu definieren – systematisch analysiert in Mobbin, abstrahiert als Flowchart, und schließlich mit KI (Relume) zu einem Wireframe-Grundgerüst umgewandelt.
+              Ihr könnt euch entweder ein komplett eigenes fiktives Szenario ausdenken (wie z.B. eine E-Commerce Checkout-Route, ein System-as-a-Service (SaaS) Dashboard Onboarding, oder ein Hotel Check-In System), oder ihr sucht euch existierende Flows aus Tools wie Relume oder Mobbin heraus.
             </p>
           </div>
         </motion.div>
 
-        <div className="text-sm font-semibold tracking-widest uppercase text-white/30 mb-6">Der Kern der Aufgabe:</div>
+        <div className="text-sm font-semibold tracking-widest uppercase text-white/30 mb-6">Wie ihr vorgeht:</div>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 text-left w-full">
-          {steps.map((s, idx) => (
+          {options.map((s, idx) => (
             <Card 
               key={idx}
               delay={0.1 * idx}
