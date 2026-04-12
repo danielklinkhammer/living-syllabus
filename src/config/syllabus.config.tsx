@@ -142,6 +142,14 @@ const rawSchedule: DayScheduleInput[] = [
         ]
       },
       {
+        id: "sys-chal-c", title: "Challenge C", icon: <Hammer className="w-[18px] h-[18px]" />,
+        slides: [
+          { id: 's03-c-scen', title: 'Szenarien', component: <ChallengeScenariosSlide /> },
+          { id: 's03-c-work', title: 'Methodik & Pipeline', component: <ChallengeWorkflowSlide /> },
+          { id: 's03-c-assess', title: 'Bewertungsschema', component: <ChallengeAssessmentSlide /> }
+        ]
+      },
+      {
         id: "sys-dash-input", title: "Dashboard Design", icon: <BookOpen className="w-[18px] h-[18px]" />,
         slides: [
           { id: 's03-dash-def', title: 'Was ist ein Dashboard?', component: <DashboardDefinitionSlide /> },
@@ -150,14 +158,6 @@ const rawSchedule: DayScheduleInput[] = [
           { id: 's03-dash', title: 'Kriterien & Psychologie', component: <DashboardDesignSlide /> },
           { id: 's03-patterns', title: 'Bento Grid & Patterns', component: <DashboardPatternsSlide /> },
           { id: 's03-a11y', title: 'A11y & KI', component: <DashboardAIA11ySlide /> }
-        ]
-      },
-      {
-        id: "sys-chal-c", title: "Challenge C", icon: <Hammer className="w-[18px] h-[18px]" />,
-        slides: [
-          { id: 's03-c-scen', title: 'Szenarien', component: <ChallengeScenariosSlide /> },
-          { id: 's03-c-work', title: 'Methodik & Pipeline', component: <ChallengeWorkflowSlide /> },
-          { id: 's03-c-assess', title: 'Bewertungsschema', component: <ChallengeAssessmentSlide /> }
         ]
       },
       {
