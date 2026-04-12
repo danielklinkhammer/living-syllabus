@@ -37,10 +37,6 @@ export default function ChallengeE1IntroSlide() {
             </p>
             <p className="text-base text-white/50">
               Nutzt Ressourcen wie den <a href="https://aistudio.google.com/apps?source=showcase&showcaseTag=featured" target="_blank" rel="noreferrer" className="text-fhgr-petrol underline hover:text-white transition-colors">Google AI Studio Showcase</a> als Startpunkt. Ziel ist es, mit einer KI-API zu experimentieren und einen eigenen <strong>KI-App-Prototyp</strong> zu bauen. 
-              <br/><br/>
-              <span className="inline-block bg-white/5 border border-white/10 p-3 rounded-lg text-sm text-yellow-400/80">
-                <strong>Wichtig:</strong> Manche echte KI-Schnittstellen (APIs) erfordern einen kostenpflichtigen API-Key. Sollte euch dieser fehlen, könnt ihr den Output in eurem Prototypen oder in Figma auch visuell simulieren / faken!
-              </span>
             </p>
           </div>
         </motion.div>
