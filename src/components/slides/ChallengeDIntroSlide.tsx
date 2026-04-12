@@ -10,13 +10,13 @@ export default function ChallengeDIntroSlide() {
       icon: <Search className="w-8 h-8 text-fhgr-petrol" />
     },
     { 
-      title: "2. Eigene Szenarien", 
-      desc: "Wählt ein eigenes, komplexes digitales Szenario (siehe Beispiele oben) und entwerft dafür von Grund auf einen systematischen Klick-Pfad.",
+      title: "2. Tool-Driven Generation", 
+      desc: "Für eigene Szenarien nutzt ihr als Erstes die vorgestellten Werkzeuge: Skizziert die Logik in Whimsical oder Mermaid.js und generiert das Grundgerüst der Sitemaps via Relume.",
       icon: <PlusCircle className="w-8 h-8 text-purple-400" />
     },
     { 
-      title: "3. Flow-Modellierung", 
-      desc: "Erstellt die Flows visuell in Figma/FigJam, skizziert sie als Mermaid-Diagramm oder baut die Sitemaps direkt in Relume nach.",
+      title: "3. Iteration in Figma", 
+      desc: "Importiert die in Schritt 2 generierten Diagramme und Relume-Wireframes in Figma bzw. FigJam. Dort nutzt ihr die Arbeitsfläche, um den Flow manuell weiter zu iterieren und Details auszuarbeiten.",
       icon: <Settings className="w-8 h-8 text-orange-400" />
     }
   ]
