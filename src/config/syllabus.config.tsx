@@ -10,6 +10,7 @@ import RecapChallengeBSlide from '../components/slides/recap/RecapChallengeBSlid
 import DesignSystemSlide from '../components/slides/DesignSystemSlide'
 import DesignSystemReferenceSlide from '../components/slides/DesignSystemReferenceSlide'
 import TokenDNASlide from '../components/slides/TokenDNASlide'
+import SystemW3CDTCGSlide from '../components/slides/SystemW3CDTCGSlide'
 import StitchDesignMdSlide from '../components/slides/StitchDesignMdSlide'
 import DesignMdFormatSlide from '../components/slides/DesignMdFormatSlide'
 import MCPSlide from '../components/slides/MCPSlide'
@@ -90,6 +91,7 @@ export const schedule: DaySchedule[] = [
           { id: 's03-sys', title: 'Anatomie', component: <DesignSystemSlide /> },
           { id: 's03-sys-ref', title: 'Referenzsysteme', component: <DesignSystemReferenceSlide /> },
           { id: 's03-token', title: 'Token-DNA', component: <TokenDNASlide /> },
+          { id: 's03-dtcg', title: 'W3C & Token Standard', component: <SystemW3CDTCGSlide /> },
           { id: 's03-design-md', title: 'Stitch & DESIGN.md', component: <StitchDesignMdSlide /> },
           { id: 's03-design-fmt', title: 'Format: DESIGN.md', component: <DesignMdFormatSlide /> },
           { id: 's03-mcp', title: 'MCP Handoff', component: <MCPSlide /> },
