@@ -6,27 +6,27 @@ export default function ChallengeWorkflowSlide() {
   const steps = [
     {
       num: "Phase 1", 
-      title: "Visuelle Konzepte erstellen", 
-      icon: <Palette className="w-4 h-4 text-white/50" />,
-      desc: "Nutzt ImageFX oder Midjourney, um drei grundverschiedene Design-Welten (z.B. Clean vs. Dark Mode vs. Retro) für euer Dashboard zu skizzieren."
+      title: "Thema & Struktur", 
+      icon: <FileCode2 className="w-4 h-4 text-white/50" />,
+      desc: "Wählt ein Thema (spickt dazu gerne in die nächste Lektion 'Dashboard Design'). Überlegt, welche Ansichten & Elemente sinnvoll sind. Schreibt eine sehr präzise Themenbeschreibung als Basis-Prompt."
     },
     {
       num: "Phase 2", 
-      title: "Design-Regeln dokumentieren", 
-      icon: <FileCode2 className="w-4 h-4 text-white/50" />,
-      desc: "Analysiert eure erstellten Referenzen (gerne mit Hilfe eines LLMs wie Gemini/ChatGPT) und dokumentiert die Design-Regeln, Farben und UI-Elemente systematisch in Textform (z.B. als `design.md` oder in Stichpunkten)."
+      title: "Design-Exploration", 
+      icon: <Palette className="w-4 h-4 text-white/50" />,
+      desc: "Nutzt Tools wie Google Stitch oder Figma Make, um Stile radikal zu explorieren. Wichtig: Nehmt nicht den ersten Wurf! Iteriert die UIs, verfeinert sie und passt sie auf euren Geschmack an."
     },
     {
       num: "Phase 3", 
-      title: "Design manuell manipulieren & KI-Build", 
+      title: "Canvas-Erstellung", 
       icon: <Sparkles className="w-4 h-4 text-fhgr-petrol" />,
-      desc: "Gebt euer Manifest als Prompt an Figma Make oder Google Stitch. Wichtig: Schaut euch die `design.md` genau an und manipuliert gezielt Werte (z.B. Spacer, Corner-Radius), um zu sehen, wie Stitch darauf reagiert!"
+      desc: "Wählt euren Weg: Vollautomatisiert (Stitch) oder manuell-kontrolliert (Figma Make). Baut eure Matrix auf und iteriert in diesem Canvas die jeweiligen Dashboard-Ansichten aus."
     },
      {
       num: "Phase 4", 
-      title: "Figma Konsolidierung", 
+      title: "Dokumentation ableiten", 
       icon: <Download className="w-4 h-4 text-white/50" />,
-      desc: "Exportiert alle drei fertigen Dashboard-Varianten in eine einzige Figma-Datei, bereinigt KI-Fehler und bereitet sie als Präsentationsmatrix auf."
+      desc: "Schaut euch eure fertigen Designs an und leitet daraus aktiv die `design.md` (oder JSON) ab. Dokumentiert den Stil und die Elemente schriftlich direkt als Layer in Figma."
     }
   ]
 
@@ -40,7 +40,7 @@ export default function ChallengeWorkflowSlide() {
             <div className="text-fhgr-petrol-light text-xs font-mono uppercase tracking-widest mb-3">Challenge C · Part 2</div>
             <h2 className="text-4xl lg:text-5xl font-bold mb-6 mt-2 tracking-tight">Methodik & KI-Pipeline</h2>
             <p className="text-lg text-white/60 leading-relaxed mb-6 max-w-4xl">
-              Wir bauen die Dashboards nicht mühsam per Hand von Grund auf. Stattdessen nutzen wir KI als Assistenten – orchestrieren den Aufbau aber durch strikte Regeln, um Zufall durch Präzision zu ersetzen.
+              Wir bauen die Dashboards nicht mühsam per Hand, sondern nutzen KI primär zum Erkunden und Aufbauen der Struktur. Der skizzierte Workflow ist ein <strong>möglicher Vorschlag</strong> – ihr dürft auch völlig eigene Pipelines und Custom-Tools anwenden!
             </p>
           </motion.div>
         </div>
@@ -70,20 +70,15 @@ export default function ChallengeWorkflowSlide() {
              </Card>
            ))}
            
-           {/* Unified Tool Matrix below Pipeline */}
+          {/* Unified Tool Matrix below Pipeline */}
            <div className="col-span-full mt-2">
-            <div className="text-xs font-semibold tracking-widest uppercase text-white/30 mb-3">Zugelassenes Toolkit</div>
+            <div className="text-xs font-semibold tracking-widest uppercase text-white/30 mb-3">Empfohlenes Toolkit</div>
             <div className="flex flex-wrap gap-2">
-               <div className="px-3 py-1.5 border border-white/10 bg-white/5 rounded-lg flex items-center gap-2 text-xs">
-                  <span className="w-1.5 h-1.5 rounded-full bg-blue-400"></span> ImageFX
-               </div>
-               <div className="px-3 py-1.5 border border-white/10 bg-white/5 rounded-lg flex items-center gap-2 text-xs">
-                  <span className="w-1.5 h-1.5 rounded-full bg-orange-400"></span> Gemini
-               </div>
                <div className="px-3 py-1.5 border border-fhgr-petrol/40 bg-fhgr-petrol/10 rounded-lg flex items-center gap-2 text-xs text-fhgr-petrol-light font-bold shadow-[0_0_15px_rgba(25,188,155,0.15)]">
                   <span className="w-1.5 h-1.5 rounded-full bg-purple-400"></span> Figma Make 
+                  <span className="text-white/40 font-normal ml-1">(Bietet diverse KI-Modelle zum Testen!)</span>
                </div>
-               <div className="px-3 py-1.5 border border-fhgr-petrol/40 bg-fhgr-petrol/10 rounded-lg flex items-center gap-2 text-xs text-fhgr-petrol-light font-bold shadow-[0_0_15px_rgba(25,188,155,0.15)]">
+               <div className="px-3 py-1.5 border border-white/20 bg-white/5 rounded-lg flex items-center gap-2 text-xs text-white/90">
                   <span className="w-1.5 h-1.5 rounded-full bg-indigo-400"></span> Google Stitch 
                </div>
             </div>
