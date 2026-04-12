@@ -440,24 +440,54 @@
     "title": "Service Blueprints & UML"
   },
   {
-    "slideId": "s03-chalD1-scen",
-    "title": "W\u00e4hle dein Szenario",
+    "slideId": "s03-d-intro",
     "block": "B03",
     "order": 35,
-    "exportId": "living-syllabus:s03-chalD1-scen",
-    "exportName": "B03-35 \u00b7 W\u00e4hle dein Szenario",
+    "exportId": "living-syllabus:s03-d-intro",
+    "exportName": "B03-35 \u00b7 Aufgabenstellung",
     "figmaPageName": "Living Syllabus",
-    "exportStatus": "draft"
+    "exportStatus": "draft",
+    "title": "Aufgabenstellung"
   },
   {
-    "slideId": "s03-chalD1-task",
-    "title": "Challenge: The Process Logic",
+    "slideId": "s03-d-scen",
     "block": "B03",
     "order": 36,
-    "exportId": "living-syllabus:s03-chalD1-task",
-    "exportName": "B03-36 \u00b7 Challenge: The Process Logic",
+    "exportId": "living-syllabus:s03-d-scen",
+    "exportName": "B03-36 \u00b7 Use Case Scenarios",
     "figmaPageName": "Living Syllabus",
-    "exportStatus": "draft"
+    "exportStatus": "draft",
+    "title": "Use Case Scenarios"
+  },
+  {
+    "slideId": "s03-d-out",
+    "block": "B03",
+    "order": 37,
+    "exportId": "living-syllabus:s03-d-out",
+    "exportName": "B03-37 \u00b7 Outcome",
+    "figmaPageName": "Living Syllabus",
+    "exportStatus": "draft",
+    "title": "Outcome"
+  },
+  {
+    "slideId": "s03-d-work",
+    "block": "B03",
+    "order": 38,
+    "exportId": "living-syllabus:s03-d-work",
+    "exportName": "B03-38 \u00b7 Methodik & Pipeline",
+    "figmaPageName": "Living Syllabus",
+    "exportStatus": "draft",
+    "title": "Methodik & Pipeline"
+  },
+  {
+    "slideId": "s03-d-assess",
+    "block": "B03",
+    "order": 39,
+    "exportId": "living-syllabus:s03-d-assess",
+    "exportName": "B03-39 \u00b7 Bewertungsschema",
+    "figmaPageName": "Living Syllabus",
+    "exportStatus": "draft",
+    "title": "Bewertungsschema"
   },
   {
     "slideId": "s04-mvp",

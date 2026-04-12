@@ -56,6 +56,10 @@ import TerminalSlide from '../components/slides/TerminalSlide'
 import GitHubSlide from '../components/slides/GitHubSlide'
 import PublishingSlide from '../components/slides/PublishingSlide'
 import ChallengeDScenariosSlide from '../components/slides/ChallengeDScenariosSlide'
+import ChallengeDIntroSlide from '../components/slides/ChallengeDIntroSlide'
+import ChallengeDOutcomeSlide from '../components/slides/ChallengeDOutcomeSlide'
+import ChallengeDWorkflowSlide from '../components/slides/ChallengeDWorkflowSlide'
+import ChallengeDAssessmentSlide from '../components/slides/ChallengeDAssessmentSlide'
 import ChallengeSlide from '../components/slides/ChallengeSlide'
 import Part2IntroSlide from '../components/slides/Part2IntroSlide'
 import StackReactViteSlide from '../components/slides/StackReactViteSlide'
@@ -181,16 +185,24 @@ const rawSchedule: DayScheduleInput[] = [
         id: "sys-flow-chal", title: "Challenge D", icon: <Hammer className="w-[18px] h-[18px]" />,
         slides: [
           { 
-            id: 's03-chalD1-scen', title: 'Wähle dein Szenario', 
+            id: 's03-d-intro', title: 'Aufgabenstellung', 
+            component: <ChallengeDIntroSlide /> 
+          },
+          { 
+            id: 's03-d-scen', title: 'Use Case Scenarios', 
             component: <ChallengeDScenariosSlide /> 
           },
           { 
-            id: 's03-chalD1-task', title: 'Challenge: The Process Logic', 
-            component: <ChallengeSlide 
-              id="D.1" title="The Process Logic" 
-              scenario="Euer gewähltes Applikations-Szenario aus der vorherigen Übersicht."
-              tasks={["Sitemap grob skizzieren (welche Screens gibt es?)", "User Flow mit Whimsical bauen (mit >3 Verzweigungen)", "Die 3 Unhappy Paths lokalisieren und Lösung skizzieren", "CONSTRAINT: Kein visuelles Design in dieser Phase!"]}
-              tools="Whimsical, Relume, FigJam" timeBudget="75 Minuten" /> 
+            id: 's03-d-out', title: 'Outcome', 
+            component: <ChallengeDOutcomeSlide /> 
+          },
+          { 
+            id: 's03-d-work', title: 'Methodik & Pipeline', 
+            component: <ChallengeDWorkflowSlide /> 
+          },
+          { 
+            id: 's03-d-assess', title: 'Bewertungsschema', 
+            component: <ChallengeDAssessmentSlide /> 
           }
         ]
       }
