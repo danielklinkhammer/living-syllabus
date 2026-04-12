@@ -10,13 +10,13 @@ export default function ChallengeE1IntroSlide() {
       icon: <Sparkles className="w-8 h-8 text-fhgr-petrol" />
     },
     { 
-      title: "2. Eigene KI-App", 
-      desc: "Wählt eine Schnittstelle aus (z.B. Image Generation). Baut daraufhin mit Tools wie Lovable entweder eine bestehende Sandbox-Idee weiter aus oder legt eine komplett neue KI-Applikation an.",
+      title: "2. KI-App-Prototyp", 
+      desc: "Wählt eine Schnittstelle aus (z.B. Image Generation). Baut daraufhin mit Tools wie Lovable eine bestehende Idee weiter aus oder legt einen eigenen KI-App-Prototypen an.",
       icon: <Hammer className="w-8 h-8 text-purple-400" />
     },
     { 
       title: "3. Doku & Reflexion", 
-      desc: "Dokumentiert eure App in Figma/FigJam für euer Portfolio. Stellt die Grundidee vor, benennt den konkreten Mehrwert den die KI hier liefert und reflektiert eure Lernerfahrung.",
+      desc: "Stellt den generierten Prototypen in Figma vor. Welchen Mehrwert bringt die KI hier? Falls für die echte Funktion API-Keys fehlen, dürft ihr den Flow auch rein prototypisch simulieren.",
       icon: <LayoutTemplate className="w-8 h-8 text-orange-400" />
     }
   ]
@@ -33,10 +33,14 @@ export default function ChallengeE1IntroSlide() {
           <h2 className="text-4xl lg:text-5xl font-bold mb-6 mt-2 tracking-tight">AI App Exploration</h2>
           <div className="text-lg text-white/70 leading-relaxed max-w-3xl mx-auto mb-8 space-y-4">
             <p>
-              <strong>Das Ziel:</strong> Ihr verlasst die Welt der Wireframes und taucht in die faszinierende Entwicklungs-Sandbox echter KI-Applikationen ab (Multi-Modal Vision, Audio, Text-Generation).
+              <strong>Das Ziel:</strong> Ihr verlasst die statische Welt und taucht in die Entwicklungs-Sandbox echter KI-Applikationen ab (Vision, Audio, Text, Image-Generation).
             </p>
             <p className="text-base text-white/50">
-              Nutzt den <a href="https://aistudio.google.com/apps?source=showcase&showcaseTag=featured" target="_blank" rel="noreferrer" className="text-fhgr-petrol underline hover:text-white transition-colors">Google AI Studio Showcase</a> als Startpunkt. Eure Aufgabe ist es, mit KI-APIs zu experimentieren, eine eigene Mini-Anwendung zu "bauen" und den Prozess anschließend methodisch in eurem Portfolio abzubilden.
+              Nutzt Ressourcen wie den <a href="https://aistudio.google.com/apps?source=showcase&showcaseTag=featured" target="_blank" rel="noreferrer" className="text-fhgr-petrol underline hover:text-white transition-colors">Google AI Studio Showcase</a> als Startpunkt. Ziel ist es, mit einer KI-API zu experimentieren und einen eigenen <strong>KI-App-Prototyp</strong> zu bauen. 
+              <br/><br/>
+              <span className="inline-block bg-white/5 border border-white/10 p-3 rounded-lg text-sm text-yellow-400/80">
+                <strong>Wichtig:</strong> Manche echte KI-Schnittstellen (APIs) erfordern einen kostenpflichtigen API-Key. Sollte euch dieser fehlen, könnt ihr den Output in eurem Prototypen oder in Figma auch visuell simulieren / faken!
+              </span>
             </p>
           </div>
         </motion.div>

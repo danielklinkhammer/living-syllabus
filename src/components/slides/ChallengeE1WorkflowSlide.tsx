@@ -1,6 +1,6 @@
 import { motion } from 'framer-motion'
 import Card from '../ui/Card'
-import { Telescope, BrainCircuit, Hammer, PlaySquare } from 'lucide-react'
+import { Telescope, BrainCircuit, Blocks, PlaySquare } from 'lucide-react'
 
 export default function ChallengeE1WorkflowSlide() {
   const workflow = [
@@ -12,20 +12,20 @@ export default function ChallengeE1WorkflowSlide() {
     },
     {
       step: "02",
-      title: "Reverse Engineering",
-      desc: "Wählt eine Favoriten-App. Schaut euch den System Prompt an: Welche Instruktionen wurden der KI gegeben, damit sie sich z.B. wie ein Storyteller verhält?",
+      title: "Prompt Engineering",
+      desc: "Schaut euch bei eurer Favoriten-App den System Prompt an: Welche verdeckten Instruktionen wurden der KI gegeben, damit sie die gewünschte Rolle annimmt?",
       icon: <BrainCircuit className="w-5 h-5 text-indigo-400" />
     },
     {
       step: "03",
-      title: "Der Hacker Mode",
-      desc: "Kopiert die Logik und überführt sie in eure Entwicklungsumgebung (Lovable, v0, CodeSandbox). Jetzt greift ihr ein: Verändert das UI, passt den Prompt radikal an oder fügt neue Features hinzu.",
-      icon: <Hammer className="w-5 h-5 text-purple-400" />
+      title: "Prototyping",
+      desc: "Holt euch die Logik in eure Entwicklungsumgebung (Lovable, v0, CodeSandbox). Verändert das UI, passt den Prompt an oder baut eine völlig neue Funktion drumherum.",
+      icon: <Blocks className="w-5 h-5 text-purple-400" />
     },
     {
       step: "04",
-      title: "Live Testing",
-      desc: "Testet eure modifizierte App. Funktioniert eure hinzugefügte KI-Logik? Habt ihr aus einer simplen Translation-App z.B. einen Piraten-Sprachübersetzer gebaut?",
+      title: "Testing & Mocking",
+      desc: "Testet eure modifizierte App. Solltet ihr für den echten API-Loop keinen API-Key besitzen, nutzt die App als UI-Prototyp und werft statische Mockup-Daten ein.",
       icon: <PlaySquare className="w-5 h-5 text-red-400" />
     }
   ]
@@ -36,9 +36,9 @@ export default function ChallengeE1WorkflowSlide() {
         
         <motion.div initial={{opacity:0, x:-20}} animate={{opacity:1, x:0}} className="mb-12">
           <div className="text-fhgr-petrol-light text-xs font-mono uppercase tracking-widest mb-3">Challenge E.1 · Part 3</div>
-          <h2 className="text-4xl lg:text-5xl font-bold mb-4 tracking-tight">Die Hacking Pipeline</h2>
+          <h2 className="text-4xl lg:text-5xl font-bold mb-4 tracking-tight">Der Workspace</h2>
           <p className="text-lg text-white/50 max-w-3xl leading-relaxed">
-            Eine KI-App zu bauen ist kein Hexenwerk mehr. Nutzt diesen iterativen Workflow, um fremde Code-Beispiele in eure eigenen, kreativen Tools zu verwandeln.
+            Eine KI-App zu bauen ist kein Hexenwerk mehr. Nutzt diesen iterativen Workflow, um fremde Code-Beispiele in eure eigenen, kreativen Prototypen zu verwandeln.
           </p>
         </motion.div>
 
