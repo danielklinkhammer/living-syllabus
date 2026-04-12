@@ -58,7 +58,6 @@ import PublishingSlide from '../components/slides/PublishingSlide'
 import ChallengeDScenariosSlide from '../components/slides/ChallengeDScenariosSlide'
 import ChallengeDIntroSlide from '../components/slides/ChallengeDIntroSlide'
 import ChallengeDOutcomeSlide from '../components/slides/ChallengeDOutcomeSlide'
-import ChallengeDWorkflowSlide from '../components/slides/ChallengeDWorkflowSlide'
 import ChallengeDAssessmentSlide from '../components/slides/ChallengeDAssessmentSlide'
 import ChallengeSlide from '../components/slides/ChallengeSlide'
 import Part2IntroSlide from '../components/slides/Part2IntroSlide'
@@ -195,10 +194,6 @@ const rawSchedule: DayScheduleInput[] = [
           { 
             id: 's03-d-out', title: 'Outcome', 
             component: <ChallengeDOutcomeSlide /> 
-          },
-          { 
-            id: 's03-d-work', title: 'Methodik & Pipeline', 
-            component: <ChallengeDWorkflowSlide /> 
           },
           { 
             id: 's03-d-assess', title: 'Bewertungsschema', 

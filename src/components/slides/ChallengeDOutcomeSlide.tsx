@@ -6,16 +6,14 @@ export default function ChallengeDOutcomeSlide() {
   const deliverables = [
     {
       title: "1. Das Flowchart",
-      desc: "Die logische App-Architektur. Ein ausführliches Diagramm, das genau zeigt, welchen Navigationen, Abzweigungen und Fehlermeldungen (Unhappy Paths) der User begegnet.",
-      format: "Ein FigJam oder Whimsical Link",
+      desc: "Eure aufbereitete Logik-Ansicht. Die Darstellung muss nicht riesig sein! Uns ist wichtig, dass ihr das Tooling ausprobiert habt und abstraktes architektonisches Denken anwendet (Happy Path vs. Unhappy Path).",
       icon: <GitBranch className="w-6 h-6 text-indigo-400" />,
       color: "from-indigo-500/10 to-transparent",
       borderColor: "border-indigo-500/30"
     },
     {
-      title: "2. Sitemap & Wireframes",
-      desc: "Die Struktur des Interfaces. Basierend auf eurem abstrakten Flow generiert ihr in Relume.io die dazu passenden App-Screens (Wireframes) und vernetzt diese final zu einer Sitemap.",
-      format: "Ein Relume.io Share-Link",
+      title: "2. Die Sitemap",
+      desc: "Eine strukturierte Darstellung in z.B. Relume oder FigJam, die zeigt, wie sich die Screens aus eurem Flowchart im finalen User Interface gliedern würden.",
       icon: <Layers className="w-6 h-6 text-purple-400" />,
       color: "from-purple-500/10 to-transparent",
       borderColor: "border-purple-500/30"
@@ -33,7 +31,7 @@ export default function ChallengeDOutcomeSlide() {
           <div className="text-fhgr-petrol-light text-xs font-mono uppercase tracking-widest mb-3">Challenge D · Part 3</div>
           <h2 className="text-4xl lg:text-5xl font-bold mb-6 mt-2 tracking-tight">Outcome & Deliverables</h2>
           <p className="text-lg text-white/50 max-w-2xl mx-auto mb-16 leading-relaxed">
-            Am Ende dieser Challenge präsentiert ihr zwei miteinander verbundene IA-Artefakte, die beweisen, dass eure Navigations-Logik robust und für den späteren High-Fidelity Build gerüstet ist.
+            Als Output erwarten wir diese zwei zentralen Artefakte der Informationsarchitektur. Sie landen später gebündelt in eurem Portfolio:
           </p>
         </motion.div>
 
@@ -51,13 +49,9 @@ export default function ChallengeDOutcomeSlide() {
               <h3 className="text-2xl font-bold mb-4 flex items-center gap-3">
                 {item.title}
               </h3>
-              <p className="text-white/70 leading-relaxed mb-6 font-medium text-sm">
+              <p className="text-white/70 leading-relaxed font-medium text-sm">
                 {item.desc}
               </p>
-              <div className="bg-black/30 rounded-lg p-4 border border-white/5">
-                <span className="block text-[10px] uppercase font-mono tracking-widest text-white/40 mb-2">Abgabeformat</span>
-                <span className="text-sm font-semibold text-white/90">{item.format}</span>
-              </div>
             </Card>
           ))}
         </div>
