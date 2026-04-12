@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
 
-type StyleKey = 'swiss' | 'brutalist' | 'glass'
+type StyleKey = 'swiss' | 'brutalist' | 'glass' | 'spatial' | 'devcore'
 
 interface StyleConfig {
   name: string
@@ -57,6 +57,32 @@ const styles: Record<StyleKey, StyleConfig> = {
     badge: 'bg-white/20 text-white text-xs px-3 py-0.5 rounded-full backdrop-blur border border-white/30',
     kpiText: 'font-bold text-white text-4xl',
   },
+  spatial: {
+    name: 'Spatial / Tactile UI',
+    tag: 'Soft · Inner Depth · Clay',
+    desc: 'Erinnert an Apple Vision Pro. Softer Claymorphism, weiche innere Schatten und extrem taktile Oberflächen.',
+    prompt: '"Spatial UI, soft inner shadows, tactile surfaces, claymorphism, translucent panels overlapping, highly polished 3D-like depth"',
+    bg:    'bg-gray-100',
+    card:  'bg-white/70 rounded-2xl shadow-[inset_0_2px_4px_rgba(255,255,255,0.8),_0_8px_16px_rgba(0,0,0,0.05)] border border-white/60 backdrop-blur-2xl',
+    text:  'text-gray-800',
+    accent:'text-blue-500',
+    border:'border-gray-200/50',
+    badge: 'bg-white shadow-sm text-gray-700 font-medium text-[10px] px-3 py-1 rounded-full border border-gray-100',
+    kpiText: 'font-semibold text-gray-900 text-4xl',
+  },
+  devcore: {
+    name: 'Developer Core',
+    tag: 'Cyber · Terminal · Linear-Style',
+    desc: 'Die dominierende Tech-Ästhetik. Perfektes Schwarz, feine Glow-Borders und Monospace-Präzision.',
+    prompt: '"Developer tool aesthetic, pure true black background, high contrast minimal silver text, glowing neon thin borders, tech precision, monospace data"',
+    bg:    'bg-black',
+    card:  'bg-[#09090B] border border-[#27272A] shadow-[0_4px_24px_rgba(0,0,0,0.5)]',
+    text:  'text-gray-400',
+    accent:'text-emerald-400',
+    border:'border-[#27272A]',
+    badge: 'bg-[#18181B] border border-[#27272A] text-emerald-400 text-[10px] px-2 py-0.5 rounded font-mono',
+    kpiText: 'font-mono text-white text-4xl',
+  }
 }
 
 function DashboardMock({ style }: { style: StyleConfig }) {
@@ -91,6 +117,8 @@ function DashboardMock({ style }: { style: StyleConfig }) {
                 className={`rounded-sm transition-all duration-500 ${
                   style.name === 'Swiss Minimalism' ? 'bg-red-600' :
                   style.name === 'Neobrutalism'     ? 'bg-black border-2 border-black' :
+                  style.name === 'Developer Core' ? 'bg-emerald-500 shadow-[0_0_12px_rgba(16,185,129,0.4)]' :
+                  style.name === 'Spatial / Tactile UI' ? 'bg-gradient-to-t from-blue-400 to-blue-200 shadow-inner' :
                   'bg-purple-400/60'
                 }`}
                 style={{ height: `${h}%` }}

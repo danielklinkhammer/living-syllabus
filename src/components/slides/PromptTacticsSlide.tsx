@@ -30,6 +30,18 @@ export default function PromptTacticsSlide() {
       title: "Glassmorphism 2.0",
       desc: "Atmosphärischer Prompt für Tiefe und Hierarchie.",
       prompt: "Implement this using a Glassmorphism 2.0 aesthetic. Key atmosphere: Frosted glass panels, subtle transparency, floating layers. Create depth through overlapping cards and soft, dark ambient gradients. Negative prompt: No solid flat backgrounds, no high-contrast harsh borders."
+    },
+    {
+      id: 4,
+      title: "Spatial / Tactile UI",
+      desc: "Apple Vision Pro inspiriert, für weiche Tiefe und Clay-Vibes.",
+      prompt: "Design this interface using a Spatial/Tactile UI aesthetic. Atmospheric rules: Softer claymorphism, highly tactile surfaces, subtle inner shadows, translucent overlapping panels. Create polished 3D-like depth without harsh vectors. Negative prompt: No flat vector brutalism, no harsh #000000 borders, no high-contrast generic elements."
+    },
+    {
+      id: 5,
+      title: "Developer Core",
+      desc: "Tech-Lineare Ästhetik (CLI Vibes & Dark Mode).",
+      prompt: "Generate a Developer tool aesthetic UI. Atmospheric rules: Cyberpunk precision, true black background, highly minimal high-contrast silver/gray text. Glowing neon thin borders. Technical precision, monospace data representation. Negative prompt: No white backgrounds, no soft pastel corporate gradients, no playful shapes."
     }
   ]
 
