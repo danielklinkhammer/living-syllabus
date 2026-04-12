@@ -42,11 +42,17 @@ export default function APIsSlide() {
             </p>
 
             <div className="mt-8 bg-black/60 border border-white/10 rounded-xl p-4 font-mono text-[11px] lg:text-xs">
-              <span className="text-white/40">// Klassischer API-Request (Starr)</span><br/><br/>
+              <span className="text-white/40">// 1. Klassischer Request</span><br/>
               <span className="text-blue-400">POST</span> <span className="text-green-300">/api/v1/weather</span><br/>
               <span className="text-purple-300">{`{`}</span><br/>
               &nbsp;&nbsp;<span className="text-blue-300">"lat"</span>: <span className="text-orange-300">47.3769</span>,<br/>
               &nbsp;&nbsp;<span className="text-blue-300">"lng"</span>: <span className="text-orange-300">8.5417</span><br/>
+              <span className="text-purple-300">{`}`}</span><br/><br/>
+              <span className="text-white/40">// 2. Starre JSON Response</span><br/>
+              <span className="text-purple-300">{`{`}</span><br/>
+              &nbsp;&nbsp;<span className="text-blue-300">"temp_c"</span>: <span className="text-orange-300">14.2</span>,<br/>
+              &nbsp;&nbsp;<span className="text-blue-300">"condition"</span>: <span className="text-yellow-300">"Sunny"</span>,<br/>
+              &nbsp;&nbsp;<span className="text-blue-300">"wind_kph"</span>: <span className="text-orange-300">12.5</span><br/>
               <span className="text-purple-300">{`}`}</span>
             </div>
           </motion.div>
@@ -83,13 +89,17 @@ export default function APIsSlide() {
             </p>
 
             <div className="mt-8 bg-black/60 border border-white/10 rounded-xl p-4 font-mono text-[11px] lg:text-xs">
-              <span className="text-white/40">// Generativer API-Request (Semantisch)</span><br/><br/>
+              <span className="text-white/40">// 1. Generativer Request</span><br/>
               <span className="text-fhgr-petrol">POST</span> <span className="text-green-300">/v1/chat/completions</span><br/>
               <span className="text-purple-300">{`{`}</span><br/>
               &nbsp;&nbsp;<span className="text-blue-300">model</span>: <span className="text-orange-300">"gpt-4o"</span>,<br/>
               &nbsp;&nbsp;<span className="text-blue-300">messages</span>: [<br/>
-              &nbsp;&nbsp;&nbsp;&nbsp;<span className="text-yellow-300">{`{ "role": "user", "content": "Analysiere das Wetter in Zürich und schreibe ein Gedicht darüber." }`}</span><br/>
+              &nbsp;&nbsp;&nbsp;&nbsp;<span className="text-yellow-300">{`{ "role": "user", "content": "Wetter Zürich? Mache ein Haiku." }`}</span><br/>
               &nbsp;&nbsp;]<br/>
+              <span className="text-purple-300">{`}`}</span><br/><br/>
+              <span className="text-white/40">// 2. Semantische KI Response</span><br/>
+              <span className="text-purple-300">{`{`}</span><br/>
+              &nbsp;&nbsp;<span className="text-blue-300">"content"</span>: <span className="text-yellow-300">"Goldne Sonne lacht,\nZürichsee im hellen Glanz,\nKühl weht sanfter Wind."</span><br/>
               <span className="text-purple-300">{`}`}</span>
             </div>
           </motion.div>
