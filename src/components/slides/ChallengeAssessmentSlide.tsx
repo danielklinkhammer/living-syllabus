@@ -5,25 +5,25 @@ import { LayoutDashboard, Component, Scale } from 'lucide-react'
 export default function ChallengeAssessmentSlide() {
   const criteria = [
     {
-      title: "Visueller Kontrast & Identität",
+      title: "Ästhetische Reichweite",
       weight: "30%",
       icon: <LayoutDashboard className="w-5 h-5 text-fhgr-accent" />,
       color: "border-fhgr-accent/30 bg-fhgr-accent/5",
-      desc: "Wirken die drei Dashboard-Versionen wirklich wie drei völlig unterschiedliche Apps? Wurde euer Konzept (z.B. \"Cyberpunk\" oder \"Clean Swiss\") durch Farben, Schriften und Eckenradien konsequent umgesetzt?"
+      desc: "Haben die Studierenden explorativ gearbeitet? Wie radikal, mutig und unterscheidbar sind die 3 gewählten Stile? Verlangt eine hohe Bandbreite im Prompting und ein Gespür für echte visuelle Identitäten."
     },
     {
-      title: "Tool-Beherrschung & Konsistenz",
+      title: "Systemische Dekonstruktion",
       weight: "40%",
       icon: <Component className="w-5 h-5 text-fhgr-petrol" />,
       color: "border-fhgr-petrol/30 bg-fhgr-petrol/5",
-      desc: "Zeigt ihr, dass ihr den KI-Agenten durch eure `design.md` kontrollieren konntet? Stimmen die Spacings, Schriften und Buttons innerhalb eines Stils überein, oder hat die KI unbemerkt halluziniert?"
+      desc: "Das Reverse-Engineering: Wie präzise wurde das generierte UI in Textform (`design.md`) zerlegt? Sind die dokumentierten Design-Regeln so analytisch erfasst, dass man das Design rein textbasiert reproduzieren könnte?"
     },
     {
-      title: "Informationsarchitektur",
+      title: "Cross-Matrix Konsistenz",
       weight: "30%",
       icon: <Scale className="w-5 h-5 text-purple-400" />,
       color: "border-purple-500/30 bg-purple-500/5",
-      desc: "Sind die Dashboard-Komponenten kognitiv sinnvoll strukturiert? Anwendung der Data-to-Ink Ratio, Einhaltung von Gestaltgesetzen (Gruppierung durch Weißraum) und hierarchischer Aufbau (Progressive Disclosure)."
+      desc: "Bleibt die Informationsarchitektur über alle Stile hinweg logisch stabil, während umgekehrt die visuelle DNA (Regelwerk) innerhalb der 3 Ansichten eines Stils strikt und halluzinationsfrei erhalten bleibt?"
     }
   ]
 
@@ -37,10 +37,10 @@ export default function ChallengeAssessmentSlide() {
             <div className="text-fhgr-petrol-light text-xs font-mono uppercase tracking-widest mb-3">Challenge C · Part 3</div>
             <h2 className="text-4xl lg:text-5xl font-bold mb-6 mt-2 tracking-tight">Bewertungsschema</h2>
             <p className="text-lg text-white/50 leading-relaxed mb-6">
-              Wir bewerten nicht primär, ob das Dashboard \"schön\" ist. Wir bewerten, ob das Dashboard nutzbar ist und ob ihr beweisen könnt, dass ihr KI-Werkzeuge systematisch steuern könnt.
+              Dieses Modul wächst organisch in eurer zentralen Figma-Datei und fließt am Ende des Semesters in die Gesamtbewertung des Portfolios ein. Es gibt hier keinen isolierten Abgabe-Link.
             </p>
             <div className="p-4 rounded-xl bg-white/5 border border-white/10 text-sm text-white/60 leading-relaxed">
-              <strong>Abgabe-Format:</strong> Ein Figma-Link mit euren 3 Dashboard-Varianten nebeneinander + eure drei `design.md` Manifeste, die ihr benutzt habt.
+              <strong>Die Essenz:</strong> Wir bewerten am Ende nicht, wer handwerklich am schönsten "Pixel schubst" – sondern wir bewerten das analytische Systemverständnis und den strategischen Umgang mit den KI-Generatoren.
             </div>
           </motion.div>
         </div>
