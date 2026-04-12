@@ -13,32 +13,32 @@ export default function StitchDesignMdSlide() {
             <div className="text-fhgr-petrol-light text-xs font-mono uppercase tracking-widest mb-3">System Context · Agentic Design Builder</div>
             <h2 className="text-4xl lg:text-5xl font-bold mb-6 mt-2 tracking-tight">Stitch & DESIGN.md</h2>
             <p className="text-lg text-white/60 leading-relaxed mb-6">
-              Ein UI-Agent (wie Stitch) ist im Kern ein Large Language Model. Damit es deine Markenidentität versteht, benötigt es puren Kontext. 
-              Hier schlägt Google <strong className="text-white">DESIGN.md</strong> vor: Die Brücke zwischen W3C-Tokens und dem Agenten.
+              Ein UI-Agent (wie Stitch oder Make) ist im Kern ein Large Language Model. Damit es deine Markenidentität bauen kann, benötigt es kontextuelle Regeln. 
+              Hierfür wird eine <strong className="text-white">DESIGN.md</strong> etabliert: Ein Manifest, das exakt definiert, wie das Design-System aussieht.
             </p>
           </motion.div>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-6">
             <Card delay={0.2} variant="glass" className="!p-4 border-fhgr-petrol/20 bg-fhgr-petrol/5">
               <Code2 className="w-5 h-5 text-fhgr-petrol-light mb-2" />
-              <div className="font-bold mb-1 text-sm text-fhgr-petrol-light">W3C Design Tokens (JSON)</div>
-              <div className="text-xs text-white/50 leading-relaxed">Liefert die rohen Variablen (Hex-Werte, Spacing). Streng typisiert und maschinenlesbar, aber ohne kontextuellen "Sinn".</div>
+              <div className="font-bold mb-1 text-sm text-fhgr-petrol-light">AGENTS.md</div>
+              <div className="text-xs text-white/50 leading-relaxed">Für den Coding-Agenten strukturiert. Definiert Architektur, Code-Style und <em>wie</em> das Projekt technisch gebaut wird.</div>
             </Card>
             <Card delay={0.3} variant="glass" className="!p-4 border-indigo-500/20 bg-indigo-500/5">
               <FileText className="w-5 h-5 text-indigo-400 mb-2" />
-              <div className="font-bold mb-1 text-sm text-indigo-400">DESIGN.md Manifest</div>
-              <div className="text-xs text-white/50 leading-relaxed">Der Agent-Kontext. Erklärt dem LLM in fließendem Text, <em>wie</em> und <em>wann</em> die json-Tokens atmosphärisch korrekt genutzt werden.</div>
+              <div className="font-bold mb-1 text-sm text-indigo-400">DESIGN.md</div>
+              <div className="text-xs text-white/50 leading-relaxed">Für den Design-Agenten (Stitch / Figma). Definiert Farben, Typografie, Vibe und <em>wie</em> das Projekt visuell aussieht.</div>
             </Card>
           </div>
 
           <motion.div initial={{opacity:0}} animate={{opacity:1}} transition={{delay: 0.5}} className="space-y-4">
-             <div className="text-sm font-semibold tracking-widest uppercase text-white/30 ml-2 mb-2 mt-4">Die System-Architektur</div>
+             <div className="text-sm font-semibold tracking-widest uppercase text-white/30 ml-2 mb-2 mt-4">Was liefert das Manifest dem Agenten?</div>
              
              {[
-               { title: "Overview", desc: "Der holistische 'Vibe' (playful vs. professional, dense vs. spacious)." },
-               { title: "Token Mapping", desc: "Verbindung der starren W3C JSON-Tokens mit semantischen LLM-Design-Entscheidungen." },
-               { title: "Elevation & Form", desc: "Wie verhalten sich Komponenten-Strukturen und Schatten zueinander?" },
-               { title: "Do's and Don'ts", desc: "Einfache Leitplanken, die das LLM vom Halluzinieren generischer Styles abhalten." }
+               { title: "Overview & Vibe", desc: "Der holistische visuelle Eindruck (playful vs. professional, dense vs. spacious)." },
+               { title: "Colors & Typography", desc: "Verbindung von primitiven Farb-Werten und Schriften mit semantischen Rollen." },
+               { title: "Elevation & Components", desc: "Wie verhalten sich Komponenten-Strukturen und wie tief fallen Schatten?" },
+               { title: "Do's and Don'ts", desc: "Strikte Leitplanken, die das LLM vom Halluzinieren generischer Styles abhalten." }
              ].map((item, idx) => (
                 <div key={idx} className="flex gap-3 items-start ml-2">
                    <div className="w-1.5 h-1.5 rounded-full bg-white/20 mt-1.5 shrink-0" />
