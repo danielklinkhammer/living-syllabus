@@ -15,15 +15,15 @@ export default function StitchVsMakeSlide() {
         </motion.div>
 
         <motion.div initial={{opacity:0, y:20}} animate={{opacity:1, y:0}} className="mb-12 text-center">
-          <h2 className="text-4xl lg:text-5xl font-bold mb-4 tracking-tight">Exploration: Canvas vs. Code</h2>
+          <h2 className="text-4xl lg:text-5xl font-bold mb-4 tracking-tight">Figma vs. Stitch</h2>
           <p className="text-lg text-white/50 max-w-3xl mx-auto leading-relaxed">
-            Es geht im KI-Zeitalter nicht mehr um manuelles "Pixelschubsen", sondern um die <strong>Exploration von Design-Varianten</strong>. Zwei grundlegende Ansätze zeigen, wie wir Layout-Optionen und Design-Systeme heute sondieren und orchestrieren.
+            Zwei unterschiedliche Paradigmen zur Exploration von Design-Varianten im KI-Zeitalter. Es geht nicht um die Generierung eines finalen Screens, sondern darum, wie Lösungsräume am effizientesten ausgelotet werden.
           </p>
         </motion.div>
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-8">
           
-          {/* Left: Infinite Canvas (Figma Make, Google Sketch) */}
+          {/* Left: Figma (Manual Canvas) */}
           <motion.div initial={{opacity:0, x:-20}} animate={{opacity:1, x:0}} transition={{delay: 0.2}}>
             <Card variant="glass" className="h-full !p-8 border-indigo-500/30 bg-gradient-to-br from-indigo-500/10 to-transparent relative overflow-hidden group">
               <div className="absolute top-0 right-0 p-6 opacity-10 transform translate-x-4 -translate-y-4 group-hover:scale-110 transition-transform">
@@ -35,23 +35,23 @@ export default function StitchVsMakeSlide() {
                    <div className="p-3 bg-indigo-500/20 rounded-xl">
                      <LayoutPanelLeft className="w-6 h-6 text-indigo-400" />
                    </div>
-                   <h3 className="text-2xl font-bold">Infinite Canvas Agenten</h3>
+                   <h3 className="text-2xl font-bold">Figma (Spatial Canvas)</h3>
                  </div>
-                 <div className="text-[10px] font-mono text-indigo-400 bg-indigo-500/10 px-2 py-1 rounded uppercase">Visuell</div>
+                 <div className="text-[10px] font-mono text-indigo-400 bg-indigo-500/10 px-2 py-1 rounded uppercase">Kuratierung</div>
               </div>
               
               <div className="space-y-6">
                  <div>
-                    <h4 className="flex items-center gap-2 font-bold text-indigo-300 mb-2"><Search className="w-4 h-4" /> Varianten kuratieren</h4>
+                    <h4 className="flex items-center gap-2 font-bold text-indigo-300 mb-2"><Search className="w-4 h-4" /> Räumliche Exploration</h4>
                     <p className="text-sm text-white/60 leading-relaxed">
-                      Tools wie <strong>Figma Make</strong> oder auch die neuen Agenten von <strong>Google Sketch</strong> nutzen den endlosen Raum (Canvas/FigJam). Die KI generiert multiple UI-Iterationen, die man visuell nebeneinanderstellt, um Layouts und Design-System-Verhalten optimal zu vergleichen.
+                      Figma bietet einen unendlichen Raum. Hier können KI-generierte Entwürfe (z.B. via Figma Make) frei angeordnet und direkt verglichen werden. Man stellt Layout-Optionen visuell gegenüber.
                     </p>
                  </div>
                  
                  <div>
-                    <h4 className="flex items-center gap-2 font-bold text-indigo-300 mb-2"><Layers className="w-4 h-4" /> Design als Baukasten</h4>
+                    <h4 className="flex items-center gap-2 font-bold text-indigo-300 mb-2"><Layers className="w-4 h-4" /> Prototyping & Flow</h4>
                     <p className="text-sm text-white/60 leading-relaxed">
-                      Das Hineinkopieren generierter Drafts in das Projekt-File ist kein statisches "One-Shot". Es ist ein interaktiver Prozess, bei dem der Designer als Kurator agiert und die besten Vektor-Varianten für das finale Erlebnis kombiniert.
+                      Die Varianten bleiben nicht isoliert. Man kann sie sofort in interaktiven Prototypen durchspielen, um User-Flows und das Zusammenspiel der Design-System-Komponenten ganzheitlich zu evaluieren.
                     </p>
                  </div>
               </div>
@@ -68,25 +68,25 @@ export default function StitchVsMakeSlide() {
               <div className="flex justify-between items-start mb-6">
                  <div className="flex items-center gap-3">
                    <div className="p-3 bg-fhgr-petrol/20 rounded-xl">
-                     <Baseline className="w-6 h-6 text-fhgr-petrol-light" />
+                     <Wand2 className="w-6 h-6 text-fhgr-petrol-light" />
                    </div>
-                   <h3 className="text-2xl font-bold">Stitch & Code-Generatoren</h3>
+                   <h3 className="text-2xl font-bold">Google Stitch</h3>
                  </div>
-                 <div className="text-[10px] font-mono text-fhgr-petrol bg-fhgr-petrol/10 px-2 py-1 rounded uppercase">Strukturell</div>
+                 <div className="text-[10px] font-mono text-fhgr-petrol bg-fhgr-petrol/10 px-2 py-1 rounded uppercase">Agentic Canvas</div>
               </div>
               
               <div className="space-y-6">
                  <div>
-                    <h4 className="flex items-center gap-2 font-bold text-fhgr-petrol-light mb-2"><Wand2 className="w-4 h-4" /> Code-First Exploration</h4>
+                    <h4 className="flex items-center gap-2 font-bold text-fhgr-petrol-light mb-2"><Wand2 className="w-4 h-4" /> Ein Agent steuert den Canvas</h4>
                     <p className="text-sm text-white/60 leading-relaxed">
-                      Ansätze wie Google Stitch (oder auch Cursor/v0) explorieren Varianten <em>direkt im Code</em>. Anstatt visuelle Vektor-Ebenen zu verschieben, testet man funktionale React/Tailwind-Komponenten im laufenden Browser-Preview.
+                      Während man in Figma selbst den Canvas orchestriert, implementiert Stitch im Grunde einen agierenden Agenten <em>innerhalb</em> des Canvas. Der Agent baut iterativ verschiedene System-Ausprägungen automatisch auf.
                     </p>
                  </div>
 
                  <div>
-                    <h4 className="flex items-center gap-2 font-bold text-fhgr-petrol-light mb-2"><Search className="w-4 h-4" /> Ground Truth im Code</h4>
+                    <h4 className="flex items-center gap-2 font-bold text-fhgr-petrol-light mb-2"><Search className="w-4 h-4" /> Systematische Iteration</h4>
                     <p className="text-sm text-white/60 leading-relaxed">
-                      Diese Exploration nutzt Text und <code>DESIGN.md</code> Dateien als strikte Vorgabe. Der Vorteil: Die Varianten sind nicht nur statische Layout-Bilder, sondern sofort interaktionsfähige Prototypen.
+                      Stitch übernimmt die Generierung und Evaluierung von Varianten programmatisch. Gesteuert durch zentrale Guidelines (wie <code>DESIGN.md</code>) durchsucht der Agent selbstständig den Lösungsraum nach dem optimalen Layout.
                     </p>
                  </div>
               </div>
