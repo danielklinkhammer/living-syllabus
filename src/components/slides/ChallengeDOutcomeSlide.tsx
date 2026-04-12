@@ -1,21 +1,21 @@
 import { motion } from 'framer-motion'
 import Card from '../ui/Card'
-import { FileDown, FileJson, Layers } from 'lucide-react'
+import { FileDown, GitBranch, Layers } from 'lucide-react'
 
 export default function ChallengeDOutcomeSlide() {
   const deliverables = [
     {
-      title: "1. Der Service Blueprint",
-      desc: "Die logische App-Architektur. Ein ausführliches Diagramm, das exakt beschreibt, wann der Frontstage-User mit Backend-APIs, Datenbanken und Third-Party Services kommuniziert.",
-      format: "Whimsical Flowchart oder Mermaid.js Code (in einem Markdown-Dokument)",
-      icon: <FileJson className="w-6 h-6 text-indigo-400" />,
+      title: "1. Das Flowchart",
+      desc: "Die logische App-Architektur. Ein ausführliches Diagramm, das genau zeigt, welchen Navigationen, Abzweigungen und Fehlermeldungen (Unhappy Paths) der User begegnet.",
+      format: "Ein FigJam oder Whimsical Link",
+      icon: <GitBranch className="w-6 h-6 text-indigo-400" />,
       color: "from-indigo-500/10 to-transparent",
       borderColor: "border-indigo-500/30"
     },
     {
-      title: "2. Die Interface-Sitemap",
-      desc: "Die Struktur des Frontends. Basierend auf eurem Service Blueprint generiert ihr in Relume.io die dazu passenden App-Screens (Wireframes) und vernetzt diese zu einem Flow.",
-      format: "Relume.io Share-Link oder Figma-Copy",
+      title: "2. Sitemap & Wireframes",
+      desc: "Die Struktur des Interfaces. Basierend auf eurem abstrakten Flow generiert ihr in Relume.io die dazu passenden App-Screens (Wireframes) und vernetzt diese final zu einer Sitemap.",
+      format: "Ein Relume.io Share-Link",
       icon: <Layers className="w-6 h-6 text-purple-400" />,
       color: "from-purple-500/10 to-transparent",
       borderColor: "border-purple-500/30"
@@ -33,7 +33,7 @@ export default function ChallengeDOutcomeSlide() {
           <div className="text-fhgr-petrol-light text-xs font-mono uppercase tracking-widest mb-3">Challenge D · Part 3</div>
           <h2 className="text-4xl lg:text-5xl font-bold mb-6 mt-2 tracking-tight">Outcome & Deliverables</h2>
           <p className="text-lg text-white/50 max-w-2xl mx-auto mb-16 leading-relaxed">
-            Am Ende dieser Challenge präsentiert ihr zwei miteinander verbundene System-Artefakte, die beweisen, dass eure System-Logik wasserdicht ist.
+            Am Ende dieser Challenge präsentiert ihr zwei miteinander verbundene IA-Artefakte, die beweisen, dass eure Navigations-Logik robust und für den späteren High-Fidelity Build gerüstet ist.
           </p>
         </motion.div>
 

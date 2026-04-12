@@ -1,31 +1,31 @@
 import { motion } from 'framer-motion'
 import Card from '../ui/Card'
-import { Bot, LineChart, Code2, ShieldAlert } from 'lucide-react'
+import { Search, Spline, LayoutTemplate, ShieldAlert } from 'lucide-react'
 
 export default function ChallengeDWorkflowSlide() {
   const workflow = [
     {
       step: "01",
-      title: "KI Sparring (Textuell)",
-      desc: "Gebt ChatGPT euer Szenario und bittet es: 'Definiere die Service-Architektur. Welche Microservices, API-Calls und Akteure sind involviert? Welche Edge-Cases gibt es?'",
-      icon: <Bot className="w-5 h-5 text-blue-400" />
+      title: "Mobbin Research",
+      desc: "Wie lösen die 'Großen' das Problem? Sucht auf Mobbin nach ähnlichen Apps und scannt deren User Flows ab. Welche Screens und Popups werden beim Onboarding/Checkout verwendet?",
+      icon: <Search className="w-5 h-5 text-blue-400" />
     },
     {
       step: "02",
-      title: "Blueprint Modellierung",
-      desc: "Basierend auf dem KI-Output zeichnet ihr in Whimsical den System-Flow oder lasst euch von ChatGPT direkt ein 'Mermaid.js Sequence Diagram' generieren.",
-      icon: <LineChart className="w-5 h-5 text-indigo-400" />
+      title: "Mapping im Flowchart",
+      desc: "Übertragt den Flow in FigJam oder Whimsical. Verbindet die theoretischen Screens mit Linien und definiert klar, an welchen Stellen der User abzweigen kann.",
+      icon: <Spline className="w-5 h-5 text-indigo-400" />
     },
     {
       step: "03",
-      title: "Sitemap Generierung",
-      desc: "Geht zu Relume.io und generiert aus eurer Blueprint-Logik die passenden Wireframes der Frontend-Ansicht.",
-      icon: <Code2 className="w-5 h-5 text-purple-400" />
+      title: "AI Generation (Relume)",
+      desc: "Nutzt euren Flowchart als Grundlage für den Relume.io Sitebuilder-Prompt. Lasst Relume daraus eine KI-gestützte Sitemap inkl. der ersten Low-Fi Wireframes erstellen.",
+      icon: <LayoutTemplate className="w-5 h-5 text-purple-400" />
     },
     {
       step: "04",
-      title: "Logik prüfen",
-      desc: "Zieht harte Kanten! Fragt wieder ChatGPT: 'Hier ist mein Blueprint. Was habe ich übersehen? Wie verhält sich mein Flow, wenn die Datenbank keine Verbindung hat?'",
+      title: "Edge Cases checken",
+      desc: "Prüft final, ob in eurer Relume-Sitemap Notfall-Screens existieren: 'Success-States', 'Empty-States' oder 'Error-Messages', wenn der Flow abreißt.",
       icon: <ShieldAlert className="w-5 h-5 text-red-400" />
     }
   ]
@@ -36,9 +36,9 @@ export default function ChallengeDWorkflowSlide() {
         
         <motion.div initial={{opacity:0, x:-20}} animate={{opacity:1, x:0}} className="mb-12">
           <div className="text-fhgr-petrol-light text-xs font-mono uppercase tracking-widest mb-3">Challenge D · Part 4</div>
-          <h2 className="text-4xl lg:text-5xl font-bold mb-4 tracking-tight">Die AI Pipeline</h2>
+          <h2 className="text-4xl lg:text-5xl font-bold mb-4 tracking-tight">Die Pipeline</h2>
           <p className="text-lg text-white/50 max-w-3xl leading-relaxed">
-            Versucht nicht, die Architektur von Grund auf im Kopf zu lösen. Wendet den <strong>Vibe Coding</strong> Ansatz an: Nutzt Large Language Models systematisch als Architektur-Sparringspartner.
+            Eine saubere Informationsarchitektur entsteht nicht einfach durch 'drauf los prompten'. Nutzt diesen systematischen 4-Schritte-Workflow, um komplexe Flows AI-gestützt aufzubauen.
           </p>
         </motion.div>
 

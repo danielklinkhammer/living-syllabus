@@ -1,23 +1,23 @@
 import { motion } from 'framer-motion'
 import Card from '../ui/Card'
-import { Network, GitMerge, FileCode2 } from 'lucide-react'
+import { Search, GitBranch, LayoutTemplate } from 'lucide-react'
 
 export default function ChallengeDIntroSlide() {
   const steps = [
     { 
-      title: "Service Blueprint", 
-      desc: "Ihr modelliert den Ablauf eures Use Cases als Mermaid.js Sequenz-Diagramm oder in Whimsical. Fokus: Welche Akteure (Client, Server, API) agieren wann miteinander?",
-      icon: <Network className="w-8 h-8 text-fhgr-petrol" />
+      title: "Pattern Research", 
+      desc: "Ihr durchsucht Mobbin.com nach bewährten UX-Patterns und Best-Practices für komplexe Onboardings und Checkouts.",
+      icon: <Search className="w-8 h-8 text-fhgr-petrol" />
     },
     { 
-      title: "Edge Cases (Unhappy Path)", 
-      desc: "Ihr identifiziert mindestens 3 kritische Brüche im System (z.B. API Offline, Timeout, User hat keine Rechte) und definiert visuell, wie die App darauf reagiert.",
-      icon: <GitMerge className="w-8 h-8 text-red-400" />
+      title: "Flow Mapping", 
+      desc: "Ihr skizziert den Nutzerweg visuell in FigJam oder Whimsical. Dazu gehören auch Abzweigungen, Log-Ins und Fehler-Popups (Unhappy Paths).",
+      icon: <GitBranch className="w-8 h-8 text-purple-400" />
     },
     { 
-      title: "Sitemap & Wireframes", 
-      desc: "Mit Relume.io wandelt ihr die konzipierte Logik in eine Sitemap und grundlegende Wireframes um. Dies bildet das Fundament für den späteren Bau.",
-      icon: <FileCode2 className="w-8 h-8 text-orange-400" />
+      title: "IA & Wireframing", 
+      desc: "Mittels Relume übersetzt ihr euren theoretischen Pfad in eine echte Sitemap. Daraus erstellt ihr mit wenigen Klicks fertige Low-Fi Ansichten.",
+      icon: <LayoutTemplate className="w-8 h-8 text-orange-400" />
     }
   ]
 
@@ -33,10 +33,10 @@ export default function ChallengeDIntroSlide() {
           <h2 className="text-4xl lg:text-5xl font-bold mb-6 mt-2 tracking-tight">Die Aufgabenstellung</h2>
           <div className="text-lg text-white/70 leading-relaxed max-w-3xl mx-auto mb-12 space-y-4">
             <p>
-              <strong>Das Ziel:</strong> Ihr gestaltet keinen UI-Klickdummy, sondern entwerft eine maschinenlesbare <strong>Prozess-Architektur</strong>!
+              <strong>Das Ziel:</strong> Ihr baut ein inhaltliches Fundament. Wer wild drauf los designt, scheitert an der Komplexität. Ihr benötigt vorab <strong>User Flows</strong> und <strong>Informationsarchitektur (IA)</strong>!
             </p>
             <p className="text-base text-white/50">
-              Ihr wählt eines von vier hochkomplexen Service-Logik Szenarien. Anstatt gleich Figma zu öffnen, plant ihr die "Backstage"-Logik: Wie interagiert die App mit Datenbanken, Drittanbieter-Services und APIs? Erst wenn die Logik (Service Blueprint) steht, generiert ihr die Struktur (Sitemap).
+              Ihr widmet euch einem komplexen Service-Szenario. Eure Aufgabe ist es, den gesamten Ablauf von Start bis Ziel zu definieren – systematisch analysiert in Mobbin, abstrahiert als Flowchart, und schließlich mit KI (Relume) zu einem Wireframe-Grundgerüst umgewandelt.
             </p>
           </div>
         </motion.div>

@@ -1,29 +1,29 @@
 import { motion } from 'framer-motion'
 import Card from '../ui/Card'
-import { Target, AlertTriangle, Workflow } from 'lucide-react'
+import { Target, AlertTriangle, Blocks } from 'lucide-react'
 
 export default function ChallengeDAssessmentSlide() {
   const criteria = [
     {
-      title: "System Thinking",
-      desc: "Ist es ein echter Service Blueprint (inkl. Datenbanken, Drittanbieter-Services, APIs) oder nur ein verkleideter Click-Flow?",
-      weight: "50%",
-      icon: <Workflow className="w-5 h-5 text-indigo-400" />,
+      title: "Flow Logic & Edge Cases",
+      desc: "Ist der User Flow in sich logisch aufgebaut? Wurden Sackgassen bedacht (Unhappy Paths) und fängt das Flowchart Fehlermeldungen sauber mit Rückwegen ab?",
+      weight: "40%",
+      icon: <AlertTriangle className="w-5 h-5 text-red-400" />,
+      color: "from-red-500/10 to-transparent",
+      borderColor: "border-red-500/30"
+    },
+    {
+      title: "Pattern Nutzung",
+      desc: "Erfindet ihr das Rad neu oder habt ihr etablierte App-Mechaniken via Mobbin adaptiert? Ein guter Flow greift auf bekannte UX-Heuristiken zurück (z.B. bei Checkout-Wizards).",
+      weight: "30%",
+      icon: <Blocks className="w-5 h-5 text-indigo-400" />,
       color: "from-indigo-500/10 to-transparent",
       borderColor: "border-indigo-500/20"
     },
     {
-      title: "Edge Cases (Unhappy Path)",
-      desc: "Wurden die kritischsten System-Ausfälle erkannt (API-Timeout, Payment Failed, No Bluetooth) und sinnvolle UX-Fallbacks skizziert?",
+      title: "Relume Translation",
+      desc: "Wie gut wurde der theoretische Flowchart in die Relume-Sitemap (und Wireframes) übersetzt? Wurde das KI-Ergebnis nachgebessert oder nur der erste Wurf blind abgenommen?",
       weight: "30%",
-      icon: <AlertTriangle className="w-5 h-5 text-red-400" />,
-      color: "from-red-500/10 to-transparent",
-      borderColor: "border-red-500/20"
-    },
-    {
-      title: "Sitemap Translation",
-      desc: "Spiegelt die Relume Sitemap (Wireframes) die Komplexität des zugrundeliegenden Blueprints sauber im UI wider?",
-      weight: "20%",
       icon: <Target className="w-5 h-5 text-fhgr-accent" />,
       color: "from-fhgr-petrol/10 to-transparent",
       borderColor: "border-fhgr-petrol/30"
@@ -38,7 +38,7 @@ export default function ChallengeDAssessmentSlide() {
           <div className="text-fhgr-petrol-light text-xs font-mono uppercase tracking-widest mb-3">Challenge D · Part 5</div>
           <h2 className="text-4xl lg:text-5xl font-bold mb-4 tracking-tight">Bewertungskriterien</h2>
           <p className="text-lg text-white/50 max-w-2xl mx-auto">
-            Wir bewerten hier nicht die Schönheit eines Interfaces, sondern die <strong>Robustheit einer Systemarchitektur</strong>. Eine hübsche App ohne Fehlerabfang-Logik (Edge Cases) fiktiver APIs fällt durch.
+            Wir bewerten hier keine hochglänzenden UI-Farben, sondern <strong>pure Informationsarchitektur</strong>. Eine hübsche App, in der der User in Dead-Ends rennt, fällt an diesem Punkt der Konzeption durch.
           </p>
         </motion.div>
 
