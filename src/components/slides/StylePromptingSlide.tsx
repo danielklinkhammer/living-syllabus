@@ -50,56 +50,61 @@ export default function StylePromptingSlide() {
           </div>
         </div>
 
-        {/* Right: Abstract Visualization of standard UI pulling to the centre */}
+        {/* Right: The Fixation Funnel */}
         <div className="lg:col-span-6 relative mt-12 lg:mt-0">
           <motion.div 
             initial={{ opacity: 0, scale: 0.95 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ delay: 0.3 }}
-            className="relative w-full aspect-square md:aspect-[4/3] rounded-2xl overflow-hidden bg-[#0A1628] border border-white/10 flex items-center justify-center shadow-2xl"
+            className="w-full flex flex-col md:flex-row items-center gap-6"
           >
-            {/* Background concentric circles implying gravity */}
-            <div className="absolute inset-0 flex items-center justify-center opacity-20 pointer-events-none">
-              <div className="w-[80%] h-[80%] rounded-full border border-orange-500/20 animate-pulse"></div>
-              <div className="w-[60%] h-[60%] rounded-full border border-orange-500/30 absolute animate-pulse delay-75"></div>
-              <div className="w-[40%] h-[40%] rounded-full border border-orange-500/50 absolute animate-pulse delay-150"></div>
+            {/* The Inputs */}
+            <div className="flex flex-col gap-4 w-full md:w-5/12">
+               <div className="bg-white/5 border border-white/10 rounded-lg p-3 text-xs font-mono text-white/70 relative">
+                  Prompt 1: <span className="text-pink-400">"Mache es wild & verspielt!"</span>
+                  <div className="hidden md:block absolute -right-6 top-1/2 w-6 border-t border-dashed border-white/20"></div>
+               </div>
+               <div className="bg-white/5 border border-white/10 rounded-lg p-3 text-xs font-mono text-white/70 relative">
+                  Prompt 2: <span className="text-yellow-400">"Maximal brutalistisch."</span>
+                  <div className="hidden md:block absolute -right-6 top-1/2 w-6 border-t border-dashed border-white/20"></div>
+               </div>
+               <div className="bg-white/5 border border-white/10 rounded-lg p-3 text-xs font-mono text-white/70 relative">
+                  Prompt 3: <span className="text-blue-400">"Einfach Corporate."</span>
+                  <div className="hidden md:block absolute -right-6 top-1/2 w-6 border-t border-dashed border-white/20"></div>
+               </div>
             </div>
 
-            <div className="relative z-10 flex flex-col items-center gap-6">
-              <div className="text-center mb-2">
-                <Target className="w-8 h-8 text-orange-400 mx-auto mb-3 opacity-80" />
-                <div className="text-xs font-mono text-orange-300/80 uppercase tracking-widest">SaaS Gravity Well</div>
-              </div>
-              
-              {/* Stack of basic UI cards looking generic */}
-              <div className="relative w-64 h-48">
-                <div className="absolute inset-0 bg-white shadow-xl rounded-lg border border-gray-200 transform -rotate-6 flex flex-col p-4 opacity-50">
-                  <div className="h-4 w-1/3 bg-gray-200 rounded mb-4"></div>
-                  <div className="flex-1 space-y-2">
-                     <div className="h-2 bg-gray-100 rounded w-full"></div>
-                     <div className="h-2 bg-gray-100 rounded w-5/6"></div>
-                     <div className="h-2 bg-gray-100 rounded w-4/6"></div>
-                  </div>
-                  <div className="h-8 bg-blue-500 rounded-md w-full mt-4"></div>
-                </div>
-                
-                <div className="absolute inset-0 bg-white shadow-xl rounded-lg border border-gray-200 transform rotate-3 flex flex-col p-4 z-10">
-                  <div className="flex items-center gap-3 mb-4">
-                     <div className="w-6 h-6 rounded-full bg-blue-100 text-blue-500 flex items-center justify-center"><Sparkles className="w-3 h-3" /></div>
-                     <div className="h-4 w-1/2 bg-gray-200 rounded"></div>
-                  </div>
-                  <div className="flex-1 space-y-2">
-                     <div className="h-2 bg-gray-100 rounded w-full"></div>
-                     <div className="h-2 bg-gray-100 rounded w-full"></div>
-                     <div className="h-2 bg-gray-100 rounded w-3/4"></div>
-                  </div>
-                  <div className="mt-4 flex gap-2">
-                     <div className="h-8 bg-gray-100 rounded-md w-1/2"></div>
-                     <div className="h-8 bg-blue-600 rounded-md w-1/2 shadow-inner shadow-white/20"></div>
-                  </div>
-                </div>
-              </div>
-              
+            {/* The Processing / Funnel logic */}
+            <div className="flex items-center justify-center">
+               <div className="bg-[#0A1628] border border-orange-500/30 rounded-xl p-4 flex flex-col items-center gap-2 shadow-[0_0_30px_rgba(249,115,22,0.1)]">
+                 <BrainCircuit className="w-6 h-6 text-orange-400" />
+                 <div className="text-[10px] font-bold tracking-widest uppercase text-orange-400">LLM Filter</div>
+               </div>
+            </div>
+
+            {/* The Singular Output */}
+            <div className="w-full md:w-5/12 relative">
+               <div className="hidden md:block absolute -left-6 top-1/2 w-6 border-t border-dashed border-orange-500/50"></div>
+               <div className="bg-white rounded-xl p-5 shadow-2xl border border-gray-200 w-full transform md:rotate-2">
+                 <div className="flex items-center gap-3 mb-4">
+                    <div className="w-8 h-8 rounded-full bg-blue-100 flex items-center justify-center">
+                      <Target className="w-4 h-4 text-blue-500" />
+                    </div>
+                    <div>
+                      <div className="h-3 w-20 bg-gray-200 rounded mb-1"></div>
+                      <div className="h-2 w-12 bg-gray-100 rounded"></div>
+                    </div>
+                 </div>
+                 <div className="h-2 w-full bg-gray-100 rounded mb-2"></div>
+                 <div className="h-2 w-4/5 bg-gray-100 rounded mb-6"></div>
+                 <div className="w-full h-8 bg-blue-600 rounded-lg flex items-center justify-center">
+                    <div className="h-2 w-12 bg-white/50 rounded"></div>
+                 </div>
+               </div>
+               <div className="text-center mt-4">
+                 <div className="text-xs font-mono text-orange-400 uppercase tracking-widest font-bold">Generic SaaS Output</div>
+                 <div className="text-[10px] text-white/40 mt-1">Struktur besiegt Stil</div>
+               </div>
             </div>
 
           </motion.div>
