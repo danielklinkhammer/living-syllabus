@@ -1,23 +1,23 @@
 import { motion } from 'framer-motion'
 import Card from '../ui/Card'
-import { Sparkles, Pickaxe, TestTube2 } from 'lucide-react'
+import { Sparkles, Hammer, LayoutTemplate } from 'lucide-react'
 
 export default function ChallengeE1IntroSlide() {
   const steps = [
     { 
-      title: "1. Prompt Engineering", 
-      desc: "Ihr durchlauft den AI Studio Showcase und analysiert die verwendeten Prompts. Wie steuert man ein LLM, damit es die Rolle einer App übernimmt?",
+      title: "1. Exploration", 
+      desc: "Durchlauft den AI Studio Showcase und probiert verschiedene KI-Schnittstellen (Text, Bild, Video) aktiv aus, um ein Gefühl für deren Fähigkeiten zu bekommen.",
       icon: <Sparkles className="w-8 h-8 text-fhgr-petrol" />
     },
     { 
-      title: "2. Reverse Engineering", 
-      desc: "Ihr nehmt eine bestehende KI-Anwendung auseinander und versucht den Source-Code in Tools wie Lovable oder v0.dev zu rekonstruieren.",
-      icon: <Pickaxe className="w-8 h-8 text-purple-400" />
+      title: "2. Eigene KI-App", 
+      desc: "Wählt eine Schnittstelle aus (z.B. Image Generation). Baut daraufhin mit Tools wie Lovable entweder eine bestehende Sandbox-Idee weiter aus oder legt eine komplett neue KI-Applikation an.",
+      icon: <Hammer className="w-8 h-8 text-purple-400" />
     },
     { 
-      title: "3. Mutate & Extend", 
-      desc: "Sobald eure Basis-KI-App läuft, erweitert ihr sie um eigene, komplexere Features oder baut ihr ein visuell komplett neues Interface.",
-      icon: <TestTube2 className="w-8 h-8 text-orange-400" />
+      title: "3. Doku & Reflexion", 
+      desc: "Dokumentiert eure App in Figma/FigJam für euer Portfolio. Stellt die Grundidee vor, benennt den konkreten Mehrwert den die KI hier liefert und reflektiert eure Lernerfahrung.",
+      icon: <LayoutTemplate className="w-8 h-8 text-orange-400" />
     }
   ]
 
@@ -36,7 +36,7 @@ export default function ChallengeE1IntroSlide() {
               <strong>Das Ziel:</strong> Ihr verlasst die Welt der Wireframes und taucht in die faszinierende Entwicklungs-Sandbox echter KI-Applikationen ab (Multi-Modal Vision, Audio, Text-Generation).
             </p>
             <p className="text-base text-white/50">
-              Wir nutzen das <a href="https://aistudio.google.com/apps?source=showcase&showcaseTag=featured" target="_blank" rel="noreferrer" className="text-fhgr-petrol underline hover:text-white transition-colors">Google AI Studio</a> als Forschungslabor. Eure Sandbox-Challenge: Erkundet die verfügbaren Generative-AI Schnittstellen, testet 2-3 komplexe Feature-Beispiele aus, und entwickelt dann eines davon zu einer eigenen, veränderten App weiter.
+              Nutzt den <a href="https://aistudio.google.com/apps?source=showcase&showcaseTag=featured" target="_blank" rel="noreferrer" className="text-fhgr-petrol underline hover:text-white transition-colors">Google AI Studio Showcase</a> als Startpunkt. Eure Aufgabe ist es, mit KI-APIs zu experimentieren, eine eigene Mini-Anwendung zu "bauen" und den Prozess anschließend methodisch in eurem Portfolio abzubilden.
             </p>
           </div>
         </motion.div>
