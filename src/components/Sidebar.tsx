@@ -109,8 +109,8 @@ export default function Sidebar({ isOpen, setIsOpen, isMobile, schedule, activeG
                             onSelectGroup(group.id);
                           }
                         }}
-                        className={`w-7 h-7 mt-0.5 rounded-full border-2 flex items-center justify-center flex-shrink-0 transition-all duration-300
-                          ${isActiveGroup ? 'border-fhgr-petrol bg-fhgr-petrol-dark text-white ring-4 ring-fhgr-petrol/20' : 
+                        className={`w-7 h-7 mt-0.5 outline-none focus:outline-none rounded-full border-2 flex items-center justify-center flex-shrink-0 transition-all duration-300
+                          ${isActiveGroup ? 'border-fhgr-petrol bg-fhgr-petrol-dark text-white' : 
                             isPast ? 'border-fhgr-petrol bg-fhgr-petrol text-white' : 
                             'border-white/20 bg-[#060F1A] text-white/30 hover:border-white/40 hover:text-white/60'}`}
                       >
@@ -151,9 +151,7 @@ export default function Sidebar({ isOpen, setIsOpen, isMobile, schedule, activeG
                             onSelectGroup(group.id);
                           }
                         }}
-                        className={`w-full text-left rounded-lg transition-all duration-200 block
-                          ${isActiveGroup ? 'text-white' : 'text-white/60 hover:text-white'}
-                        `}
+                        className={`w-full outline-none focus:outline-none text-left rounded-lg block transition-all duration-200 ${isActiveGroup ? 'text-white' : 'text-white/60 hover:text-white'}`}
                       >
                         <span className={`block text-[15px] font-semibold transition-colors ${isActiveGroup ? 'text-fhgr-beige' : ''}`}>{group.title}</span>
                       </button>
@@ -175,7 +173,7 @@ export default function Sidebar({ isOpen, setIsOpen, isMobile, schedule, activeG
                                     e.stopPropagation();
                                     onSelectSlide(group.id, slideIdx);
                                   }}
-                                  className={`w-full text-left px-3 rounded-md text-sm transition-colors flex items-center h-[34px] ${
+                                  className={`w-full text-left px-3 outline-none focus:outline-none rounded-md text-sm transition-colors flex items-center h-[34px] ${
                                     isSlideActive ? 'text-fhgr-petrol-light bg-fhgr-petrol/10 border border-fhgr-petrol/20' : 'text-white/40 hover:text-white/80 hover:bg-white/5 border border-transparent'
                                   }`}
                                 >
