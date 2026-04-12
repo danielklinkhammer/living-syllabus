@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion'
-import { FileCode2, Share2, Workflow, Infinity as InfinityIcon } from 'lucide-react'
+import { FileCode2, Share2, Workflow, Infinity as InfinityIcon, ExternalLink } from 'lucide-react'
 import Card from '../ui/Card'
 
 export default function WhimsicalSlide() {
@@ -14,9 +14,12 @@ export default function WhimsicalSlide() {
               <Workflow className="w-4 h-4" /> Tool Spotlight
             </div>
             <h2 className="text-4xl lg:text-5xl font-bold mb-6 mt-2">Visuelle Logik mit Whimsical</h2>
-            <p className="text-lg text-white/50 leading-relaxed mb-8">
+            <p className="text-lg text-white/50 leading-relaxed mb-6">
               Für wirklich komplexe, verschachtelte Diagramme stößt man in FigJam oft an Grenzen. <strong>Whimsical</strong> ist der Best-in-Class Editor für User Flows und Architektur.
             </p>
+            <a href="https://whimsical.com/" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 px-4 py-2 bg-indigo-500/10 hover:bg-indigo-500/20 text-indigo-400 text-sm font-medium rounded-lg transition-colors border border-indigo-500/30 mb-8">
+              Zu Whimsical <ExternalLink className="w-4 h-4" />
+            </a>
           </motion.div>
 
           <div className="space-y-4">

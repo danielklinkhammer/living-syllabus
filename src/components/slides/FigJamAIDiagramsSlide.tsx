@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion'
-import { LayoutTemplate, Sparkles, Zap } from 'lucide-react'
+import { LayoutTemplate, Sparkles, Zap, ExternalLink } from 'lucide-react'
 import Card from '../ui/Card'
 
 export default function FigJamAIDiagramsSlide() {
@@ -14,9 +14,12 @@ export default function FigJamAIDiagramsSlide() {
               <Sparkles className="w-4 h-4" /> AI Natively in FigJam
             </div>
             <h2 className="text-4xl lg:text-5xl font-bold mb-6 mt-2">Diagramme via FigJam AI</h2>
-            <p className="text-lg text-white/50 leading-relaxed mb-8">
+            <p className="text-lg text-white/50 leading-relaxed mb-6">
               Bevor wir komplett über Code-Logik gehen: <strong>FigJam</strong> hat mittlerweile ebenfalls eine sehr starke native KI an Bord, um aus einem Text-Prompt strukturierte Diagramme, Mindmaps oder komplexe Flowcharts zu generieren.
             </p>
+            <a href="https://www.figma.com/figjam/ai/" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 px-4 py-2 bg-[#0ACF83]/10 hover:bg-[#0ACF83]/20 text-[#0ACF83] text-sm font-medium rounded-lg transition-colors border border-[#0ACF83]/30 mb-8">
+              Zu FigJam AI <ExternalLink className="w-4 h-4" />
+            </a>
           </motion.div>
 
           <div className="space-y-4">

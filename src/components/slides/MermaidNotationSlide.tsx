@@ -1,6 +1,6 @@
 import { motion } from 'framer-motion'
 import Card from '../ui/Card'
-import { Code2, FileCode2, Workflow, Check, ArrowRight, LayoutTemplate } from 'lucide-react'
+import { Code2, FileCode2, Workflow, Check, ArrowRight, LayoutTemplate, ExternalLink } from 'lucide-react'
 
 export default function MermaidNotationSlide() {
   const mermaidCode = `
@@ -77,11 +77,14 @@ flowchart TD
             <Code2 className="w-4 h-4" /> Die Architektur-Sprache
           </div>
           <h2 className="text-4xl lg:text-5xl font-bold mb-4 tracking-tight">Format: Mermaid.js</h2>
-          <p className="text-lg text-white/50 max-w-3xl leading-relaxed">
+          <p className="text-lg text-white/50 max-w-3xl leading-relaxed mb-6">
             KI-Modelle zeichnen keine Linien auf einen Canvas. 
             Sie strukturieren Logik durch Code. <strong>Mermaid.js</strong> ist die universelle 
             Markdown-Syntax, um komplexe Flows (inklusive Subgraphen und Klassen) maschinenlesbar zu diktieren.
           </p>
+          <a href="https://mermaid.js.org/" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 px-4 py-2 bg-white/10 hover:bg-white/20 text-white text-sm font-medium rounded-lg transition-colors border border-white/10">
+            Zu Mermaid.js <ExternalLink className="w-4 h-4" />
+          </a>
         </motion.div>
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
