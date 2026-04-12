@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion'
-import { Sparkles, BrainCircuit, Target, AlertTriangle, ShieldX } from 'lucide-react'
+import { BrainCircuit, AlertTriangle, ShieldX } from 'lucide-react'
 
 export default function StylePromptingSlide() {
   return (

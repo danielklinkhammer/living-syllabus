@@ -1,6 +1,6 @@
 import { motion } from 'framer-motion'
 import Card from '../ui/Card'
-import { FileText, Code2, PlayCircle } from 'lucide-react'
+import { FileText, Code2 } from 'lucide-react'
 
 export default function StitchDesignMdSlide() {
   return (
