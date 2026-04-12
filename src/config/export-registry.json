@@ -90,6 +90,16 @@
     "exportStatus": "draft"
   },
   {
+    "slideId": "s03-sys-intro1",
+    "title": "Grundlagen",
+    "block": "sys-design",
+    "order": 1,
+    "exportId": "living-syllabus:s03-sys-intro1",
+    "exportName": "sys-design-01 · Grundlagen",
+    "figmaPageName": "Living Syllabus",
+    "exportStatus": "draft"
+  },
+  {
     "slideId": "s03-sys",
     "title": "Anatomie",
     "block": "B03",
@@ -166,6 +176,16 @@
     "order": 13,
     "exportId": "living-syllabus:s03-design-fmt",
     "exportName": "B03-13 · Format: DESIGN.md",
+    "figmaPageName": "Living Syllabus",
+    "exportStatus": "draft"
+  },
+  {
+    "slideId": "s03-agents-md",
+    "title": "Format: AGENTS.md",
+    "block": "B03",
+    "order": 14,
+    "exportId": "living-syllabus:s03-agents-md",
+    "exportName": "B03-14 · Format: AGENTS.md",
     "figmaPageName": "Living Syllabus",
     "exportStatus": "draft"
   },

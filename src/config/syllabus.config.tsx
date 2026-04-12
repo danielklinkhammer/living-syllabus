@@ -11,6 +11,8 @@ import RecapImageVsCodeSlide from '../components/slides/recap/RecapImageVsCodeSl
 import RecapChallengeASlide from '../components/slides/recap/RecapChallengeASlide'
 import RecapChallengeBSlide from '../components/slides/recap/RecapChallengeBSlide'
 import RecapReflectionSlide from '../components/slides/recap/RecapReflectionSlide'
+import DesignSystemIntroSlide from '../components/slides/DesignSystemIntroSlide'
+
 import DesignSystemSlide from '../components/slides/DesignSystemSlide'
 import DesignSystemReferenceSlide from '../components/slides/DesignSystemReferenceSlide'
 import TokenDNASlide from '../components/slides/TokenDNASlide'
@@ -19,6 +21,7 @@ import DataFormatJsonSlide from '../components/slides/DataFormatJsonSlide'
 import DataFormatMarkdownSlide from '../components/slides/DataFormatMarkdownSlide'
 import StitchDesignMdSlide from '../components/slides/StitchDesignMdSlide'
 import DesignMdFormatSlide from '../components/slides/DesignMdFormatSlide'
+import AgentsMdSlide from '../components/slides/AgentsMdSlide'
 import MCPSlide from '../components/slides/MCPSlide'
 import StitchVsMakeSlide from '../components/slides/StitchVsMakeSlide'
 import StylePromptingSlide from '../components/slides/StylePromptingSlide'
@@ -118,6 +121,7 @@ const rawSchedule: DayScheduleInput[] = [
       {
         id: "sys-design", title: "Design Systeme", icon: <BookOpen className="w-[18px] h-[18px]" />,
         slides: [
+          { id: 's03-sys-intro1', title: 'Grundlagen', component: <DesignSystemIntroSlide /> },
           { id: 's03-sys', title: 'Anatomie', component: <DesignSystemSlide /> },
           { id: 's03-sys-ref', title: 'Referenzsysteme', component: <DesignSystemReferenceSlide /> },
           { id: 's03-token', title: 'Token-DNA', component: <TokenDNASlide /> },
@@ -126,6 +130,7 @@ const rawSchedule: DayScheduleInput[] = [
           { id: 's03-data-md', title: 'Format: Markdown', component: <DataFormatMarkdownSlide /> },
           { id: 's03-design-md', title: 'Stitch & DESIGN.md', component: <StitchDesignMdSlide /> },
           { id: 's03-design-fmt', title: 'Format: DESIGN.md', component: <DesignMdFormatSlide /> },
+          { id: 's03-agents-md', title: 'Format: AGENTS.md', component: <AgentsMdSlide /> },
           { id: 's03-mcp', title: 'MCP Handoff', component: <MCPSlide /> },
           { id: 's03-stitch-make', title: 'Stitch vs. Make', component: <StitchVsMakeSlide /> },
           { id: 's03-style', title: 'Aesthetic Fixation', component: <StylePromptingSlide /> },

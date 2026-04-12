@@ -13,7 +13,10 @@ export default function TokenDNASlide() {
         <div className="lg:col-span-5 flex flex-col justify-center">
           <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }}>
             <div className="text-fhgr-petrol-light text-xs font-mono uppercase tracking-widest mb-3">Sitzung 3 · Die API des Designs</div>
-            <h2 className="text-4xl lg:text-5xl font-bold mb-6 mt-2 tracking-tight">Die Token-DNA</h2>
+            <h2 className="text-4xl lg:text-5xl font-bold mb-4 mt-2 tracking-tight">Die Token-DNA</h2>
+            <div className="inline-block px-3 py-1.5 bg-orange-500/10 border border-orange-500/30 text-orange-400 text-[11px] font-mono rounded-lg mb-6">
+              ⚠️ <strong>Wording-Check:</strong> Wir sprechen von <em>Design Tokens</em> (UI-Variablen), nicht von <em>LLM Tokens</em> (Textbausteine einer KI)!
+            </div>
             <p className="text-lg text-white/50 leading-relaxed mb-8 max-w-xl">
               Stell dir vor, du änderst dein Markenblau und musst 500 Dateien (CSS, Swift, Android, Figma) von Hand anpassen. Tokens lösen das. Sie sind Variablen, die Design-Entscheidungen speichern.
             </p>
@@ -22,13 +25,9 @@ export default function TokenDNASlide() {
           <div className="space-y-4">
             <Card delay={0.1} className="!p-6 w-full text-left">
               <div className="font-semibold text-fhgr-beige mb-2 text-xl">Semantic Aliasing</div>
-              <p className="text-sm text-white/50 mb-4 leading-relaxed">
+              <p className="text-sm text-white/50 leading-relaxed">
                 Der wichtigste Trick bei Tokens: Wir benennen sie <strong>nicht</strong> danach, wie sie aussehen (<span className="text-fhgr-petrol-light font-mono text-xs">blue-500</span>), sondern nach ihrem <strong>Zweck</strong> (<span className="text-fhgr-petrol-light font-mono text-xs">color.accent.brand</span>). So kann das System Themes wechseln (Light/Dark Mode), ohne dass wir Code anfassen müssen.
               </p>
-              <div className="flex items-center gap-3 p-3 bg-white/5 rounded-lg border border-white/5 w-fit">
-                <Code2 className="text-white/30 w-5 h-5" />
-                <div className="text-xs text-white/40">Der aktuelle globale W3C-Standard für Tokens ist <strong className="text-white/70">W3C DTCG</strong> (Design Token Community Group). So verstehen Plugins wie Figma-&gt;Code die Daten direkt.</div>
-              </div>
             </Card>
           </div>
         </div>
@@ -118,12 +117,26 @@ export default function TokenDNASlide() {
                <div className="flex px-4 py-2 bg-[#161B22] border-b border-white/10 items-center justify-between w-full">
                  <div className="text-xs text-white/40 font-mono">tokens.json (W3C Format)</div>
                </div>
-               <div className="p-4 overflow-x-auto text-xs font-mono leading-relaxed w-full">
-                 <span className="text-[#8B949E]">"color": {`{`}</span><br/>
-                 <span className="text-[#8B949E]">  "accent": {`{`}</span><br/>
-                 <span className="text-[#8B949E]">    "brand": {`{`} <span className="text-[#79C0FF]">"$value"</span>: <span className="text-[#A5D6FF]">"{`{blue-500}`}"</span>, <span className="text-[#79C0FF]">"$type"</span>: <span className="text-[#A5D6FF]">"color"</span> {`}`}</span><br/>
-                 <span className="text-[#8B949E]">  {`}`}</span><br/>
-                 <span className="text-[#8B949E]">{`}`}</span>
+               <div className="p-5 overflow-x-auto text-[13px] font-mono leading-relaxed w-full whitespace-pre">
+                 <span className="text-[#8B949E]">{"{"}</span>
+                 <br />
+                 <span className="text-[#79C0FF]">  "color"</span><span className="text-[#8B949E]">: {"{"}</span>
+                 <br />
+                 <span className="text-[#79C0FF]">    "accent"</span><span className="text-[#8B949E]">: {"{"}</span>
+                 <br />
+                 <span className="text-[#79C0FF]">      "brand"</span><span className="text-[#8B949E]">: {"{"}</span>
+                 <br />
+                 <span className="text-[#8B949E]">        </span><span className="text-[#79C0FF]">"$value"</span><span className="text-[#8B949E]">: </span><span className="text-[#A5D6FF]">"{'{blue-500}'}"</span><span className="text-[#8B949E]">,</span>
+                 <br />
+                 <span className="text-[#8B949E]">        </span><span className="text-[#79C0FF]">"$type"</span><span className="text-[#8B949E]">: </span><span className="text-[#A5D6FF]">"color"</span>
+                 <br />
+                 <span className="text-[#8B949E]">      {"}"}</span>
+                 <br />
+                 <span className="text-[#8B949E]">    {"}"}</span>
+                 <br />
+                 <span className="text-[#8B949E]">  {"}"}</span>
+                 <br />
+                 <span className="text-[#8B949E]">{"}"}</span>
                </div>
              </motion.div>
              
