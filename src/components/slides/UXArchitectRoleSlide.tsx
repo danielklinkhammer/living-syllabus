@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion'
-import { Network, Layout, Scale, AlertTriangle } from 'lucide-react'
+import { Network, Layout, Scale } from 'lucide-react'
 
 export default function UXArchitectRoleSlide() {
   return (
@@ -12,21 +12,10 @@ export default function UXArchitectRoleSlide() {
             <div className="text-fhgr-petrol-light text-xs font-mono uppercase tracking-widest mb-3">Die neue Design-Realität</div>
             <h2 className="text-4xl lg:text-5xl font-bold mb-6 mt-2 tracking-tight">UX Designer als Architekten</h2>
             <p className="text-lg text-white/50 leading-relaxed mb-6">
-              KI-Modelle sind extrem mächtig in der Mikro-Exekution (z.B. dem Generieren isolierter Interfaces). Sie verlieren im Makro-Level jedoch völlig den Kontext über komplexe Geschäftslogiken.
+              KI-Modelle sind extrem mächtig in der Mikro-Exekution (z.B. dem Generieren einzelner Interfaces oder Texte). Aber sie verlieren im Makro-Level schnell den Kontext über komplexe Geschäftslogiken.
             </p>
-            
-            {/* The Unhappy Path Box */}
-            <div className="p-5 rounded-xl bg-red-500/10 border border-red-500/20 shadow-[0_0_30px_rgba(239,68,68,0.1)] mb-6">
-              <h3 className="font-bold text-red-400 mb-2 flex items-center gap-2 text-sm uppercase tracking-wider">
-                <AlertTriangle className="w-4 h-4"/> KI-Blindspot: Der "Happy Path"
-              </h3>
-              <p className="text-sm text-white/70 leading-relaxed">
-                KI-Modelle haben ein massives Optimismus-Problem: Sie generieren fast ausschließlich den perfekten Idealzustand. <strong>Edge Cases, Error-States und "Unhappy Paths"</strong> (z.B. Offline-Zustände, Payment-Abbrüche) können sie von sich aus nicht vorausschauend planen.
-              </p>
-            </div>
-
-            <div className="text-sm text-white/60 leading-relaxed">
-              Die Konsequenz: Unsere Rolle als Product Designer shiftet dramatisch hin zu <strong className="text-fhgr-accent">Orchestrierung</strong>, <strong className="text-fhgr-accent">Systemarchitektur</strong> und dem Planen dieser Kantenfälle.
+            <div className="p-4 rounded-xl bg-white/5 border border-white/10 text-sm text-white/60 leading-relaxed">
+              Die Konsequenz: Unsere Rolle als Product Designer shiftet dramatisch hin zu <strong className="text-fhgr-accent">Orchestrierung</strong>, <strong className="text-fhgr-accent">Systemarchitektur</strong> und strategischer <strong className="text-fhgr-accent">Planung</strong>.
             </div>
             
           </motion.div>
