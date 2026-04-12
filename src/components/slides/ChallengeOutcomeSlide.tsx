@@ -32,9 +32,9 @@ export default function ChallengeOutcomeSlide() {
                   <FileText className="w-5 h-5 text-orange-400" />
                 </div>
                 <div>
-                  <h3 className="font-bold text-white text-base">Die Stil-Dokumentation</h3>
+                  <h3 className="font-bold text-white text-base">Die Stil-Dokumentation & System</h3>
                   <p className="text-sm text-white/50 leading-relaxed">
-                    Eure schriftlichen Dokumentationen (z.B. Markdown-Files), die die Stile formalisieren. Sie garantieren, dass euer visueller Code von anderen (oder LLMs) eindeutig reproduziert werden kann.
+                    Eure schriftlichen Regelwerke (als `.md` oder `.json` Textblöcke) werden <strong>direkt in die Unterseite der Figma-Matrix</strong> gepackt. Optional (und bei Google Stitch automatisch dabei) kann noch eine grafische Design-System-Übersicht (Tokens) hinzugefügt werden.
                   </p>
                 </div>
               </div>
@@ -86,24 +86,40 @@ export default function ChallengeOutcomeSlide() {
                 <div className="aspect-square bg-white/5 border-2 border-black rounded-none overflow-hidden flex items-center justify-center p-2"><div className="w-3/4 h-3/4 bg-purple-500/20 border border-black"></div></div>
                 <div className="aspect-square shadow-[inset_0_2px_4px_rgba(255,255,255,0.1)] bg-white/10 border border-white/20 rounded-xl overflow-hidden flex items-center justify-center p-2"><div className="w-3/4 h-3/4 rounded-full bg-gradient-to-tr from-orange-500/20 to-orange-300/10 shadow-inner"></div></div>
 
+                {/* Divider */}
+                <div className="col-span-4 h-px bg-white/10 my-2"></div>
+
+                {/* Row: Documentation (JSON/MD) */}
+                <div className="flex items-center justify-end pr-3 text-[10px] font-mono text-orange-300/70">.md / .json</div>
+                <div className="bg-[#18181B] border border-[#27272A] rounded p-2 overflow-hidden relative">
+                   <div className="w-1/2 h-1 bg-white/20 mb-1 rounded"></div>
+                   <div className="w-3/4 h-1 bg-white/10 mb-1 rounded"></div>
+                   <div className="w-2/3 h-1 bg-white/10 mb-1 rounded"></div>
+                </div>
+                <div className="bg-[#18181B] border border-[#27272A] rounded p-2 overflow-hidden relative">
+                   <div className="w-1/2 h-1 bg-white/20 mb-1 rounded"></div>
+                   <div className="w-full h-1 bg-white/10 mb-1 rounded"></div>
+                   <div className="w-4/5 h-1 bg-white/10 mb-1 rounded"></div>
+                </div>
+                <div className="bg-[#18181B] border border-[#27272A] rounded p-2 overflow-hidden relative">
+                   <div className="w-1/2 h-1 bg-white/20 mb-1 rounded"></div>
+                   <div className="w-3/4 h-1 bg-white/10 mb-1 rounded"></div>
+                   <div className="w-1/2 h-1 bg-white/10 mb-1 rounded"></div>
+                </div>
+
+                {/* Row: Token/Design System Overview */}
+                <div className="flex items-center justify-end pr-3 text-[8px] leading-tight font-mono text-white/30 text-right">System<br/>Overview</div>
+                <div className="bg-white/5 border border-white/10 rounded h-10 flex gap-1 p-1">
+                   <div className="w-3 h-full bg-fhgr-petrol/40"></div><div className="w-3 h-full bg-white/20"></div>
+                </div>
+                <div className="bg-white/5 border border-white/10 rounded h-10 flex gap-1 p-1">
+                   <div className="w-3 h-full bg-purple-500/40"></div><div className="w-3 h-full bg-white/20"></div>
+                </div>
+                <div className="bg-white/5 border border-white/10 rounded h-10 flex gap-1 p-1">
+                   <div className="w-3 h-full bg-orange-400/40"></div><div className="w-3 h-full bg-white/20"></div>
+                </div>
+
               </div>
-
-              {/* Documentation Floating Card */}
-              <motion.div 
-                initial={{ opacity: 0, y: 10 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ delay: 0.6 }}
-                className="absolute -bottom-4 -left-4 xl:-left-8 bg-[#18181B] border border-[#27272A] p-4 rounded-xl shadow-[0_8px_30px_rgb(0,0,0,0.5)] flex gap-3 items-center"
-              >
-                <div className="p-2 bg-gradient-to-br from-orange-400 to-red-500 rounded-lg">
-                  <FileText className="w-4 h-4 text-white" />
-                </div>
-                <div className="pr-4">
-                  <div className="text-[10px] text-white/40 font-mono uppercase tracking-widest mb-1">Documentation</div>
-                  <div className="text-xs text-white font-medium">3x design_rules.md</div>
-                </div>
-              </motion.div>
-
             </div>
           </motion.div>
         </div>
