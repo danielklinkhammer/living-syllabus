@@ -530,22 +530,12 @@
     "exportStatus": "draft"
   },
   {
-    "slideId": "s04-chalD2",
-    "title": "Challenge: Build It",
-    "block": "B04",
-    "order": 6,
-    "exportId": "living-syllabus:s04-chalD2",
-    "exportName": "B04-06 \u00b7 Challenge: Build It",
-    "figmaPageName": "Living Syllabus",
-    "exportStatus": "draft"
-  },
-  {
     "slideId": "s04-intro",
     "title": "Intro: The Modern Stack",
     "block": "B04",
-    "order": 7,
+    "order": 6,
     "exportId": "living-syllabus:s04-intro",
-    "exportName": "B04-07 \u00b7 Intro: The Modern Stack",
+    "exportName": "B04-06 \u00b7 Intro: The Modern Stack",
     "figmaPageName": "Living Syllabus",
     "exportStatus": "draft"
   },
@@ -553,9 +543,9 @@
     "slideId": "s04-react",
     "title": "React 19 Core",
     "block": "B04",
-    "order": 8,
+    "order": 7,
     "exportId": "living-syllabus:s04-react",
-    "exportName": "B04-08 \u00b7 React 19 Core",
+    "exportName": "B04-07 \u00b7 React 19 Core",
     "figmaPageName": "Living Syllabus",
     "exportStatus": "draft"
   },
@@ -563,9 +553,9 @@
     "slideId": "s04-tailwind",
     "title": "Tailwind CSS",
     "block": "B04",
-    "order": 9,
+    "order": 8,
     "exportId": "living-syllabus:s04-tailwind",
-    "exportName": "B04-09 \u00b7 Tailwind CSS",
+    "exportName": "B04-08 \u00b7 Tailwind CSS",
     "figmaPageName": "Living Syllabus",
     "exportStatus": "draft"
   },
@@ -573,9 +563,9 @@
     "slideId": "s04-shadcn",
     "title": "shadcn/ui (AI Secret)",
     "block": "B04",
-    "order": 10,
+    "order": 9,
     "exportId": "living-syllabus:s04-shadcn",
-    "exportName": "B04-10 \u00b7 shadcn/ui (AI Secret)",
+    "exportName": "B04-09 \u00b7 shadcn/ui (AI Secret)",
     "figmaPageName": "Living Syllabus",
     "exportStatus": "draft"
   },
@@ -583,9 +573,9 @@
     "slideId": "s04-ts",
     "title": "TypeScript",
     "block": "B04",
-    "order": 11,
+    "order": 10,
     "exportId": "living-syllabus:s04-ts",
-    "exportName": "B04-11 \u00b7 TypeScript",
+    "exportName": "B04-10 \u00b7 TypeScript",
     "figmaPageName": "Living Syllabus",
     "exportStatus": "draft"
   },
@@ -593,9 +583,9 @@
     "slideId": "s04-framer",
     "title": "Framer Motion",
     "block": "B04",
-    "order": 12,
+    "order": 11,
     "exportId": "living-syllabus:s04-framer",
-    "exportName": "B04-12 \u00b7 Framer Motion",
+    "exportName": "B04-11 \u00b7 Framer Motion",
     "figmaPageName": "Living Syllabus",
     "exportStatus": "draft"
   },
@@ -603,9 +593,9 @@
     "slideId": "s04-server",
     "title": "Vite (Server & Build)",
     "block": "B04",
-    "order": 13,
+    "order": 12,
     "exportId": "living-syllabus:s04-server",
-    "exportName": "B04-13 \u00b7 Vite (Server & Build)",
+    "exportName": "B04-12 \u00b7 Vite (Server & Build)",
     "figmaPageName": "Living Syllabus",
     "exportStatus": "draft"
   },
@@ -613,9 +603,9 @@
     "slideId": "s04-chalE",
     "title": "Optional: Projekt Live schalten",
     "block": "B04",
-    "order": 14,
+    "order": 13,
     "exportId": "living-syllabus:s04-chalE",
-    "exportName": "B04-14 \u00b7 Optional: Projekt Live schalten",
+    "exportName": "B04-13 \u00b7 Optional: Projekt Live schalten",
     "figmaPageName": "Living Syllabus",
     "exportStatus": "draft"
   }

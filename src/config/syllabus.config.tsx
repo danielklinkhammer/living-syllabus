@@ -59,6 +59,11 @@ import ChallengeDScenariosSlide from '../components/slides/ChallengeDScenariosSl
 import ChallengeDIntroSlide from '../components/slides/ChallengeDIntroSlide'
 import ChallengeDOutcomeSlide from '../components/slides/ChallengeDOutcomeSlide'
 import ChallengeDAssessmentSlide from '../components/slides/ChallengeDAssessmentSlide'
+import ChallengeE1IntroSlide from '../components/slides/ChallengeE1IntroSlide'
+import ChallengeE1ScenariosSlide from '../components/slides/ChallengeE1ScenariosSlide'
+import ChallengeE1WorkflowSlide from '../components/slides/ChallengeE1WorkflowSlide'
+import ChallengeE1OutcomeSlide from '../components/slides/ChallengeE1OutcomeSlide'
+import ChallengeE1AssessmentSlide from '../components/slides/ChallengeE1AssessmentSlide'
 import ChallengeSlide from '../components/slides/ChallengeSlide'
 import Part2IntroSlide from '../components/slides/Part2IntroSlide'
 import StackReactViteSlide from '../components/slides/StackReactViteSlide'
@@ -220,12 +225,24 @@ const rawSchedule: DayScheduleInput[] = [
         id: "proto-chalD2", title: "Challenge E.1", icon: <Hammer className="w-[18px] h-[18px]" />,
         slides: [
           { 
-            id: 's04-chalD2', title: 'Challenge: Build It', 
-            component: <ChallengeSlide 
-              id="D.2" title="Build It" 
-              scenario="Euer gewähltes Applikations-Szenario visuell und funktional umsetzen."
-              tasks={["Frontend Tool wählen (Lovable, AI Studio, v0 etc)", "Euren User Flow in einer echten App rekonstruieren", "Mindestens 2 eurer definierten Edge Cases funktional machen"]}
-              tools="Lovable, AI Studio, v0.dev, Bolt.new" timeBudget="120 Minuten" /> 
+            id: 's04-chalE1-intro', title: 'Aufgabenstellung', 
+            component: <ChallengeE1IntroSlide />
+          },
+          { 
+            id: 's04-chalE1-scene', title: 'AI Showcase', 
+            component: <ChallengeE1ScenariosSlide />
+          },
+          { 
+            id: 's04-chalE1-work', title: 'Der Workspace', 
+            component: <ChallengeE1WorkflowSlide />
+          },
+          { 
+            id: 's04-chalE1-out', title: 'Outcome', 
+            component: <ChallengeE1OutcomeSlide />
+          },
+          { 
+            id: 's04-chalE1-assess', title: 'Evaluationskriterien', 
+            component: <ChallengeE1AssessmentSlide />
           }
         ]
       },
