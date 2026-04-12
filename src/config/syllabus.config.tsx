@@ -12,6 +12,7 @@ import RecapChallengeASlide from '../components/slides/recap/RecapChallengeASlid
 import RecapChallengeBSlide from '../components/slides/recap/RecapChallengeBSlide'
 import RecapReflectionSlide from '../components/slides/recap/RecapReflectionSlide'
 import DesignSystemIntroSlide from '../components/slides/DesignSystemIntroSlide'
+import ServiceBlueprintSlide from '../components/slides/ServiceBlueprintSlide'
 
 import DesignSystemSlide from '../components/slides/DesignSystemSlide'
 import DesignSystemReferenceSlide from '../components/slides/DesignSystemReferenceSlide'
@@ -172,6 +173,7 @@ const rawSchedule: DayScheduleInput[] = [
           { id: 's03-flow-3', title: 'IA & Sitemaps', component: <IADesignSlide /> },
           { id: 's03-flow-relume', title: 'Tool: Relume', component: <RelumeSitemapSlide /> },
           { id: 's03-flow-mobbin', title: 'Pattern Library: Mobbin', component: <MobbinSlide /> },
+          { id: 's03-flow-blueprint', title: 'Service Blueprints & UML', component: <ServiceBlueprintSlide /> },
 
         ]
       },
