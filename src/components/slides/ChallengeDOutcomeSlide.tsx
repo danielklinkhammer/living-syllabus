@@ -5,15 +5,15 @@ import { FileDown, GitBranch, Layers } from 'lucide-react'
 export default function ChallengeDOutcomeSlide() {
   const deliverables = [
     {
-      title: "1. Das Flowchart",
+      title: "Flowcharts & Sitemaps",
       desc: "Eure aufbereitete Logik-Ansicht. Die Darstellung muss nicht riesig sein! Uns ist wichtig, dass ihr das Tooling ausprobiert habt und abstraktes architektonisches Denken anwendet (Happy Path vs. Unhappy Path).",
       icon: <GitBranch className="w-6 h-6 text-indigo-400" />,
       color: "from-indigo-500/10 to-transparent",
       borderColor: "border-indigo-500/30"
     },
     {
-      title: "2. Die Sitemap",
-      desc: "Eine strukturierte Darstellung in z.B. Relume oder FigJam, die zeigt, wie sich die Screens aus eurem Flowchart im finalen User Interface gliedern würden.",
+      title: "Wireframes & Mockups (Optional)",
+      desc: "Je nachdem, welches Tool ihr benutzt (z.B. Relume), werden oft bereits erste Low-Fi Wireframes oder Sitemaps mit Seitenstruktur generiert. Diese könnt ihr sehr gerne als Ergänzung mit in euer Portfolio aufnehmen!",
       icon: <Layers className="w-6 h-6 text-purple-400" />,
       color: "from-purple-500/10 to-transparent",
       borderColor: "border-purple-500/30"
@@ -31,7 +31,7 @@ export default function ChallengeDOutcomeSlide() {
           <div className="text-fhgr-petrol-light text-xs font-mono uppercase tracking-widest mb-3">Challenge D · Part 3</div>
           <h2 className="text-4xl lg:text-5xl font-bold mb-6 mt-2 tracking-tight">Outcome & Deliverables</h2>
           <p className="text-lg text-white/50 max-w-2xl mx-auto mb-16 leading-relaxed">
-            Als Output erwarten wir diese zwei zentralen Artefakte der Informationsarchitektur. Sie landen später gebündelt in eurem Portfolio:
+            Als Output erwarten wir zentrale Artefakte der Informationsarchitektur. Sie landen später gebündelt in eurem Portfolio:
           </p>
         </motion.div>
 
