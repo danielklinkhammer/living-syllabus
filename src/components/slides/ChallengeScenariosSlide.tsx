@@ -5,8 +5,8 @@ import { LayoutDashboard, Palette, FileJson } from 'lucide-react'
 export default function ChallengeScenariosSlide() {
   const steps = [
     { 
-      title: "1 Modell", 
-      desc: "Ihr definiert nachher ein einziges Dashboard-Thema (z.B. Energie, Health oder SaaS). Die inhaltliche Struktur bleibt identisch.",
+      title: "1 Thema, 3 Ansichten", 
+      desc: "Ihr wählt nachher ein Dashboard-Thema. Für dieses Thema entwerft ihr drei verschiedene Ansichten (z.B. unterschiedliche Dashboard-Größen oder Visualisierungs-Typen).",
       icon: <LayoutDashboard className="w-8 h-8 text-fhgr-petrol" />
     },
     { 

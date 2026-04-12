@@ -18,9 +18,9 @@ export default function ChallengeWorkflowSlide() {
     },
     {
       num: "Phase 3", 
-      title: "KI-gestützt bauen", 
+      title: "Design manuell manipulieren & KI-Build", 
       icon: <Sparkles className="w-4 h-4 text-fhgr-petrol" />,
-      desc: "Gebt euer Manifest als Prompt an Figma Make oder Google Stitch. Die KI baut nun euer Layout, wird dabei aber streng durch eure Design-Pattern gesteuert."
+      desc: "Gebt euer Manifest als Prompt an Figma Make oder Google Stitch. Wichtig: Schaut euch die `design.md` genau an und manipuliert gezielt Werte (z.B. Spacer, Corner-Radius), um zu sehen, wie Stitch darauf reagiert!"
     },
      {
       num: "Phase 4", 
