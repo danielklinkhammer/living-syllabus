@@ -161,11 +161,11 @@
   },
   {
     "slideId": "s03-design-md",
-    "title": "Stitch",
+    "title": "Google Stitch",
     "block": "B03",
     "order": 12,
     "exportId": "living-syllabus:s03-design-md",
-    "exportName": "B03-12 · Stitch",
+    "exportName": "B03-12 · Google Stitch",
     "figmaPageName": "Living Syllabus",
     "exportStatus": "draft"
   },
@@ -201,11 +201,11 @@
   },
   {
     "slideId": "s03-stitch-make",
-    "title": "Stitch vs. Make",
+    "title": "Figma vs. Stitch",
     "block": "B03",
     "order": 15,
     "exportId": "living-syllabus:s03-stitch-make",
-    "exportName": "B03-15 · Stitch vs. Make",
+    "exportName": "B03-15 · Figma vs. Stitch",
     "figmaPageName": "Living Syllabus",
     "exportStatus": "draft"
   },
