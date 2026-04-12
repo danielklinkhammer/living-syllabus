@@ -95,7 +95,6 @@ export default function App() {
           currentIndex={currentIndex}
           onSelectGroup={handleSelectGroup}
           onSelectSlide={handleSelectSlide}
-          onOpenDesignSystem={() => { setIsCourseOverviewOpen(false); setIsDesignSystemOpen(true); }}
           onOpenCourseOverview={() => { setIsDesignSystemOpen(false); setIsCourseOverviewOpen(true); }}
         />
         

@@ -11,11 +11,11 @@ interface SidebarProps {
   currentIndex: number;
   onSelectGroup: (groupId: string) => void;
   onSelectSlide: (groupId: string, index: number) => void;
-  onOpenDesignSystem: () => void;
+
   onOpenCourseOverview: () => void;
 }
 
-export default function Sidebar({ isOpen, setIsOpen, isMobile, schedule, activeGroupId, currentIndex, onSelectGroup, onSelectSlide, onOpenDesignSystem, onOpenCourseOverview }: SidebarProps) {
+export default function Sidebar({ isOpen, setIsOpen, isMobile, schedule, activeGroupId, currentIndex, onSelectGroup, onSelectSlide, onOpenCourseOverview }: SidebarProps) {
   const [expandedGroupId, setExpandedGroupId] = useState<string | null>(activeGroupId);
 
   // Sync expanded state if the active group is changed externally
@@ -193,32 +193,8 @@ export default function Sidebar({ isOpen, setIsOpen, isMobile, schedule, activeG
             })}
           </div>
         </div>
-        
-        <div className={`mt-2 pt-4 border-t border-white/10 px-6 pb-4 transition-opacity duration-300 ${!isOpen ? 'opacity-0 pointer-events-none' : 'opacity-100'}`}>
-          <div className="flex items-start gap-4 relative z-10">
-            <div className="flex flex-col items-center">
-              <button 
-                onClick={(e) => { e.stopPropagation(); onOpenDesignSystem(); }}
-                className="w-7 h-7 mt-0.5 rounded-full border-2 flex items-center justify-center flex-shrink-0 transition-all duration-300 border-white/20 bg-[#060F1A] text-white/30 hover:border-fhgr-petrol/50 hover:bg-fhgr-petrol/10 hover:text-fhgr-petrol-light"
-              >
-                <div className="transform scale-[0.65]">
-                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M12 20h9"/><path d="M16.5 3.5a2.12 2.12 0 0 1 3 3L7 19l-4 1 1-4Z"/></svg>
-                </div>
-              </button>
-            </div>
-            
-            <div className="flex-1 pt-1">
-              <button 
-                onClick={(e) => { e.stopPropagation(); onOpenDesignSystem(); }}
-                className="w-full text-left rounded-lg block text-white/60 hover:text-white transition-all duration-200"
-              >
-                <span className="block text-[15px] font-semibold transition-colors">Templates & Styles</span>
-              </button>
-            </div>
-          </div>
         </div>
-      </div>
-    </motion.div>
+      </motion.div>
     </>
   );
 }
