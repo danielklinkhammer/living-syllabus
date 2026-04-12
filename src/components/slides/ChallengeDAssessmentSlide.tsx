@@ -1,30 +1,27 @@
 import { motion } from 'framer-motion'
 import Card from '../ui/Card'
-import { Target, AlertTriangle, Blocks } from 'lucide-react'
+import { Target, Search, Blocks } from 'lucide-react'
 
 export default function ChallengeDAssessmentSlide() {
   const criteria = [
     {
-      title: "Flow Logic & Edge Cases",
-      desc: "Ist der User Flow in sich logisch aufgebaut? Wurden Sackgassen bedacht (Unhappy Paths) und fängt das Flowchart Fehlermeldungen sauber mit Rückwegen ab?",
-      weight: "40%",
-      icon: <AlertTriangle className="w-5 h-5 text-red-400" />,
-      color: "from-red-500/10 to-transparent",
-      borderColor: "border-red-500/30"
-    },
-    {
-      title: "Pattern Nutzung",
-      desc: "Erfindet ihr das Rad neu oder habt ihr etablierte App-Mechaniken via Mobbin adaptiert? Ein guter Flow greift auf bekannte UX-Heuristiken zurück (z.B. bei Checkout-Wizards).",
-      weight: "30%",
-      icon: <Blocks className="w-5 h-5 text-indigo-400" />,
+      title: "Flow Logic & Architektur",
+      desc: "Ist der Navigationsfluss schlüssig visualisiert? Uns geht es darum zu sehen, dass ihr nicht nur den idealen Weg visualisiert, sondern euch auch über Fehler- oder Abbruch-Routen (Unhappy Paths) Gedanken macht.",
+      icon: <Blocks className="w-6 h-6 text-indigo-400" />,
       color: "from-indigo-500/10 to-transparent",
-      borderColor: "border-indigo-500/20"
+      borderColor: "border-indigo-500/30"
     },
     {
-      title: "Relume Translation",
-      desc: "Wie gut wurde der theoretische Flowchart in die Relume-Sitemap (und Wireframes) übersetzt? Wurde das KI-Ergebnis nachgebessert oder nur der erste Wurf blind abgenommen?",
-      weight: "30%",
-      icon: <Target className="w-5 h-5 text-fhgr-accent" />,
+      title: "Pattern Exploration",
+      desc: "Erfindet ihr das Rad neu oder schaut ihr, wie etablierte Apps aussehen? Nutzt Ressourcen wie Mobbin, um herauszufinden, welche UI-Muster (z.B. bei Checkouts oder Dashboards) gut funktionieren.",
+      icon: <Search className="w-6 h-6 text-purple-400" />,
+      color: "from-purple-500/10 to-transparent",
+      borderColor: "border-purple-500/30"
+    },
+    {
+      title: "Tool-Nutzung",
+      desc: "Wie souverän wurden die Werkzeuge (Figma, Relume, Whimsical etc.) kombiniert? Es geht weniger um Perfektion, sondern um die Erfahrung, aus einem abstrakten Graphen ein erstes Gerüst zu generieren.",
+      icon: <Target className="w-6 h-6 text-fhgr-accent" />,
       color: "from-fhgr-petrol/10 to-transparent",
       borderColor: "border-fhgr-petrol/30"
     }
@@ -32,33 +29,27 @@ export default function ChallengeDAssessmentSlide() {
 
   return (
     <div className="w-full h-full flex flex-col justify-center bg-[#060F1A] text-white px-6 lg:px-16 overflow-y-auto lg:overflow-hidden relative">
-      <div className="max-w-4xl w-full mx-auto relative z-10">
+      <div className="max-w-5xl w-full mx-auto relative z-10 text-center">
         
-        <motion.div initial={{opacity:0, y:20}} animate={{opacity:1, y:0}} className="text-center mb-12">
-          <div className="text-fhgr-petrol-light text-xs font-mono uppercase tracking-widest mb-3">Challenge D · Part 5</div>
-          <h2 className="text-4xl lg:text-5xl font-bold mb-4 tracking-tight">Bewertungskriterien</h2>
-          <p className="text-lg text-white/50 max-w-2xl mx-auto">
-            Wir bewerten hier keine hochglänzenden UI-Farben, sondern <strong>pure Informationsarchitektur</strong>. Eine hübsche App, in der der User in Dead-Ends rennt, fällt an diesem Punkt der Konzeption durch.
+        <motion.div initial={{opacity:0, y:20}} animate={{opacity:1, y:0}} className="mb-12">
+          <div className="text-fhgr-petrol-light text-xs font-mono uppercase tracking-widest mb-3">Challenge D · Part 4</div>
+          <h2 className="text-4xl lg:text-5xl font-bold mb-4 tracking-tight">Evaluationskriterien</h2>
+          <p className="text-lg text-white/50 max-w-2xl mx-auto leading-relaxed">
+            Es geht bei dieser Challenge nicht um ein perfekt ausgearbeitetes High-End Ergebnis, sondern um euer <strong>Architektonisches Denken</strong> und die Experimentierfreude mit der AI-Toolchain.
           </p>
         </motion.div>
 
-        <div className="space-y-4">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 text-left">
           {criteria.map((item, idx) => (
-            <motion.div key={idx} initial={{opacity:0, x:-20}} animate={{opacity:1, x:0}} transition={{delay: 0.1 * idx}}>
-              <Card variant="glass" className={`!p-6 flex flex-col md:flex-row md:items-center gap-6 border ${item.borderColor} bg-gradient-to-r ${item.color}`}>
-                <div className="p-4 bg-black/40 rounded-xl border border-white/5 flex-shrink-0">
+            <motion.div key={idx} initial={{opacity:0, y:20}} animate={{opacity:1, y:0}} transition={{delay: 0.1 * idx}} className="h-full">
+              <Card variant="glass" className={`!p-8 flex flex-col h-full border ${item.borderColor} bg-gradient-to-br ${item.color} group hover:scale-[1.02] transition-all`}>
+                <div className="p-4 bg-white/5 border border-white/10 rounded-2xl w-fit mb-6 group-hover:bg-white/10 transition-colors">
                   {item.icon}
                 </div>
-                <div className="flex-1">
-                  <h3 className="text-xl font-bold text-white mb-2">{item.title}</h3>
-                  <p className="text-sm text-white/60 leading-relaxed max-w-xl">
-                    {item.desc}
-                  </p>
-                </div>
-                <div className="md:text-right pt-4 md:pt-0 border-t md:border-t-0 border-white/10 md:border-l md:pl-6">
-                  <div className="text-[10px] uppercase font-mono tracking-widest text-white/40 mb-1">Gewichtung</div>
-                  <div className="text-3xl font-bold text-white">{item.weight}</div>
-                </div>
+                <h3 className="text-xl font-bold text-white mb-3">{item.title}</h3>
+                <p className="text-sm text-white/60 leading-relaxed font-medium">
+                  {item.desc}
+                </p>
               </Card>
             </motion.div>
           ))}
