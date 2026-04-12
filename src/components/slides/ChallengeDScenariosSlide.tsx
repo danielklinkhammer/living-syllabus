@@ -92,7 +92,7 @@ export default function ChallengeDScenariosSlide() {
         
         {/* Header Fixed */}
         <motion.div initial={{opacity:0, y:20}} animate={{opacity:1, y:0}} className="mb-8 flex-shrink-0">
-          <div className="text-fhgr-petrol-light text-xs font-mono uppercase tracking-widest mb-3">Challenge D.1 · Phase 1</div>
+          <div className="text-fhgr-petrol-light text-xs font-mono uppercase tracking-widest mb-3">Challenge D · Phase 1</div>
           <h2 className="text-4xl font-bold tracking-tight mb-2">Wähle dein Use-Case Szenario</h2>
           <p className="text-white/50 text-lg max-w-3xl">
             Für die Konstruktion der Informationsarchitektur und der App-Logik benötigt ihr ein Fundament. <br/>
