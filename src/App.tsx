@@ -47,8 +47,29 @@ export default function App() {
   const activeGroup = allGroups.find(g => g.id === activeGroupId) || allGroups[0]
   const currentSlides = activeGroup.slides
 
-  const next = () => setCurrentIndex(c => Math.min(c + 1, currentSlides.length - 1))
-  const prev = () => setCurrentIndex(c => Math.max(c - 1, 0))
+  const next = () => {
+    if (currentIndex + 1 < currentSlides.length) {
+      setCurrentIndex(currentIndex + 1)
+    } else {
+      const groupIdx = allGroups.findIndex(g => g.id === activeGroupId)
+      if (groupIdx >= 0 && groupIdx + 1 < allGroups.length) {
+        setActiveGroupId(allGroups[groupIdx + 1].id)
+        setCurrentIndex(0)
+      }
+    }
+  }
+
+  const prev = () => {
+    if (currentIndex > 0) {
+      setCurrentIndex(currentIndex - 1)
+    } else {
+      const groupIdx = allGroups.findIndex(g => g.id === activeGroupId)
+      if (groupIdx > 0) {
+        setActiveGroupId(allGroups[groupIdx - 1].id)
+        setCurrentIndex(allGroups[groupIdx - 1].slides.length - 1)
+      }
+    }
+  }
   const goTo = (index: number) => setCurrentIndex(index)
 
   const handleSelectGroup = (groupId: string) => {
