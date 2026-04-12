@@ -81,41 +81,43 @@ export default function SlideContainer({ children, current, onNext, onPrev, onGo
         </motion.div>
       </AnimatePresence>
 
-      {/* Bottom Control Bar */}
+      {/* Bottom Control Bar Hover Area */}
       {total > 1 && (
-        <div className="absolute bottom-8 left-1/2 -translate-x-1/2 z-50 flex items-center gap-4 bg-fhgr-dark/80 backdrop-blur-xl px-4 py-2 rounded-2xl border border-white/10 shadow-2xl">
-          <button
-            onClick={onPrev}
-            disabled={current === 0}
-            className={`w-10 h-10 flex items-center justify-center rounded-xl transition-all ${current === 0 ? 'text-white/10' : 'text-white/50 hover:bg-white/10 hover:text-white'}`}
-            aria-label="Previous slide"
-          >
-            ←
-          </button>
-          
-          <div className="flex items-center gap-3 px-2">
-            {Array.from({ length: total }).map((_, i) => (
-              <button
-                key={i}
-                onClick={() => onGoTo ? onGoTo(i) : i < current ? onPrev() : i > current ? onNext() : null}
-                className={`transition-all duration-300 rounded-full ${
-                  i === current
-                    ? 'w-6 h-2 bg-fhgr-petrol-light'
-                    : 'w-2 h-2 bg-white/20 hover:bg-white/40'
-                }`}
-                aria-label={`Go to slide ${i + 1}`}
-              />
-            ))}
-          </div>
+        <div className="absolute bottom-4 left-1/2 -translate-x-1/2 z-50 w-96 h-24 flex items-end justify-center group/nav pb-4">
+          <div className="opacity-0 group-hover/nav:opacity-100 transition-opacity duration-500 flex items-center gap-4 bg-fhgr-dark/80 backdrop-blur-xl px-4 py-2 rounded-2xl border border-white/10 shadow-2xl">
+            <button
+              onClick={onPrev}
+              disabled={current === 0}
+              className={`w-10 h-10 flex items-center justify-center rounded-xl transition-all ${current === 0 ? 'text-white/10' : 'text-white/50 hover:bg-white/10 hover:text-white'}`}
+              aria-label="Previous slide"
+            >
+              ←
+            </button>
+            
+            <div className="flex items-center gap-3 px-2">
+              {Array.from({ length: total }).map((_, i) => (
+                <button
+                  key={i}
+                  onClick={() => onGoTo ? onGoTo(i) : i < current ? onPrev() : i > current ? onNext() : null}
+                  className={`transition-all duration-300 rounded-full ${
+                    i === current
+                      ? 'w-6 h-2 bg-fhgr-petrol-light'
+                      : 'w-2 h-2 bg-white/20 hover:bg-white/40'
+                  }`}
+                  aria-label={`Go to slide ${i + 1}`}
+                />
+              ))}
+            </div>
 
-          <button
-            onClick={onNext}
-            disabled={current === total - 1}
-            className={`w-10 h-10 flex items-center justify-center rounded-xl transition-all ${current === total - 1 ? 'text-white/10' : 'text-white/50 hover:bg-white/10 hover:text-white'}`}
-            aria-label="Next slide"
-          >
-            →
-          </button>
+            <button
+              onClick={onNext}
+              disabled={current === total - 1}
+              className={`w-10 h-10 flex items-center justify-center rounded-xl transition-all ${current === total - 1 ? 'text-white/10' : 'text-white/50 hover:bg-white/10 hover:text-white'}`}
+              aria-label="Next slide"
+            >
+              →
+            </button>
+          </div>
         </div>
       )}
     </div>

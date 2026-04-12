@@ -1,3 +1,4 @@
+import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import type { DaySchedule } from '../config/syllabus.config';
 
@@ -15,6 +16,12 @@ interface SidebarProps {
 }
 
 export default function Sidebar({ isOpen, setIsOpen, isMobile, schedule, activeGroupId, currentIndex, onSelectGroup, onSelectSlide, onOpenDesignSystem, onOpenCourseOverview }: SidebarProps) {
+  const [expandedGroupId, setExpandedGroupId] = useState<string | null>(activeGroupId);
+
+  // Sync expanded state if the active group is changed externally
+  useEffect(() => {
+    setExpandedGroupId(activeGroupId);
+  }, [activeGroupId]);
   // Flatten schedule into a single array for the continuous path
   const allGroups = schedule.flatMap(d => d.groups);
   const activeIndex = allGroups.findIndex(g => g.id === activeGroupId);
@@ -95,7 +102,12 @@ export default function Sidebar({ isOpen, setIsOpen, isMobile, schedule, activeG
                       <button 
                         onClick={(e) => {
                           e.stopPropagation();
-                          onSelectGroup(group.id);
+                          if (expandedGroupId === group.id) {
+                            setExpandedGroupId(null);
+                          } else {
+                            setExpandedGroupId(group.id);
+                            onSelectGroup(group.id);
+                          }
                         }}
                         className={`w-7 h-7 mt-0.5 rounded-full border-2 flex items-center justify-center flex-shrink-0 transition-all duration-300
                           ${isActiveGroup ? 'border-fhgr-petrol bg-fhgr-petrol-dark text-white ring-4 ring-fhgr-petrol/20' : 
@@ -108,7 +120,7 @@ export default function Sidebar({ isOpen, setIsOpen, isMobile, schedule, activeG
                       </button>
 
                       <AnimatePresence>
-                        {isActiveGroup && group.slides.length > 1 && (
+                        {expandedGroupId === group.id && group.slides.length > 1 && (
                           <motion.div
                             initial={{ height: 0, opacity: 0 }}
                             animate={{ height: 'auto', opacity: 1 }}
@@ -132,7 +144,12 @@ export default function Sidebar({ isOpen, setIsOpen, isMobile, schedule, activeG
                       <button
                         onClick={(e) => {
                           e.stopPropagation();
-                          onSelectGroup(group.id);
+                          if (expandedGroupId === group.id) {
+                            setExpandedGroupId(null);
+                          } else {
+                            setExpandedGroupId(group.id);
+                            onSelectGroup(group.id);
+                          }
                         }}
                         className={`w-full text-left rounded-lg transition-all duration-200 block
                           ${isActiveGroup ? 'text-white' : 'text-white/60 hover:text-white'}
@@ -142,7 +159,7 @@ export default function Sidebar({ isOpen, setIsOpen, isMobile, schedule, activeG
                       </button>
                       
                       <AnimatePresence>
-                        {isActiveGroup && group.slides.length > 1 && (
+                        {expandedGroupId === group.id && group.slides.length > 1 && (
                           <motion.div
                             initial={{ height: 0, opacity: 0 }}
                             animate={{ height: 'auto', opacity: 1 }}
