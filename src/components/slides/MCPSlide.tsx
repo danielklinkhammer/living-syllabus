@@ -17,20 +17,20 @@ const GithubIcon = ({ className }: { className?: string }) => (
 export default function MCPSlide() {
   const features = [
     { 
-      title: "1. Was ist MCP?", 
-      desc: "Das Model Context Protocol ist ein Open-Source Standard (eingeführt von Anthropic). Es ist wie ein 'USB-C Port' für KI-Agenten, um standardisiert auf Werkzeuge, APIs und lokale Daten zuzugreifen." 
+      title: "1. Server-Konfiguration (Desktop & Remote)", 
+      desc: "Um den Figma MCP Server zu nutzen, wird er direkt im Agenten (z.B. Cursor, Claude Desktop) konfiguriert. Man verbindet sich Remote (via mcp.figma.com) oder lokal, um der KI vollen Lese- und Schreibzugriff zu erteilen." 
     },
     { 
-      title: "2. Das Isolations-Problem", 
-      desc: "Bisher waren LLMs (wie ChatGPT) blind für Workspace-Kontext. Um ein Design nachzubauen, musste man Screenshots machen oder manuell CSS-Werte abtippen." 
+      title: "2. The Two-Way Sync: Code ➔ Canvas", 
+      desc: "Das absolute Highlight: Agenten können nicht nur Code schreiben, sondern Live-UI (HTML/CSS) zurück in Figma als editierbare Vektor-Frames ('Write to Canvas') generieren! Code-Änderungen fließen direkt ins Design zurück." 
     },
     { 
-      title: "3. Figma MCP (Der Gamechanger)", 
-      desc: "Figma bietet einen eigenen MCP-Server. Eine KI-IDE (z.B. Cursor oder Windsurf) kann sich direkt mit der Figma-API verbinden und Ebenen, Tokens und Auto-Layouts als Raw-Data auslesen." 
+      title: "3. Figma ➔ Code (Extraction)", 
+      desc: "Der umgekehrte Weg: Mit '@figma' liest die KI komplette Layouts, Tokens und FigJam-Flows aus. Das stundenlange manuelle Abtippen von CSS-Werten und Auto-Layout Abständen entfällt komplett." 
     },
     { 
-      title: "4. Workflow in Aktion", 
-      desc: "Ein Entwickler öffnet Cursor, tippt @figma und den Link zum Frame. Die KI liest die Design-Intent aus und generiert korrekten React-Code mit dem im Projekt genutzten Designsystem." 
+      title: "4. Code Connect Consistency", 
+      desc: "Der Server greift auf 'Code Connect' zu. Generierter Code halluziniert keine wilden Klassen, sondern nutzt exakt die React-Komponenten, die in der eigenen Codebase hinterlegt sind." 
     }
   ]
 
@@ -44,9 +44,9 @@ export default function MCPSlide() {
             <div className="text-fhgr-petrol-light text-xs font-mono uppercase tracking-widest mb-3 flex items-center gap-2">
               <Server className="w-4 h-4" /> Tool Orchestration
             </div>
-            <h2 className="text-4xl lg:text-5xl font-bold mb-6 mt-2 tracking-tight">Das Model Context Protocol</h2>
+            <h2 className="text-4xl lg:text-5xl font-bold mb-6 mt-2 tracking-tight">Die Figma MCP Bridge</h2>
             <p className="text-lg text-white/60 leading-relaxed mb-8">
-              Wir befinden uns gerade mitten in der Entwicklung des "Next-Gen Handoffs". KIs bekommen durch MCP standardisierte Zugriffe auf externe Programme und sprengen so ihre Chatbox-Grenzen.
+              MCP bricht die Mauern zwischen Design (Vektor) und Code (Production) ein. Es ermöglicht endlich eine <strong>bidirektionale</strong> Synchronisation zwischen Figma und deiner IDE.
             </p>
           </motion.div>
 
