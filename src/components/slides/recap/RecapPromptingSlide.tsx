@@ -1,89 +1,124 @@
 import { motion } from 'framer-motion'
-import Card from '../../ui/Card'
-import HeroGraphic from '../../ui/HeroGraphic'
+import SlideLayout from '../../layout/SlideLayout'
+import { Search, Map, Lightbulb, Package, BarChart3, Fingerprint } from 'lucide-react'
 
 export default function RecapPromptingSlide() {
+  const lifecycle = [
+    {
+      phase: "1. Discover", name: "Beobachten", icon: <Search className="w-5 h-5" />, color: "text-blue-400 border-blue-500/30 bg-blue-500/10",
+      content: [
+        { t: "Knowledge-Base-Analyse", d: "Gemini 1.5 Pro oder NotebookLM synthetisieren riesige Mengen an User-Interviews." },
+        { t: "Automatisierte Synthese", d: "KI erkennt Muster, die menschliche Forscher übersehen würden." }
+      ]
+    },
+    {
+      phase: "2. Define", name: "Spezifizieren", icon: <Map className="w-5 h-5" />, color: "text-purple-400 border-purple-500/30 bg-purple-500/10",
+      content: [
+        { t: "Reasoning-Strategie", d: "Einsatz von o1 für tiefgründige Personas & logische Problem-Statements." },
+        { t: "Insight-to-Requirement", d: "Auto-Generierung von Backlogs aus den Research-Transkripten." }
+      ]
+    },
+    {
+      phase: "3. Develop", name: "Ideen entwickeln", icon: <Lightbulb className="w-5 h-5" />, color: "text-green-400 border-green-500/30 bg-green-500/10",
+      content: [
+        { t: "Kreative Heuristik", d: "KI als Sparringspartner für Ideengenerierung aus multimodalen Inputs." },
+        { t: "Rapid Moodboarding", d: "Schnelle visuelle Exploration via Text-to-Image (Nanobanana/Midjourney)." }
+      ]
+    },
+    {
+      phase: "4. Deliver", name: "Prototyping", icon: <Package className="w-5 h-5" />, color: "text-orange-400 border-orange-500/30 bg-orange-500/10",
+      content: [
+        { t: "Generative UI", d: "v0.dev oder Lovable erstellen interaktive High-Fidelity UI aus Low-Fi Skizzen." },
+        { t: "Layout Automatisierung", d: "Auto-Befüllung mit Real-Content Mockup-Daten statt Lorem Ipsum." }
+      ]
+    },
+    {
+      phase: "5. Evaluate", name: "Testen", icon: <BarChart3 className="w-5 h-5" />, color: "text-red-400 border-red-500/30 bg-red-500/10",
+      content: [
+        { t: "Automated Usability", d: "KI-Agenten prüfen UI basierend auf Heuristiken (z.B. nach Nielsen)." },
+        { t: "Sentiment & Heatmaps", d: "Vorhersage von visueller Hierarchie noch bevor ein Mensch testet." }
+      ]
+    }
+  ]
+
   return (
-    <div className="w-full h-full flex flex-col justify-center bg-[#060F1A] text-white px-16 relative overflow-hidden">
-      
-      {/* Glow */}
-      <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-fhgr-petrol/5 rounded-full blur-[120px] pointer-events-none" />
-
-      <div className="max-w-6xl w-full grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center relative z-10 py-12">
+    <SlideLayout>
+      <div className="w-full flex flex-col h-full justify-center">
         
-        {/* Left Side: Text */}
-        <div className="col-span-1 lg:col-span-5">
-          <motion.div initial={{ opacity: 0, x: -20 }} animate={{ opacity: 1, x: 0 }}>
-            <div className="text-fhgr-petrol-light text-xs font-mono uppercase tracking-widest mb-3">Sitzung 2 · Recap</div>
-            <h2 className="text-4xl font-bold mb-6 mt-2">Visuelle Intelligenz & Prompting</h2>
-            <p className="text-lg text-white/50 leading-relaxed mb-8">
-              Von der bloßen Texteingabe zur systematischen Steuerung von Modellen. Wie wir durch strukturierte Workflows und Application Definition Files konstante Ergebnisse erzielen.
-            </p>
-          </motion.div>
+        <motion.div initial={{opacity:0, y:20}} animate={{opacity:1, y:0}} className="mb-8 max-w-5xl">
+          <div className="text-fhgr-petrol-light text-xs font-mono uppercase tracking-widest mb-3">UX Lifecycle</div>
+          <h2 className="text-4xl lg:text-5xl font-bold mb-4 tracking-tight">Orchestrierung statt manueller Arbeit</h2>
+          <p className="text-lg text-white/50 leading-relaxed">
+            Der UX-Lifecycle wandelt sich drastisch. Er entwickelt sich von einer Kette manueller Schritte hin zu einem asynchronen Netz aus KI-unterstützten Micro-Services. Der Designer wird zum Curator.
+          </p>
+        </motion.div>
 
-          <div className="space-y-4 pt-4">
-            <Card delay={0.1} className="!p-6">
-              <div className="text-fhgr-beige font-semibold mb-2">Application Definition Files</div>
-              <p className="text-sm text-white/40 mb-3">Narrative Doku (.md) vs Technisch skalierbar (.json). Die `.cursorrules` dienen als permanenter Kontext für Copilot Agenten.</p>
-              <div className="text-xs font-mono text-fhgr-petrol bg-black/50 p-3 rounded border border-white/5 whitespace-pre">
-                {`"rules": [
-  "Use Tailwind CSS for styling",
-  "Favor functional components",
-  "Design system: FHGR tokens"
-]`}
+        <div className="flex flex-col gap-4">
+          
+          {/* Top Row: Discover, Define, Develop */}
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+            {lifecycle.slice(0, 3).map((step) => (
+              <div 
+                key={step.phase}
+                className="bg-[#0b111a] border border-white/10 rounded-2xl flex flex-col"
+              >
+                <div className={`p-3 border-b border-white/5 bg-gradient-to-br from-white/5 to-transparent flex items-center gap-3`}>
+                  <div className={`w-8 h-8 rounded-lg flex items-center justify-center shrink-0 border ${step.color}`}>
+                    {step.icon}
+                  </div>
+                  <div className="flex items-center">
+                    <h3 className="font-bold text-white text-[13px] tracking-wide leading-tight">{step.name}</h3>
+                  </div>
+                </div>
+                
+                <div className="p-3 flex flex-col gap-2">
+                  {step.content.map((item, j) => (
+                    <div key={j} className="bg-black/40 p-2.5 rounded-lg border border-white/5 relative flex-1">
+                       <h4 className="text-[11px] font-bold text-white/80 mb-0.5">{item.t}</h4>
+                       <p className="text-[10px] text-white/50 leading-relaxed">{item.d}</p>
+                    </div>
+                  ))}
+                </div>
               </div>
-            </Card>
-            
-            <Card delay={0.2} className="!p-6">
-              <div className="text-fhgr-beige font-semibold mb-2">Model Bias im Visuellen</div>
-              <p className="text-sm text-white/40">
-                Gemini tendiert stark zu Material Design. GPT-4o generiert den generischen "Modern Web" Stil (Soft Shadows, abgerundet). Wer out-of-the-box nutzt, sieht aus wie alle anderen!
-              </p>
-            </Card>
+            ))}
           </div>
+
+          {/* Bottom Row: Deliver, Evaluate */}
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4 w-full md:w-[80%] mx-auto relative">
+            {lifecycle.slice(3, 5).map((step) => (
+              <div 
+                key={step.phase}
+                className="bg-[#0b111a] border border-white/10 rounded-2xl flex flex-col"
+              >
+                <div className={`p-3 border-b border-white/5 bg-gradient-to-br from-white/5 to-transparent flex items-center gap-3`}>
+                  <div className={`w-8 h-8 rounded-lg flex items-center justify-center shrink-0 border ${step.color}`}>
+                    {step.icon}
+                  </div>
+                  <div className="flex items-center">
+                    <h3 className="font-bold text-white text-[13px] tracking-wide leading-tight">{step.name}</h3>
+                  </div>
+                </div>
+                
+                <div className="p-3 flex flex-col gap-2">
+                  {step.content.map((item, j) => (
+                    <div key={j} className="bg-black/40 p-2.5 rounded-lg border border-white/5 relative flex-1">
+                       <h4 className="text-[11px] font-bold text-white/80 mb-0.5">{item.t}</h4>
+                       <p className="text-[10px] text-white/50 leading-relaxed">{item.d}</p>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            ))}
+          </div>
+
         </div>
 
-        {/* Right Side: Visual Workflow */}
-        <div className="col-span-1 lg:col-span-7 mt-8 lg:mt-0">
-          <HeroGraphic delay={0.2} className="!p-8 h-full justify-start">
-            <div className="text-center mb-8 w-full">
-              <div className="text-xl font-bold text-white">Der "Nanobanana" Workflow</div>
-              <p className="text-sm text-white/40 mt-1">Image Prompting mit Reasoning Modellen</p>
-            </div>
-
-            <div className="flex flex-col gap-4 relative w-full">
-              {/* Vertical line connecting steps */}
-              <div className="absolute left-6 top-6 bottom-6 w-0.5 bg-fhgr-petrol/20" />
-
-              <div className="flex items-center gap-6 relative z-10 w-full">
-                <div className="w-12 h-12 rounded-full bg-fhgr-petrol text-white flex items-center justify-center font-bold shadow-[0_0_15px_rgba(131,197,190,0.3)] shrink-0">1</div>
-                <div className="flex-1 p-4 rounded-xl bg-black/40 border border-white/5">
-                  <div className="font-semibold text-fhgr-petrol-light mb-1">Reasoning (DeepSeek / o1)</div>
-                  <div className="text-sm text-white/50">"Ich brauche ein Layout für X. Mache mir einen detaillierten Image-Prompt für die Struktur."</div>
-                </div>
-              </div>
-
-              <div className="flex items-center gap-6 relative z-10 w-full">
-                <div className="w-12 h-12 rounded-full bg-fhgr-petrol text-white flex items-center justify-center font-bold shadow-[0_0_15px_rgba(131,197,190,0.3)] shrink-0">2</div>
-                <div className="flex-1 p-4 rounded-xl bg-black/40 border border-white/5">
-                  <div className="font-semibold text-fhgr-petrol-light mb-1">Detailed Prompt</div>
-                  <div className="text-sm text-white/50">Das Modell übersetzt die UX-Logik in hochpräzise visuelle Trigger-Wörter.</div>
-                </div>
-              </div>
-
-              <div className="flex items-center gap-6 relative z-10 w-full">
-                <div className="w-12 h-12 rounded-full bg-fhgr-petrol text-white flex items-center justify-center font-bold shadow-[0_0_15px_rgba(131,197,190,0.3)] shrink-0">3</div>
-                <div className="flex-1 p-4 rounded-xl bg-black/40 border border-white/5">
-                  <div className="font-semibold text-fhgr-petrol-light mb-1">Execution (Imagen 3 / Midjourney)</div>
-                  <div className="text-sm text-white/50">Pixelerzeugung als visuelles MVP, *bevor* Code geschrieben wird.</div>
-                </div>
-              </div>
-            </div>
-            
-          </HeroGraphic>
-        </div>
+        <motion.div initial={{opacity:0}} animate={{opacity:1}} transition={{delay:0.8}} className="mt-4 flex items-center gap-3 justify-center text-sm text-fhgr-beige font-medium">
+          <Fingerprint className="w-5 h-5 text-fhgr-petrol-light" />
+          <p>Deine neue Rolle: <span className="text-white italic">"Manager der Agenten"</span> statt reiner Ausführer.</p>
+        </motion.div>
 
       </div>
-    </div>
+    </SlideLayout>
   )
 }

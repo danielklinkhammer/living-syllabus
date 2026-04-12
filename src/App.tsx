@@ -3,15 +3,46 @@ import { motion } from 'framer-motion'
 import SlideContainer from './components/SlideContainer'
 import Sidebar from './components/Sidebar'
 import DesignSystemViewer from './components/DesignSystemViewer'
+import CourseOverviewViewer from './components/CourseOverviewViewer'
 
 import { schedule, allGroups } from './config/syllabus.config'
 
+function resolveInitialSlide() {
+  const searchParams = new URLSearchParams(window.location.search)
+  const requestedSlideId = searchParams.get('slide')
+
+  if (!requestedSlideId) {
+    return {
+      activeGroupId: allGroups[0].id,
+      currentIndex: 0,
+    }
+  }
+
+  for (const group of allGroups) {
+    const slideIndex = group.slides.findIndex((slide) => slide.id === requestedSlideId)
+
+    if (slideIndex >= 0) {
+      return {
+        activeGroupId: group.id,
+        currentIndex: slideIndex,
+      }
+    }
+  }
+
+  return {
+    activeGroupId: allGroups[0].id,
+    currentIndex: 0,
+  }
+}
+
 export default function App() {
-  const [activeGroupId, setActiveGroupId] = useState(allGroups[0].id)
-  const [currentIndex, setCurrentIndex] = useState(0)
+  const initialSlide = resolveInitialSlide()
+  const [activeGroupId, setActiveGroupId] = useState(initialSlide.activeGroupId)
+  const [currentIndex, setCurrentIndex] = useState(initialSlide.currentIndex)
   const [isSidebarOpen, setIsSidebarOpen] = useState(() => window.innerWidth >= 1024)
   const [isMobile, setIsMobile] = useState(() => window.innerWidth < 1024)
   const [isDesignSystemOpen, setIsDesignSystemOpen] = useState(false)
+  const [isCourseOverviewOpen, setIsCourseOverviewOpen] = useState(false)
 
   const activeGroup = allGroups.find(g => g.id === activeGroupId) || allGroups[0]
   const currentSlides = activeGroup.slides
@@ -22,12 +53,14 @@ export default function App() {
 
   const handleSelectGroup = (groupId: string) => {
     setIsDesignSystemOpen(false)
+    setIsCourseOverviewOpen(false)
     setActiveGroupId(groupId)
     setCurrentIndex(0)
   }
 
   const handleSelectSlide = (groupId: string, index: number) => {
     setIsDesignSystemOpen(false)
+    setIsCourseOverviewOpen(false)
     setActiveGroupId(groupId)
     setCurrentIndex(index)
     if (window.innerWidth < 1024) {
@@ -62,7 +95,8 @@ export default function App() {
           currentIndex={currentIndex}
           onSelectGroup={handleSelectGroup}
           onSelectSlide={handleSelectSlide}
-          onOpenDesignSystem={() => setIsDesignSystemOpen(true)}
+          onOpenDesignSystem={() => { setIsCourseOverviewOpen(false); setIsDesignSystemOpen(true); }}
+          onOpenCourseOverview={() => { setIsDesignSystemOpen(false); setIsCourseOverviewOpen(true); }}
         />
         
         <div className="relative flex-1 flex flex-col h-full overflow-hidden">
@@ -83,11 +117,13 @@ export default function App() {
             <span className="hidden sm:inline">{activeGroup.title}</span>
             <span className="hidden sm:inline opacity-30">/</span>
             <span className="text-white drop-shadow-md truncate max-w-[200px] sm:max-w-none">
-              {isDesignSystemOpen ? 'Design System' : currentSlides[currentIndex].title}
+              {isCourseOverviewOpen ? 'Modulübersicht' : isDesignSystemOpen ? 'Design System' : currentSlides[currentIndex].title}
             </span>
           </motion.button>
 
-          {isDesignSystemOpen ? (
+          {isCourseOverviewOpen ? (
+            <CourseOverviewViewer />
+          ) : isDesignSystemOpen ? (
             <DesignSystemViewer />
           ) : (
             <SlideContainer 

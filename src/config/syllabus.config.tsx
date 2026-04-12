@@ -6,11 +6,17 @@ import RecapWelcomeSlide from '../components/slides/recap/RecapWelcomeSlide'
 import RecapFoundationSlide from '../components/slides/recap/RecapFoundationSlide'
 import RecapEcosystemSlide from '../components/slides/recap/RecapEcosystemSlide'
 import RecapPromptingSlide from '../components/slides/recap/RecapPromptingSlide'
+import RecapAppliedAISlide from '../components/slides/recap/RecapAppliedAISlide'
+import RecapImageVsCodeSlide from '../components/slides/recap/RecapImageVsCodeSlide'
+import RecapChallengeASlide from '../components/slides/recap/RecapChallengeASlide'
 import RecapChallengeBSlide from '../components/slides/recap/RecapChallengeBSlide'
+import RecapReflectionSlide from '../components/slides/recap/RecapReflectionSlide'
 import DesignSystemSlide from '../components/slides/DesignSystemSlide'
 import DesignSystemReferenceSlide from '../components/slides/DesignSystemReferenceSlide'
 import TokenDNASlide from '../components/slides/TokenDNASlide'
 import SystemW3CDTCGSlide from '../components/slides/SystemW3CDTCGSlide'
+import DataFormatJsonSlide from '../components/slides/DataFormatJsonSlide'
+import DataFormatMarkdownSlide from '../components/slides/DataFormatMarkdownSlide'
 import StitchDesignMdSlide from '../components/slides/StitchDesignMdSlide'
 import DesignMdFormatSlide from '../components/slides/DesignMdFormatSlide'
 import MCPSlide from '../components/slides/MCPSlide'
@@ -52,12 +58,20 @@ import StackShadcnSlide from '../components/slides/StackShadcnSlide'
 import StackTypeScriptSlide from '../components/slides/StackTypeScriptSlide'
 import StackFramerMotionSlide from '../components/slides/StackFramerMotionSlide'
 import StackLocalServerSlide from '../components/slides/StackLocalServerSlide'
+import {
+  exportRegistry,
+  getSlideExportMeta,
+  readyExportRegistry,
+  type SlideExportMeta,
+} from './exportRegistry'
 
-export interface SlideData {
+export interface BaseSlideData {
   id: string
   title: string
   component: React.ReactNode
 }
+
+export interface SlideData extends BaseSlideData, SlideExportMeta {}
 
 export interface CategoryGroup {
   id: string
@@ -71,18 +85,34 @@ export interface DaySchedule {
   groups: CategoryGroup[]
 }
 
-export const schedule: DaySchedule[] = [
+interface CategoryGroupInput {
+  id: string
+  title: string
+  icon: React.ReactNode
+  slides: BaseSlideData[]
+}
+
+interface DayScheduleInput {
+  day: string
+  groups: CategoryGroupInput[]
+}
+
+const rawSchedule: DayScheduleInput[] = [
   {
     day: "System zu Screen", // Changed from "Tag 1: System zu Screen"
     groups: [
       {
         id: "sys-intro", title: "Intro & Rückblick", icon: <BookOpen className="w-[18px] h-[18px]" />,
         slides: [
-          { id: 's03-open1', title: 'Willkommen in Block 2', component: <RecapWelcomeSlide /> },
-          { id: 's03-open2', title: 'Recap: KI-Fundamente', component: <RecapFoundationSlide /> },
-          { id: 's03-open3', title: 'Recap: Das Ökosystem 2026', component: <RecapEcosystemSlide /> },
-          { id: 's03-open4', title: 'Recap: Visuelle Intelligenz', component: <RecapPromptingSlide /> },
-          { id: 's03-open5', title: 'Recap: Challenge B (Landingpage)', component: <RecapChallengeBSlide /> }
+          { id: 's03-open1', title: 'Willkommen', component: <RecapWelcomeSlide /> },
+          { id: 's03-open2', title: 'Modelle', component: <RecapFoundationSlide /> },
+          { id: 's03-open3', title: 'LLMs & Agenten', component: <RecapEcosystemSlide /> },
+          { id: 's03-open4', title: 'AI-Native Apps', component: <RecapAppliedAISlide /> },
+          { id: 's03-open5', title: 'KI im UX Lifecycle', component: <RecapPromptingSlide /> },
+          { id: 's03-open6', title: 'Image vs. Code', component: <RecapImageVsCodeSlide /> },
+          { id: 's03-open7', title: 'Review Challenge A', component: <RecapChallengeASlide /> },
+          { id: 's03-open8', title: 'Review Challenge B', component: <RecapChallengeBSlide /> },
+          { id: 's03-open9', title: 'Reflexion', component: <RecapReflectionSlide /> }
         ]
       },
       {
@@ -92,6 +122,8 @@ export const schedule: DaySchedule[] = [
           { id: 's03-sys-ref', title: 'Referenzsysteme', component: <DesignSystemReferenceSlide /> },
           { id: 's03-token', title: 'Token-DNA', component: <TokenDNASlide /> },
           { id: 's03-dtcg', title: 'W3C & Token Standard', component: <SystemW3CDTCGSlide /> },
+          { id: 's03-data-json', title: 'Format: JSON', component: <DataFormatJsonSlide /> },
+          { id: 's03-data-md', title: 'Format: Markdown', component: <DataFormatMarkdownSlide /> },
           { id: 's03-design-md', title: 'Stitch & DESIGN.md', component: <StitchDesignMdSlide /> },
           { id: 's03-design-fmt', title: 'Format: DESIGN.md', component: <DesignMdFormatSlide /> },
           { id: 's03-mcp', title: 'MCP Handoff', component: <MCPSlide /> },
@@ -208,5 +240,17 @@ export const schedule: DaySchedule[] = [
   }
 ]
 
+export const schedule: DaySchedule[] = rawSchedule.map((day) => ({
+  ...day,
+  groups: day.groups.map((group) => ({
+    ...group,
+    slides: group.slides.map((slide) => ({
+      ...slide,
+      ...getSlideExportMeta(slide.id, slide.title),
+    })),
+  })),
+}))
+
 // flat map to find groups easily
 export const allGroups = schedule.flatMap(d => d.groups)
+export { exportRegistry, readyExportRegistry }

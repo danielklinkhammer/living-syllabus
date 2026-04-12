@@ -11,9 +11,10 @@ interface SidebarProps {
   onSelectGroup: (groupId: string) => void;
   onSelectSlide: (groupId: string, index: number) => void;
   onOpenDesignSystem: () => void;
+  onOpenCourseOverview: () => void;
 }
 
-export default function Sidebar({ isOpen, setIsOpen, isMobile, schedule, activeGroupId, currentIndex, onSelectGroup, onSelectSlide, onOpenDesignSystem }: SidebarProps) {
+export default function Sidebar({ isOpen, setIsOpen, isMobile, schedule, activeGroupId, currentIndex, onSelectGroup, onSelectSlide, onOpenDesignSystem, onOpenCourseOverview }: SidebarProps) {
   // Flatten schedule into a single array for the continuous path
   const allGroups = schedule.flatMap(d => d.groups);
   const activeIndex = allGroups.findIndex(g => g.id === activeGroupId);
@@ -44,18 +45,28 @@ export default function Sidebar({ isOpen, setIsOpen, isMobile, schedule, activeG
           }}
         >
         <div className="flex items-center gap-2 mb-10 pl-[8px] pr-6 relative w-full pt-1">
-          <div className="w-14 h-14 flex-shrink-0 flex items-center justify-center">
-            <img 
-               src="/dwfai_logo.png" 
-               alt="DWFAI Logo" 
-               className="w-full h-full object-cover scale-[1.25] mix-blend-screen drop-shadow-md brightness-90 contrast-200 opacity-90" 
-               style={{ WebkitMaskImage: 'radial-gradient(circle, black 60%, transparent 90%)', maskImage: 'radial-gradient(circle, black 60%, transparent 90%)' }}
-            />
-          </div>
-          <div className={`flex-1 transition-opacity duration-300 ${!isOpen ? 'opacity-0 pointer-events-none' : 'opacity-100'}`}>
-            <h2 className="text-fhgr-beige font-bold text-[15px] leading-tight tracking-wide pr-2">Designing for and with AI</h2>
-            <p className="text-fhgr-petrol-light text-[9px] uppercase font-mono tracking-widest mt-1">Block 2</p>
-          </div>
+          <button 
+            onClick={(e) => { e.stopPropagation(); onOpenCourseOverview(); }}
+            className={`flex items-center gap-2 flex-1 text-left ${isOpen ? 'hover:bg-white/5 rounded-xl p-1 -ml-1 transition-colors' : ''}`}
+          >
+            <div className="w-14 h-14 flex-shrink-0 flex items-center justify-center">
+              <img 
+                 src="/dwfai_logo.png" 
+                 alt="DWFAI Logo" 
+                 className="w-full h-full object-cover scale-[1.25] mix-blend-screen drop-shadow-md brightness-90 contrast-200 opacity-90" 
+                 style={{ WebkitMaskImage: 'radial-gradient(circle, black 60%, transparent 90%)', maskImage: 'radial-gradient(circle, black 60%, transparent 90%)' }}
+              />
+            </div>
+            <div className={`flex-1 transition-opacity duration-300 ${!isOpen ? 'opacity-0 pointer-events-none' : 'opacity-100'}`}>
+              <h2 className="text-fhgr-beige font-bold text-[15px] leading-tight tracking-wide pr-2">Designing for and with AI</h2>
+              <div className="mt-2 flex items-center">
+                <span className="bg-gradient-to-r from-fhgr-petrol/20 to-fhgr-petrol/5 border border-fhgr-petrol/30 text-fhgr-petrol-light font-mono text-[10px] font-bold uppercase tracking-widest px-2.5 py-0.5 rounded-sm shadow-[0_0_10px_rgba(131,197,190,0.15)]">
+                  Block 2
+                </span>
+              </div>
+            </div>
+          </button>
+          
           <div className={`transition-opacity duration-300 ${!isOpen ? 'opacity-0 pointer-events-none' : 'opacity-100'}`}>
             <button 
               onClick={(e) => { e.stopPropagation(); setIsOpen(false); }}

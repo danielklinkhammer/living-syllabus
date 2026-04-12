@@ -1,73 +1,30 @@
-# React + TypeScript + Vite
+# Living Syllabus
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Interaktive React/Vite-App fuer den Kurs `Designing with and for AI`.
 
-Currently, two official plugins are available:
+## Wichtige Befehle
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
-
-## React Compiler
-
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
-
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
-
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+```bash
+npm run dev
+npm run build
+npm run smoke
+npm run export:report
+npm run export:batch
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## Export-Workflow
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+- Die Source of Truth fuer Figma-Batches liegt in [`src/config/export-registry.json`](./src/config/export-registry.json).
+- Jede Slide bekommt beim Laden automatisch Export-Metadaten aus der Registry.
+- Fuer manuelle Exporte ist die normale sichtbare App mit dem Figma-Capture-Widget der Standardweg.
+- Nur Slides mit `exportStatus = "ready"` sollen aktiv nach Figma ueberfuehrt werden.
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+## Prüf-Workflow
+
+`npm run smoke` fuehrt den technischen Preflight aus:
+
+1. Produktions-Build
+2. Export-Registry validieren
+3. Referenzierte Public-Assets pruefen
+
+Die manuelle Export- und Figma-Routine ist in [`docs/figma-export-playbook.md`](./docs/figma-export-playbook.md) dokumentiert.

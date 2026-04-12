@@ -7,7 +7,13 @@
     "dev": "vite",
     "build": "tsc -b && vite build",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "check:assets": "node scripts/check-public-assets.mjs",
+    "export:validate": "node scripts/validate-export-registry.mjs",
+    "export:report": "node scripts/export-report.mjs",
+    "export:batch": "node scripts/create-export-batch.mjs",
+    "export:urls": "node scripts/export-urls.mjs",
+    "smoke": "node scripts/smoke-check.mjs"
   },
   "dependencies": {
     "framer-motion": "^12.38.0",
