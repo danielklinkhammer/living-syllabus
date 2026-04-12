@@ -81,9 +81,9 @@ export default function FlowTypesSlide() {
           transition={{delay: 0.5}}
           className="mt-12 text-left max-w-3xl mx-auto p-5 rounded-xl border border-white/10 bg-white/5"
         >
-          <div className="text-sm font-bold text-white mb-2">Warum strikte Notation statt bunter Bildgenerierung?</div>
+          <div className="text-sm font-bold text-white mb-2">Visuelle Journeys vs. Technische Notation</div>
           <p className="text-sm text-white/60 leading-relaxed">
-            Bildgeneratoren könnten uns heute wunderschöne, bunte "Customer Journey Maps" als Illustration malen. Im produktiven UX-Design und der Softwareentwicklung – insbesondere beim <strong>Vibe Coding</strong> – helfen uns Bilder aber nicht weiter. Wir benötigen strikte, <em>technische Notationsweisen</em> (Flowcharts, Text-Graphen). Nur eine präzise logische Notation kann von KI-Agenten als fehlerfreier Bauplan für Code und Architektur gelesen werden.
+            Bildgeneratoren sind fantastische Werkzeuge, um emotionale Customer Journeys oder komplexe Infografiken (z.B. für Stakeholder-Präsentationen) anschaulich zu visualisieren. Wenn es jedoch in die konkrete Exekution von Interface-Design und Softwarearchitektur geht – speziell beim <strong>Vibe Coding</strong> –, wechseln wir das Werkzeug. Hier benötigen wir eine strikte, <em>technische Notationsweise</em> (Flowcharts, Graphen), denn nur diese logischen Strukturen können von KI-Entwicklungsagenten als fehlerfreier Bauplan gelesen werden.
           </p>
         </motion.div>
 
