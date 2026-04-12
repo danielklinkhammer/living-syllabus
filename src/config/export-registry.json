@@ -430,12 +430,22 @@
     "exportStatus": "draft"
   },
   {
+    "slideId": "s03-flow-blueprint",
+    "block": "B03",
+    "order": 34,
+    "exportId": "living-syllabus:s03-flow-blueprint",
+    "exportName": "B03-34 \u00b7 Service Blueprints & UML",
+    "figmaPageName": "Living Syllabus",
+    "exportStatus": "draft",
+    "title": "Service Blueprints & UML"
+  },
+  {
     "slideId": "s03-chalD1-scen",
     "title": "W\u00e4hle dein Szenario",
     "block": "B03",
-    "order": 34,
+    "order": 35,
     "exportId": "living-syllabus:s03-chalD1-scen",
-    "exportName": "B03-34 \u00b7 W\u00e4hle dein Szenario",
+    "exportName": "B03-35 \u00b7 W\u00e4hle dein Szenario",
     "figmaPageName": "Living Syllabus",
     "exportStatus": "draft"
   },
@@ -443,9 +453,9 @@
     "slideId": "s03-chalD1-task",
     "title": "Challenge: The Process Logic",
     "block": "B03",
-    "order": 35,
+    "order": 36,
     "exportId": "living-syllabus:s03-chalD1-task",
-    "exportName": "B03-35 \u00b7 Challenge: The Process Logic",
+    "exportName": "B03-36 \u00b7 Challenge: The Process Logic",
     "figmaPageName": "Living Syllabus",
     "exportStatus": "draft"
   },
