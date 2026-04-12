@@ -35,6 +35,7 @@ import DashboardDesignSlide from '../components/slides/DashboardDesignSlide'
 import DashboardPatternsSlide from '../components/slides/DashboardPatternsSlide'
 import DashboardAIA11ySlide from '../components/slides/DashboardAIA11ySlide'
 import ChallengeScenariosSlide from '../components/slides/ChallengeScenariosSlide'
+import ChallengeOutcomeSlide from '../components/slides/ChallengeOutcomeSlide'
 import ChallengeWorkflowSlide from '../components/slides/ChallengeWorkflowSlide'
 import ChallengeAssessmentSlide from '../components/slides/ChallengeAssessmentSlide'
 import FlowNotationSlide from '../components/slides/FlowNotationSlide'
@@ -145,6 +146,7 @@ const rawSchedule: DayScheduleInput[] = [
         id: "sys-chal-c", title: "Challenge C", icon: <Hammer className="w-[18px] h-[18px]" />,
         slides: [
           { id: 's03-c-scen', title: 'Aufgabenstellung', component: <ChallengeScenariosSlide /> },
+          { id: 's03-c-out', title: 'Outcome', component: <ChallengeOutcomeSlide /> },
           { id: 's03-c-work', title: 'Methodik & Pipeline', component: <ChallengeWorkflowSlide /> },
           { id: 's03-c-assess', title: 'Bewertungsschema', component: <ChallengeAssessmentSlide /> }
         ]
