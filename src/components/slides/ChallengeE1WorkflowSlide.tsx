@@ -19,7 +19,7 @@ export default function ChallengeE1WorkflowSlide() {
     {
       step: "03",
       title: "Prototyping",
-      desc: "Holt euch die Logik in eure Entwicklungsumgebung (Lovable, v0, CodeSandbox). Verändert das UI, passt den Prompt an oder baut eine völlig neue Funktion drumherum.",
+      desc: "Nutzt das AI Studio als eure Entwicklungsumgebung. Verändert das UI, passt den Prompt an oder baut eine völlig neue Funktion drumherum.",
       icon: <Blocks className="w-5 h-5 text-purple-400" />
     },
     {

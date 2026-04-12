@@ -11,7 +11,7 @@ export default function ChallengeE1IntroSlide() {
     },
     { 
       title: "2. KI-App-Prototyp", 
-      desc: "Wählt eine Schnittstelle aus (z.B. Image Generation). Baut daraufhin mit Tools wie Lovable eine bestehende Idee weiter aus oder legt einen eigenen KI-App-Prototypen an.",
+      desc: "Wählt eine Schnittstelle aus (z.B. Image Generation). Baut daraufhin direkt im AI Studio eine bestehende Idee weiter aus oder legt einen eigenen KI-App-Prototypen an.",
       icon: <Hammer className="w-8 h-8 text-purple-400" />
     },
     { 
