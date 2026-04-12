@@ -52,15 +52,6 @@ export default function DashboardAIDesignSlide() {
                 </div>
               </div>
 
-              {/* Challenge C Connection */}
-              <div className="mt-6 p-4 rounded-xl border border-white/10 bg-white/5 flex gap-3 text-sm text-white/60">
-                <div className="shrink-0 mt-0.5"><MessageSquare className="w-4 h-4 text-white/30" /></div>
-                <div className="leading-relaxed">
-                  <strong className="text-white mb-1 block">Brücke zur Challenge C</strong>
-                  Ihr seid eingeladen, in euren Entwürfen direkt diese Zukunftsrichtung zu explorieren: Entwerft anstelle starrer Layouts dynamische KI-Dashboards (z.B. den Split-Screen aus Chat & Canvas). Beachtet jedoch, dass hybride Interfaces ein deutlich komplexeres und präziseres Prompting im Modell erfordern als klassische Grids.
-                </div>
-              </div>
-
             </div>
           </motion.div>
         </div>
@@ -140,6 +131,16 @@ export default function DashboardAIDesignSlide() {
                   </div>
                </div>
             </div>
+
+            {/* Challenge C Connection Moved to Right Side */}
+            <div className="mt-8 p-4 rounded-xl border border-fhgr-petrol/20 bg-fhgr-petrol/5 flex gap-3 text-sm text-white/70 shadow-lg">
+              <div className="shrink-0 mt-0.5"><MessageSquare className="w-5 h-5 text-fhgr-petrol" /></div>
+              <div className="leading-relaxed">
+                <strong className="text-white mb-1 block tracking-wide">Brücke zur Challenge C</strong>
+                Ihr seid eingeladen, in euren Entwürfen direkt diese Zukunftsrichtung zu explorieren: Entwerft anstelle starrer Layouts dynamische KI-Dashboards (z.B. den Split-Screen aus Chat & Canvas). Beachtet jedoch, dass hybride Interfaces ein deutlich komplexeres und präziseres Prompting im Modell erfordern als klassische Grids.
+              </div>
+            </div>
+
           </motion.div>
         </div>
 
