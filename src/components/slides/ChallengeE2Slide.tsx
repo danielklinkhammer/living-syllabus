@@ -65,11 +65,6 @@ export default function ChallengeE2Slide() {
           ))}
         </div>
         
-        <motion.div initial={{opacity:0}} animate={{opacity:1}} transition={{delay: 0.5}}>
-           <div className="inline-block bg-white/5 border border-white/10 px-6 py-4 rounded-xl text-sm font-medium">
-             <span className="text-fhgr-petrol">Outcome:</span> Postet eure eigene, funktionierende <strong>Live-URL</strong> gepaart mit eurem GitHub Repo in unser Teams-Forum!
-           </div>
-        </motion.div>
 
       </div>
     </div>
