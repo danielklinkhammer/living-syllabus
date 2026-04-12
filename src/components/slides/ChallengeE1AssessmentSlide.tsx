@@ -1,29 +1,29 @@
 import { motion } from 'framer-motion'
 import Card from '../ui/Card'
-import { Microscope, Zap, Component } from 'lucide-react'
+import { Microscope, Target, Bookmark } from 'lucide-react'
 
 export default function ChallengeE1AssessmentSlide() {
   const criteria = [
     {
-      title: "Tiefe der Exploration",
-      desc: "Habt ihr euch nur ein einfaches Text-Beispiel angeschaut oder mutig mit Multi-Modalen Eingaben (Vision/Audio) im AI Studio experimentiert? Wir honorieren die Neugierde, das Unbekannte zu testen.",
+      title: "Explorations-Tiefe",
+      desc: "Wurde sich intensiv mit einer bestimmten KI-Schnittstelle (z.B. Gen-Image mit Nano Banana oder Audio) beschäftigt? Wir bewerten die Neugierde und das aktive Testen über einfache Text-Prompts hinaus.",
       icon: <Microscope className="w-6 h-6 text-indigo-400" />,
       color: "from-indigo-500/10 to-transparent",
       borderColor: "border-indigo-500/30"
     },
     {
-      title: "Hacking & Mutation",
-      desc: "Wurde das Beispiel-Projekt nur stumpf kopiert oder habt ihr versucht, es radikal umzubauen? Es gibt Extrapunkte, wenn eure App eine völlig neue (oder völlig absurde) Funktion übernimmt.",
-      icon: <Zap className="w-6 h-6 text-purple-400" />,
-      color: "from-purple-500/10 to-transparent",
-      borderColor: "border-purple-500/30"
-    },
-    {
-      title: "Reflexion der Limitierung",
-      desc: "KI ist nicht perfekt. Ein wichtiger Teil der Bewertung ist eure Erkenntnis: Wo hat das AI-Modell oder euer Prompt bei der Umsetzung versagt? Wo stießen die Auto-Generatoren an ihre Grenzen?",
-      icon: <Component className="w-6 h-6 text-fhgr-accent" />,
+      title: "Der KI-Mehrwert",
+      desc: "Warum braucht dieses App-Szenario überhaupt eine KI? Ist die Begründung in eurer Präsentation schlüssig? Eine gute App löst ein Problem, auf das die KI eine konkrete, vorteilhafte Antwort gibt.",
+      icon: <Target className="w-6 h-6 text-fhgr-accent" />,
       color: "from-fhgr-petrol/10 to-transparent",
       borderColor: "border-fhgr-petrol/30"
+    },
+    {
+      title: "Dokumentation & Reflexion",
+      desc: "Wie übersichtlich wurde das Konzept (und eure Learnings) im Figma/FigJam Portfolio-Board dokumentiert? Fehler, Irrwege und die Limitierungen der getesten KI sind extrem wertvolle Learnings!",
+      icon: <Bookmark className="w-6 h-6 text-purple-400" />,
+      color: "from-purple-500/10 to-transparent",
+      borderColor: "border-purple-500/30"
     }
   ]
 
@@ -35,7 +35,7 @@ export default function ChallengeE1AssessmentSlide() {
           <div className="text-fhgr-petrol-light text-xs font-mono uppercase tracking-widest mb-3">Challenge E.1 · Part 5</div>
           <h2 className="text-4xl lg:text-5xl font-bold mb-4 tracking-tight">Evaluationskriterien</h2>
           <p className="text-lg text-white/50 max-w-2xl mx-auto leading-relaxed">
-            In dieser Phase gibt es kaum richtig oder falsch. Wir bewerten euren <strong>Forscherdrang</strong> und eure Bereitschaft, generative Features in echten Interfaces zusammenzubrechen und neu aufzubauen.
+            In dieser Phase gibt es kaum richtig oder falsch. Wir bewerten euren <strong>Forscherdrang</strong> und eure Fähigkeit, diesen Versuch systematisch und reflektiert für ein Publikum aufzubereiten.
           </p>
         </motion.div>
 
