@@ -249,7 +249,7 @@ const rawSchedule: DayScheduleInput[] = [
         ]
       },
       {
-        id: "proto-tech2", title: "Tech Stack", icon: <Rocket className="w-[18px] h-[18px]" />,
+        id: "proto-tech2", title: "Web Dev", icon: <Rocket className="w-[18px] h-[18px]" />,
         slides: [
           { id: 's04-intro', title: 'Intro: The Modern Stack', component: <Part2IntroSlide /> },
           { id: 's04-react', title: 'React 19 Core', component: <StackReactViteSlide /> },
