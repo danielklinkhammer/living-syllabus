@@ -31,9 +31,7 @@ import AgentSkillsSlide from '../components/slides/AgentSkillsSlide'
 import DashboardDefinitionSlide from '../components/slides/DashboardDefinitionSlide'
 import DashboardInspirationSlide from '../components/slides/DashboardInspirationSlide'
 import DataVizBasicsSlide from '../components/slides/DataVizBasicsSlide'
-import DashboardDesignSlide from '../components/slides/DashboardDesignSlide'
 import DashboardPatternsSlide from '../components/slides/DashboardPatternsSlide'
-import DashboardAIA11ySlide from '../components/slides/DashboardAIA11ySlide'
 import ChallengeScenariosSlide from '../components/slides/ChallengeScenariosSlide'
 import ChallengeOutcomeSlide from '../components/slides/ChallengeOutcomeSlide'
 import ChallengeWorkflowSlide from '../components/slides/ChallengeWorkflowSlide'
@@ -157,9 +155,7 @@ const rawSchedule: DayScheduleInput[] = [
           { id: 's03-dash-def', title: 'Was ist ein Dashboard?', component: <DashboardDefinitionSlide /> },
           { id: 's03-dash-insp', title: 'Inspiration & Domänen', component: <DashboardInspirationSlide /> },
           { id: 's03-dash-viz', title: 'Data Viz Grundlagen', component: <DataVizBasicsSlide /> },
-          { id: 's03-dash', title: 'Kriterien & Psychologie', component: <DashboardDesignSlide /> },
-          { id: 's03-patterns', title: 'Bento Grid & Patterns', component: <DashboardPatternsSlide /> },
-          { id: 's03-a11y', title: 'A11y & KI', component: <DashboardAIA11ySlide /> }
+          { id: 's03-patterns', title: 'Bento Grid & Patterns', component: <DashboardPatternsSlide /> }
         ]
       },
       {
