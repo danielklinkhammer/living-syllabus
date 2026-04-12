@@ -207,7 +207,7 @@ const rawSchedule: DayScheduleInput[] = [
     day: "Prototyp zu Produkt", // Changed from "Tag 2: Prototyp zu Produkt"
     groups: [
       {
-        id: "proto-tech1", title: "Tech für Designer: Part 1", icon: <BookOpen className="w-[18px] h-[18px]" />,
+        id: "proto-tech1", title: "Tech für Designer", icon: <BookOpen className="w-[18px] h-[18px]" />,
         slides: [
           { id: 's04-mvp', title: 'Maker vs. Pro Stack', component: <MakerVsProStackSlide /> },
           { id: 's04-ide-core', title: 'Die IDE', component: <IDESlide /> },
@@ -230,7 +230,7 @@ const rawSchedule: DayScheduleInput[] = [
         ]
       },
       {
-        id: "proto-tech2", title: "Tech für Designer: Part 2", icon: <Rocket className="w-[18px] h-[18px]" />,
+        id: "proto-tech2", title: "Tech Stack", icon: <Rocket className="w-[18px] h-[18px]" />,
         slides: [
           { id: 's04-intro', title: 'Intro: The Modern Stack', component: <Part2IntroSlide /> },
           { id: 's04-react', title: 'React 19 Core', component: <StackReactViteSlide /> },
