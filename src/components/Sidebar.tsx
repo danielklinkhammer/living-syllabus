@@ -65,9 +65,12 @@ export default function Sidebar({ isOpen, setIsOpen, isMobile, schedule, activeG
               />
             </div>
             <div className={`flex-1 transition-opacity duration-300 ${!isOpen ? 'opacity-0 pointer-events-none' : 'opacity-100'}`}>
-              <h2 className="text-fhgr-beige font-bold text-[15px] leading-tight tracking-wide pr-2">Designing for and with AI</h2>
-              <div className="mt-2 flex items-center">
-                <span className="bg-gradient-to-r from-fhgr-petrol/20 to-fhgr-petrol/5 border border-fhgr-petrol/30 text-fhgr-petrol-light font-mono text-[10px] font-bold uppercase tracking-widest px-2.5 py-0.5 rounded-sm shadow-[0_0_10px_rgba(131,197,190,0.15)]">
+              <h2 className="text-fhgr-beige font-bold text-[16px] leading-[1.3] tracking-wide pr-2">
+                Designing for <br />
+                <span className="text-white/70">and with</span> <span className="text-fhgr-accent bg-fhgr-accent/10 font-black px-1.5 py-0.5 rounded-md tracking-wider shadow-[0_0_8px_rgba(255,107,53,0.3)] border border-fhgr-accent/20">AI</span>
+              </h2>
+              <div className="mt-2.5 flex items-center">
+                <span className="bg-gradient-to-r from-fhgr-petrol/20 to-fhgr-petrol/5 border border-fhgr-petrol/30 text-fhgr-petrol-light font-mono text-[12px] font-bold uppercase tracking-widest px-3 py-1 rounded-md shadow-[0_0_10px_rgba(131,197,190,0.15)]">
                   Block 2
                 </span>
               </div>
