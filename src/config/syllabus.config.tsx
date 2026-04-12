@@ -210,7 +210,7 @@ const rawSchedule: DayScheduleInput[] = [
         ]
       },
       {
-        id: "proto-chalD2", title: "Challenge E", icon: <Hammer className="w-[18px] h-[18px]" />,
+        id: "proto-chalD2", title: "Challenge E.1", icon: <Hammer className="w-[18px] h-[18px]" />,
         slides: [
           { 
             id: 's04-chalD2', title: 'Challenge: Build It', 
@@ -235,13 +235,13 @@ const rawSchedule: DayScheduleInput[] = [
         ]
       },
       {
-        id: "proto-chalE", title: "Challenge F", icon: <Hammer className="w-[18px] h-[18px]" />,
+        id: "proto-chalE", title: "Challenge E.2", icon: <Hammer className="w-[18px] h-[18px]" />,
         slides: [
           { 
             id: 's04-chalE', title: 'Optional: Projekt Live schalten', 
             component: <ChallengeSlide 
               id="E" title="Going Live (Optional)" 
-              scenario="Eure App aus Challenge E verlässt die Sandbox und geht als echte Webseite live."
+              scenario="Eure App aus Challenge E.1 verlässt die Sandbox und geht als echte Webseite live."
               tasks={["Repository erstellen (GitHub/Vercel) oder in Lovable publizieren", "Eigene URL generieren", "Projekt in das Teams/Discord Forum posten!"]}
               tools="GitHub, Vercel, Netlify" timeBudget="30 Minuten" /> 
           }
