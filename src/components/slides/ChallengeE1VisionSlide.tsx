@@ -30,7 +30,7 @@ export default function ChallengeE1VisionSlide() {
           <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.2 }} className="bg-white/5 border border-white/10 rounded-2xl p-6 hover:bg-white/10 transition-colors">
             <Compass className="w-8 h-8 text-blue-400 mb-4" />
             <h3 className="text-lg font-bold text-white mb-2">Die Richtung</h3>
-            <p className="text-white/60 text-sm leading-relaxed">Auf welchen Pfeiler legt ihr euren Fokus? Baut ihr (1) einen API-schweren AI-Core, (2) ein Motion Vibe UI, oder (3) hackt ihr ein komplexes Template um?</p>
+            <p className="text-white/60 text-sm leading-relaxed">Auf welchen Pfeiler legt ihr euren Fokus? Baut ihr (1) einen API-schweren AI-Core, (2) ein Motion Vibe UI, oder (3) remixt ihr ein komplexes Template?</p>
           </motion.div>
 
           <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.3 }} className="bg-white/5 border border-white/10 rounded-2xl p-6 hover:bg-white/10 transition-colors">

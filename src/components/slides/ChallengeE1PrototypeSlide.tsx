@@ -56,9 +56,9 @@ export default function ChallengeE1PrototypeSlide() {
                   <div className="w-12 h-12 rounded-xl bg-orange-500/20 text-orange-400 flex items-center justify-center border border-orange-500/30">
                      <Wand2 className="w-6 h-6" />
                   </div>
-                  <h3 className="text-xl font-bold">3. Der Template-Hack</h3>
+                  <h3 className="text-xl font-bold">3. Der Template-Remix</h3>
                   <p className="text-white/60 text-sm leading-relaxed">
-                    Statt bei Null zu starten, clont ihr einen starken Vercel-Starterkit oder ein gigantisches v0-Interface und baut dieses mit Claude/Cursor rigoros in euer eigenes Produkt um. 
+                    Statt bei Null zu starten, clont ihr einen starken Vercel-Starterkit oder ein gigantisches v0-Interface und remixt dieses mit Claude/Cursor rigoros zu eurem eigenen Produkt. 
                   </p>
                 </div>
              </Card>
