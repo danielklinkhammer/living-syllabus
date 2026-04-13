@@ -1,5 +1,5 @@
 import React from 'react'
-import { BookOpen, Hammer, Rocket } from 'lucide-react'
+import { BookOpen, Hammer, Rocket, Brain } from 'lucide-react'
 
 // Recap Slides for Block 1
 import RecapWelcomeSlide from '../components/slides/recap/RecapWelcomeSlide'
@@ -66,6 +66,8 @@ import ChallengeE1WorkflowSlide from '../components/slides/ChallengeE1WorkflowSl
 import ChallengeE1OutcomeSlide from '../components/slides/ChallengeE1OutcomeSlide'
 import ChallengeE1AssessmentSlide from '../components/slides/ChallengeE1AssessmentSlide'
 import ChallengeE2Slide from '../components/slides/ChallengeE2Slide'
+import PIMConceptSlide from '../components/slides/PIMConceptSlide'
+import PIMObsidianSlide from '../components/slides/PIMObsidianSlide'
 import Part2IntroSlide from '../components/slides/Part2IntroSlide'
 import StackReactViteSlide from '../components/slides/StackReactViteSlide'
 import StackTailwindSlide from '../components/slides/StackTailwindSlide'
@@ -267,6 +269,13 @@ const rawSchedule: DayScheduleInput[] = [
             id: 's04-chalE', title: 'Optional: Projekt Live schalten', 
             component: <ChallengeE2Slide />
           }
+        ]
+      },
+      {
+        id: "proto-pim", title: "PIM & Second Brain", icon: <Brain className="w-[18px] h-[18px]" />,
+        slides: [
+          { id: 's04-pim-concept', title: 'Das AI Second Brain', component: <PIMConceptSlide /> },
+          { id: 's04-pim-obsidian', title: 'Obsidian & Semantic Web', component: <PIMObsidianSlide /> }
         ]
       }
     ]

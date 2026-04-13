@@ -650,5 +650,25 @@
     "exportName": "B04-19 \u00b7 Optional: Projekt Live schalten",
     "figmaPageName": "Living Syllabus",
     "exportStatus": "draft"
+  },
+  {
+    "slideId": "s04-pim-concept",
+    "title": "Das AI Second Brain",
+    "block": "B04",
+    "order": 20,
+    "exportId": "living-syllabus:s04-pim-concept",
+    "exportName": "B04-20 \u00b7 Das AI Second Brain",
+    "figmaPageName": "Living Syllabus",
+    "exportStatus": "draft"
+  },
+  {
+    "slideId": "s04-pim-obsidian",
+    "title": "Obsidian & Semantic Web",
+    "block": "B04",
+    "order": 21,
+    "exportId": "living-syllabus:s04-pim-obsidian",
+    "exportName": "B04-21 \u00b7 Obsidian & Semantic Web",
+    "figmaPageName": "Living Syllabus",
+    "exportStatus": "draft"
   }
 ]
