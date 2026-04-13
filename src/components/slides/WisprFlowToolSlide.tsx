@@ -18,7 +18,7 @@ export default function WisprFlowToolSlide() {
             </a>
           </h2>
           <p className="text-lg text-white/50 max-w-2xl mx-auto font-light leading-relaxed">
-            Ein lokales Obsidian-Vault ist nur nützlich, wenn man es auch füttert. Wispr Flow revolutioniert die Informationserfassung: Es ist kein Diktiergerät, sondern ein "Intelligentes Voice Keyboard".
+            Spracheingabe wird für Notizen, aber vor allem auch für das Prompting lokaler KI-Agenten immer wichtiger. Tools wie Wispr Flow sind exzellente Beispiele für die neue Generation der "Voice Keyboards".
           </p>
         </div>
 
@@ -43,7 +43,7 @@ export default function WisprFlowToolSlide() {
                </div>
                
                <div className="bg-black/40 rounded-xl p-4 border border-white/5 text-sm text-white/40 italic">
-                 "Also ähm, ich will festhalten dass der Kurs ziemlich cool war, mach mal ne Liste: erstens Markdown ist wichtig, äh zweitens Agenten sind krass, und drittens... was war's noch... ach ja, lokales Speichern rettet uns vor Notion."
+                 "Also ähm, ich will festhalten dass Spracheingabe immer wichtiger wird. Erstens für die Notizen, und äh zweitens natürlich für Prompting. Wispr nutzt im Hintergrund glaub ich das Whisper-Modell von OpenAI, mach mal Bulletpoints."
                </div>
 
                <div className="flex justify-center -my-2 text-white/20">
@@ -52,11 +52,11 @@ export default function WisprFlowToolSlide() {
 
                {/* Output fake */}
                <div className="bg-[#2A2B31] rounded-xl p-4 border border-emerald-500/30 text-sm text-white/90 shadow-[0_0_20px_rgba(16,185,129,0.1)]">
-                 <strong>Kursnotizen:</strong>
+                 <strong>Bedeutung der Spracheingabe:</strong>
                  <ul className="list-disc pl-4 mt-2 space-y-1 text-white/70">
-                   <li>Markdown ist die wichtigste Basis.</li>
-                   <li>KI-Systemagenten bieten enormes Potenzial.</li>
-                   <li>Lokales Speichern (File-over-App) verhindert Vendor-Lock-In durch Tools wie Notion.</li>
+                   <li>Zentrale Rolle für schnelle Notizerfassung.</li>
+                   <li>Essenziell für flüssiges Prompting von KI-Agenten.</li>
+                   <li>Moderne Tools basieren technologisch oft auf dem leistungsstarken <em>OpenAI Whisper-Modell</em>.</li>
                  </ul>
                </div>
              </div>
@@ -65,23 +65,23 @@ export default function WisprFlowToolSlide() {
           {/* Right Column: Explanations */}
           <div className="flex-[0.8] space-y-8 z-10 py-4">
             <motion.div initial={{ opacity: 0, x: 20 }} animate={{ opacity: 1, x: 0 }} transition={{ delay: 0.2 }}>
-               <h4 className="text-white/80 font-bold text-lg mb-2">Automatisches Refactoring</h4>
+               <h4 className="text-white/80 font-bold text-lg mb-2">Die Spracherkennung</h4>
                <p className="text-white/50 text-sm leading-relaxed">
-                 Wispr Flow transkribiert nicht nur, sondern <em>editiert</em> den Sprechfluss in Echtzeit. "Ähms", Pausen und unklare Sätze werden direkt in sauberen Schreibstil (oder Bulletpoints) umgewandelt.
+                 Werkzeuge wie Wispr Flow greifen oft auf extrem starke Grundlagen wie <strong>OpenAI's Whisper</strong> Modell (oder Cloud-ASRs) zurück. Dadurch werden auch undeutliche Sprache und Fachbegriffe fehlerfrei erkannt.
                </p>
             </motion.div>
 
             <motion.div initial={{ opacity: 0, x: 20 }} animate={{ opacity: 1, x: 0 }} transition={{ delay: 0.3 }}>
-               <h4 className="text-white/80 font-bold text-lg mb-2">Das Overlay-Prinzip</h4>
+               <h4 className="text-white/80 font-bold text-lg mb-2">Automatisches Refactoring</h4>
                <p className="text-white/50 text-sm leading-relaxed">
-                 Da es auf Systemebene läuft (wie ein Tastatur-Input), kannst du in Obsidian (oder E-Mails, Slack) stehen, den Hotkey drücken, sprechen, und der perfekte Text landet an deinem Cursor.
+                 Die KI transkribiert nicht bloß, sie <em>editiert</em> den Sprechfluss in Echtzeit. "Ähms", Selbstkorrekturen und Gedankensprünge werden nahtlos in sauberen Schreibstil oder strukturierte Listen umgewandelt.
                </p>
             </motion.div>
 
             <motion.div initial={{ opacity: 0, x: 20 }} animate={{ opacity: 1, x: 0 }} transition={{ delay: 0.4 }}>
-               <h4 className="text-white/80 font-bold text-lg mb-2">Die PIM-Pipeline</h4>
+               <h4 className="text-white/80 font-bold text-lg mb-2">Voice First im Workflow</h4>
                <p className="text-white/50 text-sm leading-relaxed">
-                 In Kombination mit Obsidian und Cursor/Claude entsteht ein verrückter Workflow: <strong>Du sprichst Gedanken ein → Wispr formatiert sie → Obsidian speichert sie als `.md` → Dein AI Agent wertet sie später aus.</strong>
+                 Egal ob man komplexe Prompts an Claude diktiert, oder eine spontane Projektidee in Obsidian festhält: Eine gute Spracherkennungs-Pipeline verringert die Reibung zwischen Gehirn und Computer enorm.
                </p>
             </motion.div>
           </div>
