@@ -273,7 +273,8 @@ const rawSchedule: DayScheduleInput[] = [
           { id: 's04-shadcn', title: 'shadcn/ui (AI Secret)', component: <StackShadcnSlide /> },
           { id: 's04-ts', title: 'TypeScript', component: <StackTypeScriptSlide /> },
           { id: 's04-framer', title: 'Framer Motion', component: <StackFramerMotionSlide /> },
-          { id: 's04-server', title: 'Vite (Server & Build)', component: <StackLocalServerSlide /> }
+          { id: 's04-server', title: 'Vite (Server & Build)', component: <StackLocalServerSlide /> },
+          { id: 's04-vibe-tools', title: 'Komponenten & UI-Inspiration', component: <VibeCodingInspirationSlide /> }
         ]
       },
       {
@@ -282,10 +283,6 @@ const rawSchedule: DayScheduleInput[] = [
           { 
             id: 's04-chalE', title: 'Optional: Projekt Live schalten', 
             component: <ChallengeE2Slide />
-          },
-          {
-            id: 's04-vibe-tools', title: 'Komponenten & UI-Inspiration',
-            component: <VibeCodingInspirationSlide />
           }
         ]
       },
