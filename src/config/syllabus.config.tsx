@@ -63,6 +63,7 @@ import ChallengeDAssessmentSlide from '../components/slides/ChallengeDAssessment
 import ChallengeE1IntroSlide from '../components/slides/ChallengeE1IntroSlide'
 import ChallengeE1ScenariosSlide from '../components/slides/ChallengeE1ScenariosSlide'
 import ChallengeE1PrototypeSlide from '../components/slides/ChallengeE1PrototypeSlide'
+import ChallengeE1VisionSlide from '../components/slides/ChallengeE1VisionSlide'
 import ChallengeE1WorkflowSlide from '../components/slides/ChallengeE1WorkflowSlide'
 import ChallengeE1OutcomeSlide from '../components/slides/ChallengeE1OutcomeSlide'
 import ChallengeE1AssessmentSlide from '../components/slides/ChallengeE1AssessmentSlide'
@@ -244,6 +245,10 @@ const rawSchedule: DayScheduleInput[] = [
           {
             id: 's04-chalE1-proto', title: 'Der KI App Prototyp',
             component: <ChallengeE1PrototypeSlide />
+          },
+          {
+            id: 's04-chalE1-vision', title: 'Die VISION.md',
+            component: <ChallengeE1VisionSlide />
           },
           { 
             id: 's04-chalE1-work', title: 'Vibe Coding Taktiken', 

@@ -631,33 +631,43 @@
     "exportStatus": "draft"
   },
   {
+    "slideId": "s04-chalE1-vision",
+    "title": "Die VISION.md",
+    "block": "B04",
+    "order": 17,
+    "exportId": "living-syllabus:s04-chalE1-vision",
+    "exportName": "B04-17 \u00b7 Die VISION.md",
+    "figmaPageName": "Living Syllabus",
+    "exportStatus": "draft"
+  },
+  {
     "slideId": "s04-chalE1-work",
     "block": "B04",
     "title": "Vibe Coding Taktiken",
-    "order": 17,
-    "exportName": "B04-17 \u00b7 Vibe Coding Taktiken"
+    "order": 18,
+    "exportName": "B04-18 \u00b7 Vibe Coding Taktiken"
   },
   {
     "slideId": "s04-chalE1-out",
     "block": "B04",
     "title": "Outcome",
-    "order": 18,
-    "exportName": "B04-18 \u00b7 Outcome"
+    "order": 19,
+    "exportName": "B04-19 \u00b7 Outcome"
   },
   {
     "slideId": "s04-chalE1-assess",
     "block": "B04",
     "title": "Evaluationskriterien",
-    "order": 19,
-    "exportName": "B04-19 \u00b7 Evaluationskriterien"
+    "order": 20,
+    "exportName": "B04-20 \u00b7 Evaluationskriterien"
   },
   {
     "slideId": "s04-chalE",
     "title": "Optional: Projekt Live schalten",
     "block": "B04",
-    "order": 20,
+    "order": 21,
     "exportId": "living-syllabus:s04-chalE",
-    "exportName": "B04-20 \u00b7 Optional: Projekt Live schalten",
+    "exportName": "B04-21 \u00b7 Optional: Projekt Live schalten",
     "figmaPageName": "Living Syllabus",
     "exportStatus": "draft"
   },
@@ -665,9 +675,9 @@
     "slideId": "s04-vibe-tools",
     "title": "Komponenten & UI-Inspiration",
     "block": "B04",
-    "order": 21,
+    "order": 22,
     "exportId": "living-syllabus:s04-vibe-tools",
-    "exportName": "B04-21 \u00b7 Komponenten & UI-Inspiration",
+    "exportName": "B04-22 \u00b7 Komponenten & UI-Inspiration",
     "figmaPageName": "Living Syllabus",
     "exportStatus": "draft"
   },
@@ -675,9 +685,9 @@
     "slideId": "s04-pim-intro",
     "title": "Personal Information Management",
     "block": "B04",
-    "order": 22,
+    "order": 23,
     "exportId": "living-syllabus:s04-pim-intro",
-    "exportName": "B04-22 \u00b7 Personal Information Management",
+    "exportName": "B04-23 \u00b7 Personal Information Management",
     "figmaPageName": "Living Syllabus",
     "exportStatus": "draft"
   },
@@ -685,9 +695,9 @@
     "slideId": "s04-local-markdown",
     "title": "Data Sovereignty",
     "block": "B04",
-    "order": 23,
+    "order": 24,
     "exportId": "living-syllabus:s04-local-markdown",
-    "exportName": "B04-23 \u00b7 Data Sovereignty",
+    "exportName": "B04-24 \u00b7 Data Sovereignty",
     "figmaPageName": "Living Syllabus",
     "exportStatus": "draft"
   },
@@ -695,9 +705,9 @@
     "slideId": "s04-obsidian-tool",
     "title": "Tool: Obsidian",
     "block": "B04",
-    "order": 24,
+    "order": 25,
     "exportId": "living-syllabus:s04-obsidian-tool",
-    "exportName": "B04-24 \u00b7 Tool: Obsidian",
+    "exportName": "B04-25 \u00b7 Tool: Obsidian",
     "figmaPageName": "Living Syllabus",
     "exportStatus": "draft"
   },
@@ -705,9 +715,9 @@
     "slideId": "s04-wispr-flow",
     "title": "Tool: Wispr Flow",
     "block": "B04",
-    "order": 25,
+    "order": 26,
     "exportId": "living-syllabus:s04-wispr-flow",
-    "exportName": "B04-25 \u00b7 Tool: Wispr Flow",
+    "exportName": "B04-26 \u00b7 Tool: Wispr Flow",
     "figmaPageName": "Living Syllabus",
     "exportStatus": "draft"
   },
@@ -715,9 +725,9 @@
     "slideId": "s04-obsidian-agents",
     "title": "Obsidian \u00d7 AI Agents",
     "block": "B04",
-    "order": 26,
+    "order": 27,
     "exportId": "living-syllabus:s04-obsidian-agents",
-    "exportName": "B04-26 \u00b7 Obsidian \u00d7 AI Agents",
+    "exportName": "B04-27 \u00b7 Obsidian \u00d7 AI Agents",
     "figmaPageName": "Living Syllabus",
     "exportStatus": "draft"
   }
