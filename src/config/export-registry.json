@@ -652,22 +652,32 @@
     "exportStatus": "draft"
   },
   {
-    "slideId": "s04-pim-concept",
-    "title": "Das AI Second Brain",
+    "slideId": "s04-local-markdown",
+    "title": "Data Sovereignty",
     "block": "B04",
     "order": 20,
-    "exportId": "living-syllabus:s04-pim-concept",
-    "exportName": "B04-20 \u00b7 Das AI Second Brain",
+    "exportId": "living-syllabus:s04-local-markdown",
+    "exportName": "B04-20 \u00b7 Data Sovereignty",
     "figmaPageName": "Living Syllabus",
     "exportStatus": "draft"
   },
   {
-    "slideId": "s04-pim-obsidian",
-    "title": "Obsidian & Semantic Web",
+    "slideId": "s04-obsidian-tool",
+    "title": "Tool: Obsidian",
     "block": "B04",
     "order": 21,
-    "exportId": "living-syllabus:s04-pim-obsidian",
-    "exportName": "B04-21 \u00b7 Obsidian & Semantic Web",
+    "exportId": "living-syllabus:s04-obsidian-tool",
+    "exportName": "B04-21 \u00b7 Tool: Obsidian",
+    "figmaPageName": "Living Syllabus",
+    "exportStatus": "draft"
+  },
+  {
+    "slideId": "s04-obsidian-agents",
+    "title": "Obsidian \u00d7 AI Agents",
+    "block": "B04",
+    "order": 22,
+    "exportId": "living-syllabus:s04-obsidian-agents",
+    "exportName": "B04-22 \u00b7 Obsidian \u00d7 AI Agents",
     "figmaPageName": "Living Syllabus",
     "exportStatus": "draft"
   }

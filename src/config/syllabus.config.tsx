@@ -66,8 +66,9 @@ import ChallengeE1WorkflowSlide from '../components/slides/ChallengeE1WorkflowSl
 import ChallengeE1OutcomeSlide from '../components/slides/ChallengeE1OutcomeSlide'
 import ChallengeE1AssessmentSlide from '../components/slides/ChallengeE1AssessmentSlide'
 import ChallengeE2Slide from '../components/slides/ChallengeE2Slide'
-import PIMConceptSlide from '../components/slides/PIMConceptSlide'
-import PIMObsidianSlide from '../components/slides/PIMObsidianSlide'
+import LocalMarkdownSlide from '../components/slides/LocalMarkdownSlide'
+import ObsidianToolSlide from '../components/slides/ObsidianToolSlide'
+import ObsidianAIAgentsSlide from '../components/slides/ObsidianAIAgentsSlide'
 import Part2IntroSlide from '../components/slides/Part2IntroSlide'
 import StackReactViteSlide from '../components/slides/StackReactViteSlide'
 import StackTailwindSlide from '../components/slides/StackTailwindSlide'
@@ -272,10 +273,11 @@ const rawSchedule: DayScheduleInput[] = [
         ]
       },
       {
-        id: "proto-pim", title: "PIM & Second Brain", icon: <Brain className="w-[18px] h-[18px]" />,
+        id: "proto-localnotes", title: "Notes & Local AI", icon: <Brain className="w-[18px] h-[18px]" />,
         slides: [
-          { id: 's04-pim-concept', title: 'Das AI Second Brain', component: <PIMConceptSlide /> },
-          { id: 's04-pim-obsidian', title: 'Obsidian & Semantic Web', component: <PIMObsidianSlide /> }
+          { id: 's04-local-markdown', title: 'Data Sovereignty', component: <LocalMarkdownSlide /> },
+          { id: 's04-obsidian-tool', title: 'Tool: Obsidian', component: <ObsidianToolSlide /> },
+          { id: 's04-obsidian-agents', title: 'Obsidian × AI Agents', component: <ObsidianAIAgentsSlide /> }
         ]
       }
     ]
