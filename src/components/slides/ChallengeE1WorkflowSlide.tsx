@@ -55,11 +55,11 @@ export default function ChallengeE1WorkflowSlide() {
               transition={{delay: 0.1 * idx}}
             >
               <Card variant="glass" className={`!p-6 h-full border ${item.borderColor} bg-gradient-to-br ${item.color} group hover:bg-white/5 transition-colors flex flex-col`}>
-                <div className="flex justify-between items-start mb-5">
-                  <div className={`p-3 bg-black/40 rounded-xl border ${item.borderColor} mb-2 shadow-lg`}>
+                <div className="flex items-center gap-4 mb-4">
+                  <div className={`p-3 bg-black/40 rounded-xl border ${item.borderColor} shadow-lg shrink-0`}>
                     {item.icon}
                   </div>
-                  <h3 className="text-2xl font-bold text-white max-w-[70%] text-right">{item.title}</h3>
+                  <h3 className="text-2xl font-bold text-white">{item.title}</h3>
                 </div>
                 <p className="text-sm text-white/70 leading-relaxed font-medium">
                   {item.desc}
