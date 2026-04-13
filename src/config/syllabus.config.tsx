@@ -57,6 +57,7 @@ import GitHubSlide from '../components/slides/GitHubSlide'
 import PublishingSlide from '../components/slides/PublishingSlide'
 import APIsSlide from '../components/slides/APIsSlide'
 import ApiExamplesSlide from '../components/slides/ApiExamplesSlide'
+import ApiConnectionSlide from '../components/slides/ApiConnectionSlide'
 import ChallengeDScenariosSlide from '../components/slides/ChallengeDScenariosSlide'
 import ChallengeDIntroSlide from '../components/slides/ChallengeDIntroSlide'
 import ChallengeDOutcomeSlide from '../components/slides/ChallengeDOutcomeSlide'
@@ -230,7 +231,8 @@ const rawSchedule: DayScheduleInput[] = [
           { id: 's04-github', title: 'GitHub', component: <GitHubSlide /> },
           { id: 's04-publish', title: 'Publishing', component: <PublishingSlide /> },
           { id: 's04-api-intro', title: 'APIs (Classic vs AI)', component: <APIsSlide /> },
-          { id: 's04-api-examples', title: 'API Inspiration', component: <ApiExamplesSlide /> }
+          { id: 's04-api-examples', title: 'API Inspiration', component: <ApiExamplesSlide /> },
+          { id: 's04-api-connection', title: 'API Anbindung & Sicherheit', component: <ApiConnectionSlide /> }
         ]
       },
       {

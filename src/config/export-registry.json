@@ -547,12 +547,22 @@
     "exportStatus": "draft"
   },
   {
+    "slideId": "s04-api-connection",
+    "title": "API Anbindung & Sicherheit",
+    "block": "B04",
+    "order": 8,
+    "exportId": "living-syllabus:s04-api-connection",
+    "exportName": "B04-08 \u00b7 API Anbindung & Sicherheit",
+    "figmaPageName": "Living Syllabus",
+    "exportStatus": "draft"
+  },
+  {
     "slideId": "s04-intro",
     "title": "Intro: The Modern Stack",
     "block": "B04",
-    "order": 8,
+    "order": 9,
     "exportId": "living-syllabus:s04-intro",
-    "exportName": "B04-08 \u00b7 Intro: The Modern Stack",
+    "exportName": "B04-09 \u00b7 Intro: The Modern Stack",
     "figmaPageName": "Living Syllabus",
     "exportStatus": "draft"
   },
@@ -560,9 +570,9 @@
     "slideId": "s04-react",
     "title": "React 19 Core",
     "block": "B04",
-    "order": 9,
+    "order": 10,
     "exportId": "living-syllabus:s04-react",
-    "exportName": "B04-09 \u00b7 React 19 Core",
+    "exportName": "B04-10 \u00b7 React 19 Core",
     "figmaPageName": "Living Syllabus",
     "exportStatus": "draft"
   },
@@ -570,9 +580,9 @@
     "slideId": "s04-tailwind",
     "title": "Tailwind CSS",
     "block": "B04",
-    "order": 10,
+    "order": 11,
     "exportId": "living-syllabus:s04-tailwind",
-    "exportName": "B04-10 \u00b7 Tailwind CSS",
+    "exportName": "B04-11 \u00b7 Tailwind CSS",
     "figmaPageName": "Living Syllabus",
     "exportStatus": "draft"
   },
@@ -580,9 +590,9 @@
     "slideId": "s04-shadcn",
     "title": "shadcn/ui (AI Secret)",
     "block": "B04",
-    "order": 11,
+    "order": 12,
     "exportId": "living-syllabus:s04-shadcn",
-    "exportName": "B04-11 \u00b7 shadcn/ui (AI Secret)",
+    "exportName": "B04-12 \u00b7 shadcn/ui (AI Secret)",
     "figmaPageName": "Living Syllabus",
     "exportStatus": "draft"
   },
@@ -590,9 +600,9 @@
     "slideId": "s04-ts",
     "title": "TypeScript",
     "block": "B04",
-    "order": 12,
+    "order": 13,
     "exportId": "living-syllabus:s04-ts",
-    "exportName": "B04-12 \u00b7 TypeScript",
+    "exportName": "B04-13 \u00b7 TypeScript",
     "figmaPageName": "Living Syllabus",
     "exportStatus": "draft"
   },
@@ -600,9 +610,9 @@
     "slideId": "s04-framer",
     "title": "Framer Motion",
     "block": "B04",
-    "order": 13,
+    "order": 14,
     "exportId": "living-syllabus:s04-framer",
-    "exportName": "B04-13 \u00b7 Framer Motion",
+    "exportName": "B04-14 \u00b7 Framer Motion",
     "figmaPageName": "Living Syllabus",
     "exportStatus": "draft"
   },
@@ -610,9 +620,9 @@
     "slideId": "s04-server",
     "title": "Vite (Server & Build)",
     "block": "B04",
-    "order": 14,
+    "order": 15,
     "exportId": "living-syllabus:s04-server",
-    "exportName": "B04-14 \u00b7 Vite (Server & Build)",
+    "exportName": "B04-15 \u00b7 Vite (Server & Build)",
     "figmaPageName": "Living Syllabus",
     "exportStatus": "draft"
   },
@@ -620,9 +630,9 @@
     "slideId": "s04-vibe-tools",
     "title": "Komponenten & UI-Inspiration",
     "block": "B04",
-    "order": 15,
+    "order": 16,
     "exportId": "living-syllabus:s04-vibe-tools",
-    "exportName": "B04-15 \u00b7 Komponenten & UI-Inspiration",
+    "exportName": "B04-16 \u00b7 Komponenten & UI-Inspiration",
     "figmaPageName": "Living Syllabus",
     "exportStatus": "draft"
   },
@@ -630,23 +640,23 @@
     "slideId": "s04-chalE1-intro",
     "block": "B04",
     "title": "Aufgabenstellung",
-    "order": 16,
-    "exportName": "B04-16 \u00b7 Aufgabenstellung"
+    "order": 17,
+    "exportName": "B04-17 \u00b7 Aufgabenstellung"
   },
   {
     "slideId": "s04-chalE1-scene",
     "block": "B04",
     "title": "AI Showcase",
-    "order": 17,
-    "exportName": "B04-17 \u00b7 AI Showcase"
+    "order": 18,
+    "exportName": "B04-18 \u00b7 AI Showcase"
   },
   {
     "slideId": "s04-chalE1-proto",
     "title": "Der KI App Prototyp",
     "block": "B04",
-    "order": 18,
+    "order": 19,
     "exportId": "living-syllabus:s04-chalE1-proto",
-    "exportName": "B04-18 \u00b7 Der KI App Prototyp",
+    "exportName": "B04-19 \u00b7 Der KI App Prototyp",
     "figmaPageName": "Living Syllabus",
     "exportStatus": "draft"
   },
@@ -654,9 +664,9 @@
     "slideId": "s04-chalE1-vision",
     "title": "Die VISION.md",
     "block": "B04",
-    "order": 19,
+    "order": 20,
     "exportId": "living-syllabus:s04-chalE1-vision",
-    "exportName": "B04-19 \u00b7 Die VISION.md",
+    "exportName": "B04-20 \u00b7 Die VISION.md",
     "figmaPageName": "Living Syllabus",
     "exportStatus": "draft"
   },
@@ -664,30 +674,30 @@
     "slideId": "s04-chalE1-work",
     "block": "B04",
     "title": "Vibe Coding Taktiken",
-    "order": 20,
-    "exportName": "B04-20 \u00b7 Vibe Coding Taktiken"
+    "order": 21,
+    "exportName": "B04-21 \u00b7 Vibe Coding Taktiken"
   },
   {
     "slideId": "s04-chalE1-out",
     "block": "B04",
     "title": "Outcome",
-    "order": 21,
-    "exportName": "B04-21 \u00b7 Outcome"
+    "order": 22,
+    "exportName": "B04-22 \u00b7 Outcome"
   },
   {
     "slideId": "s04-chalE1-assess",
     "block": "B04",
     "title": "Evaluationskriterien",
-    "order": 22,
-    "exportName": "B04-22 \u00b7 Evaluationskriterien"
+    "order": 23,
+    "exportName": "B04-23 \u00b7 Evaluationskriterien"
   },
   {
     "slideId": "s04-chalE",
     "title": "Optional: Projekt Live schalten",
     "block": "B04",
-    "order": 23,
+    "order": 24,
     "exportId": "living-syllabus:s04-chalE",
-    "exportName": "B04-23 \u00b7 Optional: Projekt Live schalten",
+    "exportName": "B04-24 \u00b7 Optional: Projekt Live schalten",
     "figmaPageName": "Living Syllabus",
     "exportStatus": "draft"
   },
@@ -695,9 +705,9 @@
     "slideId": "s04-pim-intro",
     "title": "Personal Information Management",
     "block": "B04",
-    "order": 25,
+    "order": 26,
     "exportId": "living-syllabus:s04-pim-intro",
-    "exportName": "B04-25 \u00b7 Personal Information Management",
+    "exportName": "B04-26 \u00b7 Personal Information Management",
     "figmaPageName": "Living Syllabus",
     "exportStatus": "draft"
   },
@@ -705,9 +715,9 @@
     "slideId": "s04-local-markdown",
     "title": "Data Sovereignty",
     "block": "B04",
-    "order": 26,
+    "order": 27,
     "exportId": "living-syllabus:s04-local-markdown",
-    "exportName": "B04-26 \u00b7 Data Sovereignty",
+    "exportName": "B04-27 \u00b7 Data Sovereignty",
     "figmaPageName": "Living Syllabus",
     "exportStatus": "draft"
   },
@@ -715,9 +725,9 @@
     "slideId": "s04-obsidian-tool",
     "title": "Tool: Obsidian",
     "block": "B04",
-    "order": 27,
+    "order": 28,
     "exportId": "living-syllabus:s04-obsidian-tool",
-    "exportName": "B04-27 \u00b7 Tool: Obsidian",
+    "exportName": "B04-28 \u00b7 Tool: Obsidian",
     "figmaPageName": "Living Syllabus",
     "exportStatus": "draft"
   },
@@ -725,9 +735,9 @@
     "slideId": "s04-wispr-flow",
     "title": "Tool: Wispr Flow",
     "block": "B04",
-    "order": 28,
+    "order": 29,
     "exportId": "living-syllabus:s04-wispr-flow",
-    "exportName": "B04-28 \u00b7 Tool: Wispr Flow",
+    "exportName": "B04-29 \u00b7 Tool: Wispr Flow",
     "figmaPageName": "Living Syllabus",
     "exportStatus": "draft"
   },
@@ -735,9 +745,9 @@
     "slideId": "s04-obsidian-agents",
     "title": "Obsidian \u00d7 AI Agents",
     "block": "B04",
-    "order": 29,
+    "order": 30,
     "exportId": "living-syllabus:s04-obsidian-agents",
-    "exportName": "B04-29 \u00b7 Obsidian \u00d7 AI Agents",
+    "exportName": "B04-30 \u00b7 Obsidian \u00d7 AI Agents",
     "figmaPageName": "Living Syllabus",
     "exportStatus": "draft"
   }
