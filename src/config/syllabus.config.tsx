@@ -246,7 +246,7 @@ const rawSchedule: DayScheduleInput[] = [
             component: <ChallengeE1PrototypeSlide />
           },
           { 
-            id: 's04-chalE1-work', title: 'Der Workspace', 
+            id: 's04-chalE1-work', title: 'Der Workflow', 
             component: <ChallengeE1WorkflowSlide />
           },
           { 

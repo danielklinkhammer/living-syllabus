@@ -7,25 +7,25 @@ export default function ChallengeE1WorkflowSlide() {
     {
       step: "01",
       title: "Exploration (FigJam)",
-      desc: "Öffnet die Showcase-Links aus dem vorherigen Schritt. Sammelt gemeinsam die besten KI-Beispiele und postet sie auf unser FigJam-Board, um Patterns zu analysieren.",
+      desc: "Sammelt eure Favoriten auf dem Board. Diskutiert im Team und entscheidet euch für den Fokus eures Prototypen (AI Core, Motion Vibe oder Template Hack).",
       icon: <Telescope className="w-5 h-5 text-blue-400" />
     },
     {
       step: "02",
-      title: "Prompt Engineering",
-      desc: "Schaut euch bei eurer Favoriten-App den System Prompt an: Welche verdeckten Instruktionen wurden der KI gegeben, damit sie die gewünschte Rolle annimmt?",
+      title: "Context Injection",
+      desc: "Übergt die Fremdlogik an die KI: (1) Screenshot vom UI (Vision), (2) URL posten (bei Agenten wie Cursor), oder (3) den Raw-Code (.tsx) hart in den Prompt kopieren.",
       icon: <BrainCircuit className="w-5 h-5 text-indigo-400" />
     },
     {
       step: "03",
-      title: "Prototyping",
-      desc: "Nutzt das AI Studio als eure Entwicklungsumgebung. Verändert das UI, passt den Prompt an oder baut eine völlig neue Funktion drumherum.",
+      title: "Vibe Prompting",
+      desc: "Die Instruktion. Beispiel: 'Nimm diese referenzierte Aceternity-Komponente und baue mir damit eine Landingpage. Passe die Farben an diesen Screenshot an.'",
       icon: <Blocks className="w-5 h-5 text-purple-400" />
     },
     {
       step: "04",
-      title: "Testing & Mocking",
-      desc: "Testet eure modifizierte App. Solltet ihr für den echten API-Loop keinen API-Key besitzen, nutzt die App als UI-Prototyp und werft statische Mockup-Daten ein.",
+      title: "Iterate & Hack",
+      desc: "Die KI macht Fehler. Keine Panik. Kopiert den Error-Log roh zurück in den Chat. Vergesst API-Keys: Werft vorerst überall statische Mock-Daten rein.",
       icon: <PlaySquare className="w-5 h-5 text-red-400" />
     }
   ]
@@ -36,9 +36,9 @@ export default function ChallengeE1WorkflowSlide() {
         
         <motion.div initial={{opacity:0, x:-20}} animate={{opacity:1, x:0}} className="mb-12">
           <div className="text-fhgr-petrol-light text-xs font-mono uppercase tracking-widest mb-3">Challenge E.1 · Part 3</div>
-          <h2 className="text-4xl lg:text-5xl font-bold mb-4 tracking-tight">Der Workspace</h2>
+          <h2 className="text-4xl lg:text-5xl font-bold mb-4 tracking-tight">Der Workflow</h2>
           <p className="text-lg text-white/50 max-w-3xl leading-relaxed">
-            Eine KI-App zu bauen ist kein Hexenwerk mehr. Nutzt diesen iterativen Workflow, um fremde Code-Beispiele in eure eigenen, kreativen Prototypen zu verwandeln.
+            Eine KI-App zu bauen ist kein Hexenwerk mehr. Der schwierigste Part ist der "Initial Context". Wie kommen eure Inspirationen vom Browser in euren AI-Builder?
           </p>
         </motion.div>
 
