@@ -274,7 +274,7 @@ const rawSchedule: DayScheduleInput[] = [
             component: <ChallengeE2Slide />
           },
           {
-            id: 's04-vibe-tools', title: 'UI-Inspiration (Vibe Coding)',
+            id: 's04-vibe-tools', title: 'Komponenten & UI-Inspiration',
             component: <VibeCodingInspirationSlide />
           }
         ]

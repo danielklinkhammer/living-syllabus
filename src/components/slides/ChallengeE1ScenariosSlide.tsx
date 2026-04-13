@@ -1,44 +1,44 @@
 import { motion } from 'framer-motion'
 import SlideLayout from '../layout/SlideLayout'
 import Card from '../ui/Card'
-import { FileSearch, MessageSquareQuote, Video, Globe2 } from 'lucide-react'
+import { Search, Compass, ExternalLink, Globe2 } from 'lucide-react'
 
 const showcases = [
   {
-    title: "Video Insights Analyzer",
-    desc: "Eine App, die Video-Uploads (Gemini Vision) analysiert und z.B. Handlungsstränge, Objekte oder Emotionen maschinell extrahiert.",
-    feature: "Multi-Modal Video Processing",
-    url: "https://aistudio.google.com/apps?source=showcase&showcaseTag=featured",
+    title: "Vercel AI Templates",
+    desc: "Die Referenz für produktionsbereite AI Next.js Apps. Filtert hier nach Chatbots, RAG (Semantic Search) oder GenAI Video Tools.",
+    feature: "Production Ready UIs",
+    url: "https://vercel.com/templates?category=ai",
     color: "from-blue-500/10 to-transparent",
     border: "border-blue-500/30",
-    icon: <Video className="w-8 h-8 text-blue-400" />
+    icon: <Search className="w-8 h-8 text-blue-400" />
   },
   {
-    title: "Document Data Extractor",
-    desc: "Einen PDF-Reader bauen, der gezielt Rechnungsdaten (OCR) ausliest und als saubere JSON-Struktur für euer Programm exportiert.",
-    feature: "Unstructured to Structured Data",
-    url: "https://aistudio.google.com/apps?source=showcase&showcaseTag=featured",
-    color: "from-fhgr-petrol/10 to-transparent",
-    border: "border-fhgr-petrol/30",
-    icon: <FileSearch className="w-8 h-8 text-fhgr-petrol" />
-  },
-  {
-    title: "Interactive Storyteller",
-    desc: "Ein Chat-Interface, das basierend auf User-Eingaben dynamisch Geschichten strickt, Rollen annimmt und den Status der Narrative behält.",
-    feature: "Context Retention & System Prompts",
-    url: "https://aistudio.google.com/apps?source=showcase&showcaseTag=featured",
+    title: "v0 & Lovable",
+    desc: "Schaut euch Community-Generierungen an. Hier seht ihr die wildesten Frontend UI-Demos, komplett von KI für Prompt-Challenges gebaut.",
+    feature: "Generative UI Patterns",
+    url: "https://v0.dev/chat",
     color: "from-purple-500/10 to-transparent",
     border: "border-purple-500/30",
-    icon: <MessageSquareQuote className="w-8 h-8 text-purple-400" />
+    icon: <Compass className="w-8 h-8 text-purple-400" />
   },
   {
-    title: "Language Translator Tool",
-    desc: "Weit mehr als Google Translate: Eine App, die Slang oder branchenspezifische Begriffe (Medizin, Jura) kontextbezogen übersetzt.",
-    feature: "Prompt Constraints & Tone Control",
+    title: "Google AI Studio",
+    desc: "Fokus auf rohe Model-Capabilities. Testet hier pure Prompts auf extremen Multimodal-Cases (wie Video-Analyse oder Code-Refactoring).",
+    feature: "Multimodal & Prompting",
     url: "https://aistudio.google.com/apps?source=showcase&showcaseTag=featured",
     color: "from-orange-500/10 to-transparent",
     border: "border-orange-500/30",
     icon: <Globe2 className="w-8 h-8 text-orange-400" />
+  },
+  {
+    title: "HuggingFace Spaces",
+    desc: "Das Open-Source-Paradies. Hier findet ihr oft unpolierte, aber technologisch hochspannende Demos (Gradio/Streamlit) von neuen Modellen.",
+    feature: "Open Source Demos",
+    url: "https://huggingface.co/spaces",
+    color: "from-fhgr-petrol/10 to-transparent",
+    border: "border-fhgr-petrol/30",
+    icon: <ExternalLink className="w-8 h-8 text-fhgr-petrol" />
   }
 ]
 
@@ -49,9 +49,10 @@ export default function ChallengeE1ScenariosSlide() {
         
         <motion.div initial={{opacity:0, y:20}} animate={{opacity:1, y:0}} className="mb-10 text-center">
           <div className="text-fhgr-petrol-light text-xs font-mono uppercase tracking-widest mb-3">Challenge E.1 · Phase 2</div>
-          <h2 className="text-4xl lg:text-5xl font-bold tracking-tight mb-4">Der AI Showcase</h2>
-          <p className="text-white/50 text-lg max-w-3xl mx-auto">
-            Ihr findet auf <a href="https://aistudio.google.com/apps?source=showcase&showcaseTag=featured" target="_blank" rel="noreferrer" className="text-fhgr-petrol underline">AI Studio</a> (oder auch bei v0/Lovable) dutzende Open-Source AI-Beispiele. Analysiert 2-3 Modelle davon. Diese 4 Rubriken eignen sich hervorragend für den Start:
+          <h2 className="text-4xl lg:text-5xl font-bold tracking-tight mb-4">Gemeinsame AI Exploration</h2>
+          <p className="text-white/60 text-lg max-w-3xl mx-auto leading-relaxed">
+            Die Exploration-Phase ist eine gemeinsame Recherche-Session. Durchsucht die unten stehenden 4 Plattformen nach Inspirationen. 
+            <strong> Wählt zwei Beispiele aus</strong>, die euch begeistern (egal ob Use-Case oder starkes UI-Pattern), macht Screenshots davon und pinnt diese mit dem zugehörigen Link direkt zur Diskussion auf unser <strong className="text-white">FigJam-Board</strong>.
           </p>
         </motion.div>
 

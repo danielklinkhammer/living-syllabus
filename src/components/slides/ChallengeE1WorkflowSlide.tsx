@@ -6,8 +6,8 @@ export default function ChallengeE1WorkflowSlide() {
   const workflow = [
     {
       step: "01",
-      title: "Exploration",
-      desc: "Öffnet den AI Studio Showcase und klickt euch durch 2-3 verschiedene Projekte. Testet, wie sie mit Videos, Bildern oder reinem Text als Input umgehen.",
+      title: "Exploration (FigJam)",
+      desc: "Öffnet die Showcase-Links aus dem vorherigen Schritt. Sammelt gemeinsam die besten KI-Beispiele und postet sie auf unser FigJam-Board, um Patterns zu analysieren.",
       icon: <Telescope className="w-5 h-5 text-blue-400" />
     },
     {
