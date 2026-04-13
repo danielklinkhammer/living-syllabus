@@ -51,14 +51,6 @@ export default function MakerVsProStackSlide() {
                     <span className="text-sm font-medium text-white/80 group-hover:text-white">Figma Make</span>
                     <ExternalLink className="w-3.5 h-3.5 text-white/30 group-hover:text-white/60" />
                  </a>
-                 <a href="https://www.figma.com/resource-library/vibe-coding-tools/" target="_blank" rel="noreferrer" className="flex items-center justify-between p-3 rounded-lg bg-white/5 hover:bg-white/10 border border-white/5 transition-colors cursor-pointer group">
-                    <span className="text-sm font-medium text-white/80 group-hover:text-white">Figma Vibe Tools Guide</span>
-                    <ExternalLink className="w-3.5 h-3.5 text-white/30 group-hover:text-white/60" />
-                 </a>
-                 <a href="https://www.figma.com/resource-library/vibe-coding-examples/" target="_blank" rel="noreferrer" className="flex items-center justify-between p-3 rounded-lg bg-white/5 hover:bg-white/10 border border-white/5 transition-colors cursor-pointer group">
-                    <span className="text-sm font-medium text-white/80 group-hover:text-white">Figma Vibe Examples</span>
-                    <ExternalLink className="w-3.5 h-3.5 text-white/30 group-hover:text-white/60" />
-                 </a>
               </div>
             </Card>
           </motion.div>
@@ -101,6 +93,30 @@ export default function MakerVsProStackSlide() {
           </motion.div>
           
         </div>
+
+        {/* Universal Resources */}
+        <motion.div initial={{opacity:0, y:20}} animate={{opacity:1, y:0}} transition={{delay:0.3}} className="mt-8 w-full max-w-5xl">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+             <a href="https://www.figma.com/resource-library/vibe-coding-tools/" target="_blank" rel="noreferrer" className="flex items-center gap-3 p-4 rounded-xl border border-[#00c4cc]/20 bg-[#00c4cc]/5 hover:bg-[#00c4cc]/10 transition-colors cursor-pointer group">
+                <div className="p-2 bg-[#00c4cc]/10 rounded-lg text-[#00c4cc]">
+                  <ExternalLink className="w-5 h-5" />
+                </div>
+                <div className="flex-1 text-left">
+                  <h4 className="text-sm font-bold text-white group-hover:text-[#00c4cc] transition-colors">Vibe Coding Tools & Agents</h4>
+                  <p className="text-xs text-white/50">Figma Resource Library</p>
+                </div>
+             </a>
+             <a href="https://www.figma.com/resource-library/vibe-coding-examples/" target="_blank" rel="noreferrer" className="flex items-center gap-3 p-4 rounded-xl border border-[#00c4cc]/20 bg-[#00c4cc]/5 hover:bg-[#00c4cc]/10 transition-colors cursor-pointer group">
+                <div className="p-2 bg-[#00c4cc]/10 rounded-lg text-[#00c4cc]">
+                  <ExternalLink className="w-5 h-5" />
+                </div>
+                <div className="flex-1 text-left">
+                  <h4 className="text-sm font-bold text-white group-hover:text-[#00c4cc] transition-colors">Vibe Coding Examples</h4>
+                  <p className="text-xs text-white/50">Figma Resource Library</p>
+                </div>
+             </a>
+          </div>
+        </motion.div>
 
       </div>
     </SlideLayout>
