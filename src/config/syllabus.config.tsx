@@ -246,7 +246,7 @@ const rawSchedule: DayScheduleInput[] = [
             component: <ChallengeE1PrototypeSlide />
           },
           { 
-            id: 's04-chalE1-work', title: 'Der Workflow', 
+            id: 's04-chalE1-work', title: 'Vibe Coding Taktiken', 
             component: <ChallengeE1WorkflowSlide />
           },
           { 
