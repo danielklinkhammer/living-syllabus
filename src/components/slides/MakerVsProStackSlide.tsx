@@ -51,6 +51,14 @@ export default function MakerVsProStackSlide() {
                     <span className="text-sm font-medium text-white/80 group-hover:text-white">Figma Make</span>
                     <ExternalLink className="w-3.5 h-3.5 text-white/30 group-hover:text-white/60" />
                  </a>
+                 <a href="https://www.figma.com/resource-library/vibe-coding-tools/" target="_blank" rel="noreferrer" className="flex items-center justify-between p-3 rounded-lg bg-white/5 hover:bg-white/10 border border-white/5 transition-colors cursor-pointer group">
+                    <span className="text-sm font-medium text-white/80 group-hover:text-white">Figma Vibe Tools Guide</span>
+                    <ExternalLink className="w-3.5 h-3.5 text-white/30 group-hover:text-white/60" />
+                 </a>
+                 <a href="https://www.figma.com/resource-library/vibe-coding-examples/" target="_blank" rel="noreferrer" className="flex items-center justify-between p-3 rounded-lg bg-white/5 hover:bg-white/10 border border-white/5 transition-colors cursor-pointer group">
+                    <span className="text-sm font-medium text-white/80 group-hover:text-white">Figma Vibe Examples</span>
+                    <ExternalLink className="w-3.5 h-3.5 text-white/30 group-hover:text-white/60" />
+                 </a>
               </div>
             </Card>
           </motion.div>
