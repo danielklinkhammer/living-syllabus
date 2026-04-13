@@ -69,6 +69,7 @@ import ChallengeE2Slide from '../components/slides/ChallengeE2Slide'
 import PIMIntroSlide from '../components/slides/PIMIntroSlide'
 import LocalMarkdownSlide from '../components/slides/LocalMarkdownSlide'
 import ObsidianToolSlide from '../components/slides/ObsidianToolSlide'
+import WisprFlowToolSlide from '../components/slides/WisprFlowToolSlide'
 import ObsidianAIAgentsSlide from '../components/slides/ObsidianAIAgentsSlide'
 import Part2IntroSlide from '../components/slides/Part2IntroSlide'
 import StackReactViteSlide from '../components/slides/StackReactViteSlide'
@@ -279,6 +280,7 @@ const rawSchedule: DayScheduleInput[] = [
           { id: 's04-pim-intro', title: 'Personal Information Management', component: <PIMIntroSlide /> },
           { id: 's04-local-markdown', title: 'Data Sovereignty', component: <LocalMarkdownSlide /> },
           { id: 's04-obsidian-tool', title: 'Tool: Obsidian', component: <ObsidianToolSlide /> },
+          { id: 's04-wispr-flow', title: 'Tool: Wispr Flow', component: <WisprFlowToolSlide /> },
           { id: 's04-obsidian-agents', title: 'Obsidian × AI Agents', component: <ObsidianAIAgentsSlide /> }
         ]
       }

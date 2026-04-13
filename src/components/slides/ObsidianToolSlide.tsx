@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion'
-import { Hexagon, Network, Diamond, FastForward } from 'lucide-react'
+import { Hexagon, Network, Diamond, FastForward, ExternalLink } from 'lucide-react'
 import SlideLayout from '../layout/SlideLayout'
 
 export default function ObsidianToolSlide() {
@@ -11,8 +11,11 @@ export default function ObsidianToolSlide() {
           <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-[#7A3CEF]/10 border border-[#7A3CEF]/30 text-[#A277FF] text-sm font-mono tracking-widest uppercase shadow-[0_0_15px_rgba(122,60,239,0.15)] mb-4">
              <Hexagon className="w-4 h-4" /> Tool Spotlight
           </div>
-          <h2 className="text-3xl lg:text-5xl font-bold font-head tracking-tight leading-tight mb-4 text-white">
+          <h2 className="text-3xl lg:text-5xl font-bold font-head tracking-tight leading-tight mb-4 text-white flex justify-center items-center gap-4">
             Wissensmanagement mit <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#A277FF] to-[#7A3CEF]">Obsidian</span>
+            <a href="https://obsidian.md" target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center w-8 h-8 rounded-full bg-white/5 hover:bg-white/10 transition-colors border border-white/10 text-white/50 hover:text-[#A277FF]">
+              <ExternalLink className="w-4 h-4" />
+            </a>
           </h2>
           <p className="text-lg text-white/50 max-w-2xl mx-auto font-light leading-relaxed">
             Obsidian ist im Kern nur ein extrem mächtiger Viewer über einen lokalen Ordner voller Text-Dateien. Doch es gibt dir exakt die Werkzeuge, um daraus ein "Persönliches Wiki" zu bauen.
