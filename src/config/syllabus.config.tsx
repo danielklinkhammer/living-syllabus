@@ -66,6 +66,7 @@ import ChallengeE1WorkflowSlide from '../components/slides/ChallengeE1WorkflowSl
 import ChallengeE1OutcomeSlide from '../components/slides/ChallengeE1OutcomeSlide'
 import ChallengeE1AssessmentSlide from '../components/slides/ChallengeE1AssessmentSlide'
 import ChallengeE2Slide from '../components/slides/ChallengeE2Slide'
+import PIMIntroSlide from '../components/slides/PIMIntroSlide'
 import LocalMarkdownSlide from '../components/slides/LocalMarkdownSlide'
 import ObsidianToolSlide from '../components/slides/ObsidianToolSlide'
 import ObsidianAIAgentsSlide from '../components/slides/ObsidianAIAgentsSlide'
@@ -273,8 +274,9 @@ const rawSchedule: DayScheduleInput[] = [
         ]
       },
       {
-        id: "proto-localnotes", title: "Notes & Local AI", icon: <Brain className="w-[18px] h-[18px]" />,
+        id: "proto-localnotes", title: "Zusatz: PIM", icon: <Brain className="w-[18px] h-[18px]" />,
         slides: [
+          { id: 's04-pim-intro', title: 'Personal Information Management', component: <PIMIntroSlide /> },
           { id: 's04-local-markdown', title: 'Data Sovereignty', component: <LocalMarkdownSlide /> },
           { id: 's04-obsidian-tool', title: 'Tool: Obsidian', component: <ObsidianToolSlide /> },
           { id: 's04-obsidian-agents', title: 'Obsidian × AI Agents', component: <ObsidianAIAgentsSlide /> }

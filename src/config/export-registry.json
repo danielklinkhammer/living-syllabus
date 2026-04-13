@@ -652,12 +652,22 @@
     "exportStatus": "draft"
   },
   {
+    "slideId": "s04-pim-intro",
+    "title": "Personal Information Management",
+    "block": "B04",
+    "order": 20,
+    "exportId": "living-syllabus:s04-pim-intro",
+    "exportName": "B04-20 \u00b7 Personal Information Management",
+    "figmaPageName": "Living Syllabus",
+    "exportStatus": "draft"
+  },
+  {
     "slideId": "s04-local-markdown",
     "title": "Data Sovereignty",
     "block": "B04",
-    "order": 20,
+    "order": 21,
     "exportId": "living-syllabus:s04-local-markdown",
-    "exportName": "B04-20 \u00b7 Data Sovereignty",
+    "exportName": "B04-21 \u00b7 Data Sovereignty",
     "figmaPageName": "Living Syllabus",
     "exportStatus": "draft"
   },
@@ -665,9 +675,9 @@
     "slideId": "s04-obsidian-tool",
     "title": "Tool: Obsidian",
     "block": "B04",
-    "order": 21,
+    "order": 22,
     "exportId": "living-syllabus:s04-obsidian-tool",
-    "exportName": "B04-21 \u00b7 Tool: Obsidian",
+    "exportName": "B04-22 \u00b7 Tool: Obsidian",
     "figmaPageName": "Living Syllabus",
     "exportStatus": "draft"
   },
@@ -675,9 +685,9 @@
     "slideId": "s04-obsidian-agents",
     "title": "Obsidian \u00d7 AI Agents",
     "block": "B04",
-    "order": 22,
+    "order": 23,
     "exportId": "living-syllabus:s04-obsidian-agents",
-    "exportName": "B04-22 \u00b7 Obsidian \u00d7 AI Agents",
+    "exportName": "B04-23 \u00b7 Obsidian \u00d7 AI Agents",
     "figmaPageName": "Living Syllabus",
     "exportStatus": "draft"
   }
