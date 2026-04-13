@@ -5,22 +5,22 @@ import { Microscope, Target, Bookmark } from 'lucide-react'
 export default function ChallengeE1AssessmentSlide() {
   const criteria = [
     {
-      title: "Explorations-Tiefe",
-      desc: "Wurde sich intensiv mit einer bestimmten KI-Schnittstelle (z.B. Gen-Image mit Nano Banana oder Audio) beschäftigt? Wir bewerten die Neugierde und das aktive Testen über einfache Text-Prompts hinaus.",
+      title: "Die Vision",
+      desc: "Gab es einen klaren Fahrplan? Wir bewerten die Qualität eurer VISION.md und wie gezielt ihr euren Prototypen anhand dieses Manifests gesteuert habt, statt ziellos zu prompten.",
       icon: <Microscope className="w-6 h-6 text-indigo-400" />,
       color: "from-indigo-500/10 to-transparent",
       borderColor: "border-indigo-500/30"
     },
     {
-      title: "Der KI-Mehrwert",
-      desc: "Warum braucht dieses App-Szenario überhaupt eine KI? Ist die Begründung in eurer Präsentation schlüssig? Eine gute App löst ein Problem, auf das die KI eine konkrete, vorteilhafte Antwort gibt.",
+      title: "Vibe & Complexity",
+      desc: "Wurde sich beim Coden etwas getraut? Egal ob API-Anbindung (AI Core), krasse WebGL-Animationen (Motion Vibe) oder radikaler Template-Remix: Wir bewerten den Fokus auf Advanced Prototyping.",
       icon: <Target className="w-6 h-6 text-fhgr-accent" />,
       color: "from-fhgr-petrol/10 to-transparent",
       borderColor: "border-fhgr-petrol/30"
     },
     {
-      title: "Dokumentation & Reflexion",
-      desc: "Wie übersichtlich wurde das Konzept (und eure Learnings) im Figma/FigJam Portfolio-Board dokumentiert? Fehler, Irrwege und die Limitierungen der getesten KI sind extrem wertvolle Learnings!",
+      title: "Iterative Reflexion",
+      desc: "Vibe Coding bedeutet ständiges Scheitern. Wie transparent habt ihr eure Sackgassen, Error-Loops und Prompting-Learnings im FigJam dokumentiert? Fehler sind die wertvollsten Insights!",
       icon: <Bookmark className="w-6 h-6 text-purple-400" />,
       color: "from-purple-500/10 to-transparent",
       borderColor: "border-purple-500/30"
@@ -35,7 +35,7 @@ export default function ChallengeE1AssessmentSlide() {
           <div className="text-fhgr-petrol-light text-xs font-mono uppercase tracking-widest mb-3">Challenge E.1 · Part 5</div>
           <h2 className="text-4xl lg:text-5xl font-bold mb-4 tracking-tight">Evaluationskriterien</h2>
           <p className="text-lg text-white/50 max-w-2xl mx-auto leading-relaxed">
-            In dieser Phase gibt es kaum richtig oder falsch. Wir bewerten euren <strong>Forscherdrang</strong> und eure Fähigkeit, diesen Versuch systematisch und reflektiert für ein Publikum aufzubereiten.
+            In dieser Phase gibt es kaum richtig oder falsch. Wir bewerten euren <strong>Vibe-Coding Mut</strong> und eure Fähigkeit, diesen chaotischen Prozess systematisch zu reflektieren.
           </p>
         </motion.div>
 
