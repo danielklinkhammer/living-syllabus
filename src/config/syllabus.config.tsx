@@ -66,6 +66,7 @@ import ChallengeE1WorkflowSlide from '../components/slides/ChallengeE1WorkflowSl
 import ChallengeE1OutcomeSlide from '../components/slides/ChallengeE1OutcomeSlide'
 import ChallengeE1AssessmentSlide from '../components/slides/ChallengeE1AssessmentSlide'
 import ChallengeE2Slide from '../components/slides/ChallengeE2Slide'
+import VibeCodingInspirationSlide from '../components/slides/VibeCodingInspirationSlide'
 import PIMIntroSlide from '../components/slides/PIMIntroSlide'
 import LocalMarkdownSlide from '../components/slides/LocalMarkdownSlide'
 import ObsidianToolSlide from '../components/slides/ObsidianToolSlide'
@@ -271,6 +272,10 @@ const rawSchedule: DayScheduleInput[] = [
           { 
             id: 's04-chalE', title: 'Optional: Projekt Live schalten', 
             component: <ChallengeE2Slide />
+          },
+          {
+            id: 's04-vibe-tools', title: 'UI-Inspiration (Vibe Coding)',
+            component: <VibeCodingInspirationSlide />
           }
         ]
       },
