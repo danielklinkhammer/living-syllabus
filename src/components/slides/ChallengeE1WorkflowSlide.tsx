@@ -6,7 +6,7 @@ export default function ChallengeE1WorkflowSlide() {
   const tactics = [
     {
       title: "The Context Baseline",
-      desc: "Die KI versagt ohne 'Karte'. Liefert präzisen Kontext! Nutzt @Docs in Cursor für APIs (z.B. Wetter/Supabase), übergebt UI-Screenshots (Vision) oder nutzt .cursorrules für feste Vorgaben.",
+      desc: "Die KI versagt ohne 'Karte'. Liefert präzisen Kontext! Referenziert aktuelle API-Dokumentationen via URL, übergebt Skizzen via Image-Upload (Vision) oder gebt klare Coding-Richtlinien (System Prompts) vor.",
       icon: <BrainCircuit className="w-6 h-6 text-indigo-400" />,
       color: "from-indigo-500/10 to-transparent",
       borderColor: "border-indigo-500/30"
