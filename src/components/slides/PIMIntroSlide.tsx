@@ -42,7 +42,7 @@ export default function PIMIntroSlide() {
                     <Sparkles className="w-5 h-5 text-fhgr-accent" /> Warum ist das essenziell?
                   </h3>
                   <p className="text-white/60 text-sm leading-relaxed">
-                    Als Designer nutzen wir den Computer als kreativen "Exokortex" (eine Erweiterung unseres Gehirns). Wenn wir KI effektiv nutzen wollen, müssen wir wissen, <em>wo</em> und <em>wie</em> unsere Daten liegen, damit intelligente Assistenten darauf zugreifen können.
+                    Als Designer nutzen wir den Computer als unsere zentrale kreative Arbeitsstation. Wenn wir KI effektiv nutzen wollen, müssen wir genau wissen, <em>wo</em> und <em>wie</em> unsere Daten liegen, damit intelligente Assistenten nahtlos darauf zugreifen können.
                   </p>
                 </div>
              </Card>
