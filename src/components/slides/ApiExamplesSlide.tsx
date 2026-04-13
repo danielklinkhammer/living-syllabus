@@ -36,9 +36,9 @@ export default function ApiExamplesSlide() {
       borderColor: "border-fhgr-pink/30",
       iconColor: "text-fhgr-pink",
       apis: [
-        { name: "OpenAI / Anthropic", text: "Die Klassiker für LLM-Chats und Text-Analyse.", icon: <Bot className="w-4 h-4" /> },
-        { name: "Fal.ai / Replicate", text: "Bild- und Videogenerierung in Sekundenschnelle.", icon: <ImageIcon className="w-4 h-4" /> },
-        { name: "ElevenLabs / OpenAI Audio", text: "Fotorealistische Sprachsynthese (Text to Speech).", icon: <Cpu className="w-4 h-4" /> }
+        { name: "Large Language Models", text: "Endpoints für dynamische KI-Chats, NLP und Text-Analyse.", icon: <Bot className="w-4 h-4" /> },
+        { name: "Visual Generative AI", text: "Blitzschnelle Bild- oder Videogenerierung direkt in der App.", icon: <ImageIcon className="w-4 h-4" /> },
+        { name: "Voice Synthesis (TTS)", text: "APIs für fotorealistische Audio-Erzeugung aus Text-Prompts.", icon: <Cpu className="w-4 h-4" /> }
       ]
     }
   ]
